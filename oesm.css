@@ -147,8 +147,10 @@ hr.separatoraside {
   border-top: 1px solid #05030033;
 }
 
-#postbody {
-  
+#post-body img {
+ width: 100%;
+ height: auto;
+ border-radius: 6px;
 }
 
 main {
