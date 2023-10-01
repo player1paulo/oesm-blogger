@@ -141,27 +141,23 @@ hr.commentsseparator {
 
 hr.separadorposts {
   border-top: 2px solid #050300;
+  width: 70%;
 }
 
 hr.separatoraside {
-  border-top: 1px solid #05030033;
-}
-
-#post-body img {
- width: 100%;
- height: auto;
- border-radius: 6px;
+  border-top: 2px solid #05030033;
+  width: 70%;
 }
 
 main {
   display: block;
   float: left;
-  width: auto;
+  width: 60%;
   background-color: #fffdfa;
   padding: 24px;
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-right: 3px;
+  margin-right: 5px;
   border-radius: 6px;
   border: 1px solid rgba(250, 171, 120, .4);
   font-size: 19px;
@@ -171,11 +167,11 @@ main {
 aside {
   display: block;
   float: left;
-  width: auto;
+  width: 34%;
   padding: 14px;
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 3px;
+  margin-left: 5px;
   border: 1px solid rgba(250, 171, 120, .4);
   border-radius: 6px;
   background-color: #fffdfa;
@@ -250,276 +246,3 @@ footer a:hover {
 footer i {
   margin: 10px;
 }
-
-/* For Desktop View */
-@media screen and (min-width: 1024px) {
-  main {
-    display: block;
-    float: left;
-    width: auto;
-    background-color: #fffdfa;
-    padding: 24px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-right: 3px;
-    border-radius: 6px;
-    border: 1px solid rgba(250, 171, 120, .4);
-    font-size: 19px;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
-  }
-  
-  aside {
-    display: block;
-    float: left;
-    width: auto;
-    padding: 14px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 3px;
-    border: 1px solid rgba(250, 171, 120, .4);
-    border-radius: 6px;
-    background-color: #fffdfa;
-    font-size: 19px;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
-  }
-}
-
-/* For Tablet View */
-@media screen and (min-device-width: 768px)
-  and (max-device-width: 1024px) {
-    main {
-      display: block;
-      float: left;
-      width: auto;
-      background-color: #fffdfa;
-      padding: 24px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      margin-right: 3px;
-      border-radius: 6px;
-      border: 1px solid rgba(250, 171, 120, .4);
-      font-size: 19px;
-      font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    }
-    
-    aside {
-      display: block;
-      float: left;
-      width: auto;
-      padding: 14px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      margin-left: 3px;
-      border: 1px solid rgba(250, 171, 120, .4);
-      border-radius: 6px;
-      background-color: #fffdfa;
-      font-size: 19px;
-      font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    }
-}
-
-/* For Mobile Portrait View */
-@media screen and (max-device-width: 480px)
-  and (orientation: portrait) {
-    main {
-      display: block;
-      float: left;
-      width: auto;
-      background-color: #fffdfa;
-      padding: 24px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      margin-right: 3px;
-      border-radius: 6px;
-      border: 1px solid rgba(250, 171, 120, .4);
-      font-size: 19px;
-      font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    }
-    
-    aside {
-      display: block;
-      float: left;
-      width: auto;
-      padding: 14px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      margin-left: 3px;
-      border: 1px solid rgba(250, 171, 120, .4);
-      border-radius: 6px;
-      background-color: #fffdfa;
-      font-size: 19px;
-      font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    }
-}
-
-/* For Mobile Landscape View */
-@media screen and (max-device-width: 640px)
-  and (orientation: landscape) {
-    main {
-      display: block;
-      float: left;
-      width: auto;
-      background-color: #fffdfa;
-      padding: 24px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      margin-right: 3px;
-      border-radius: 6px;
-      border: 1px solid rgba(250, 171, 120, .4);
-      font-size: 19px;
-      font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    }
-    
-    aside {
-      display: block;
-      float: left;
-      width: auto;
-      padding: 14px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      margin-left: 3px;
-      border: 1px solid rgba(250, 171, 120, .4);
-      border-radius: 6px;
-      background-color: #fffdfa;
-      font-size: 19px;
-      font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    }
-}
-
-/* For Mobile Phones Portrait or Landscape View */
-@media screen
-  and (max-device-width: 640px) {
-    main {
-      display: block;
-      float: left;
-      width: auto;
-      background-color: #fffdfa;
-      padding: 24px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      margin-right: 3px;
-      border-radius: 6px;
-      border: 1px solid rgba(250, 171, 120, .4);
-      font-size: 19px;
-      font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    }
-    
-    aside {
-      display: block;
-      float: left;
-      width: auto;
-      padding: 14px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      margin-left: 3px;
-      border: 1px solid rgba(250, 171, 120, .4);
-      border-radius: 6px;
-      background-color: #fffdfa;
-      font-size: 19px;
-      font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    }
-}
-
-/* For iPhone 4 Portrait or Landscape View */
-@media screen and (min-device-width: 320px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    main {
-      display: block;
-      float: left;
-      width: auto;
-      background-color: #fffdfa;
-      padding: 24px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      margin-right: 3px;
-      border-radius: 6px;
-      border: 1px solid rgba(250, 171, 120, .4);
-      font-size: 19px;
-      font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    }
-    
-    aside {
-      display: block;
-      float: left;
-      width: auto;
-      padding: 14px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      margin-left: 3px;
-      border: 1px solid rgba(250, 171, 120, .4);
-      border-radius: 6px;
-      background-color: #fffdfa;
-      font-size: 19px;
-      font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    }
-}
-
-/* For iPhone 5 Portrait or Landscape View */
-@media (device-height: 568px)
-  and (device-width: 320px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    main {
-      display: block;
-      float: left;
-      width: auto;
-      background-color: #fffdfa;
-      padding: 24px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      margin-right: 3px;
-      border-radius: 6px;
-      border: 1px solid rgba(250, 171, 120, .4);
-      font-size: 19px;
-      font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    }
-    
-    aside {
-      display: block;
-      float: left;
-      width: auto;
-      padding: 14px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      margin-left: 3px;
-      border: 1px solid rgba(250, 171, 120, .4);
-      border-radius: 6px;
-      background-color: #fffdfa;
-      font-size: 19px;
-      font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    }
-}
-
-/* For iPhone 6 and 6 plus Portrait or Landscape View */
-@media (min-device-height: 667px)
-  and (min-device-width: 375px)
-  and (-webkit-min-device-pixel-ratio: 3) {
-    main {
-      display: block;
-      float: left;
-      width: auto;
-      background-color: #fffdfa;
-      padding: 24px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      margin-right: 3px;
-      border-radius: 6px;
-      border: 1px solid rgba(250, 171, 120, .4);
-      font-size: 19px;
-      font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    }
-    
-    aside {
-      display: block;
-      float: left;
-      width: auto;
-      padding: 14px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      margin-left: 3px;
-      border: 1px solid rgba(250, 171, 120, .4);
-      border-radius: 6px;
-      background-color: #fffdfa;
-      font-size: 19px;
-      font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    }
-};
