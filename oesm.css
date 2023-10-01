@@ -17,12 +17,6 @@
   transition: width 0.1s ease;
 }
 
-img {
-  border-radius: 6px;
-  max-width: 100%;
-  height: auto;
-}
-
 ::-webkit-scrollbar {
   width: 12px;
   background-color: #fffdfa;
@@ -147,6 +141,14 @@ hr.commentsseparator {
 
 hr.separadorposts {
   border-top: 2px solid #050300;
+}
+
+hr.separatoraside {
+  border-top: 1px solid #05030033;
+}
+
+#postbody {
+  
 }
 
 main {
