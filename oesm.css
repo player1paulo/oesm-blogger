@@ -235,6 +235,18 @@ p {
   color: #050300;
 }
 
+p a {
+  color: #050300;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+p a:hover {
+  color: #050300;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
 footer {
   content: "";
   clear: both;
@@ -334,6 +346,7 @@ footer i {
     background-color: #fffdfa;
     font-size: 17px;
     font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    text-align: center;
   }
   
   aside i {
