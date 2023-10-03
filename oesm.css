@@ -215,6 +215,7 @@ p {
   font-family: "Bricolage Grotesque", Verdana, sans-serif;
   font-weight: 400;
   color: #050300;
+  list-style: disc;
 }
 
 footer {
@@ -350,6 +351,38 @@ footer i {
     font-weight: 500;
     line-height: 1.7em;
     overflow: auto;
+  }
+
+  footer i {
+    margin: 4px;
+  }
+
+  h1 {
+    font-size: 24px;
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    text-transform: uppercase;
+  }
+  
+  h2 {
+    font-size: 22px;
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  h3 {
+    font-size: 20px;
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  p {
+    font-size: 17px;
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-weight: 400;
+    color: #050300;
+    list-style: disc;
   }
 
 }
