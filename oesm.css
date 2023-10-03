@@ -80,7 +80,6 @@ nav a:hover {
 ul.breadcrumb {
   padding: 4px 4px;
   margin: 0;
-  list-style: none;
   font-family: "Bricolage Grotesque", Verdana, sans-serif;
 }
 
@@ -170,7 +169,7 @@ aside {
   display: block;
   float: left;
   width: 34%;
-  padding: 0px 20px 0 20px;
+  padding: 0px 20px 20px 20px;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 5px;
@@ -189,6 +188,17 @@ aside i {
 
 aside i:hover {
   color: #FAAB78;
+}
+
+aside a {
+  color: #050300;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+aside a:hover {
+  color: #050300;
+  text-decoration: underline;
 }
 
 h1 {
@@ -299,7 +309,7 @@ footer i {
     float: none;
     width: auto;
     background-color: #fffdfa;
-    padding: 0px 10px 0 10px;
+    padding: 0px 14px 0 14px;
     margin-top: 0px;
     margin-bottom: 10px;
     margin-left: 0px;
@@ -314,7 +324,7 @@ footer i {
     display: block;
     float: none;
     width: auto;
-    padding: 0px 10px 0 10px;
+    padding: 0px 14px 20px 14px;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 0px;
@@ -340,7 +350,7 @@ footer i {
     clear: both;
     display: block;
     float: none;
-    padding: 0px 6px 0px 6px;
+    padding: 0px 14px 0px 14px;
     margin-bottom: 10px;
     border-radius: 6px;
     border: 1px solid rgba(5, 3, 0, .1);
@@ -390,7 +400,6 @@ footer i {
     font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-weight: 400;
     color: #050300;
-    list-style: disc;
   }
 
 }
