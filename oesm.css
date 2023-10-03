@@ -107,7 +107,6 @@ ul.breadcrumb li a:hover {
 }
 
 ul {
-  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -118,7 +117,7 @@ li {
 
 ul.socials {
   display: inline-block;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 ul.socials a {
@@ -159,11 +158,13 @@ main {
   padding: 0px 20px 0 20px;
   margin-top: 20px;
   margin-bottom: 20px;
+  margin-left: 0px;
   margin-right: 5px;
   border-radius: 6px;
   border: 1px solid rgba(250, 171, 120, .4);
   font-size: 18px;
   font-family: "Bricolage Grotesque", Verdana, sans-serif;
+  list-style: disc;
 }
 
 aside {
@@ -174,11 +175,13 @@ aside {
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 5px;
+  margin-right: 0px;
   border: 1px solid rgba(250, 171, 120, .4);
   border-radius: 6px;
   background-color: #fffdfa;
   font-size: 18px;
   font-family: "Bricolage Grotesque", Verdana, sans-serif;
+  list-style: disc;
 }
 
 aside i {
