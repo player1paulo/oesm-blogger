@@ -277,10 +277,15 @@ footer i {
     background-color: #fcedd4;
     margin: 0 20px 0 20px;
   }
+
+  .responsivetoplogo {
+    width: 70%;
+    height: auto;
+  }
   
   header {
     display: block;
-    padding: 0px 10px 0 10px;
+    padding: 0px;
     float: none;
     width: auto;
     font-family: "Bricolage Grotesque", Verdana, sans-serif;
