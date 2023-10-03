@@ -11,13 +11,13 @@
   <meta keywords="ontem é só memória, teresa isabel silva, blog, lifestyle, organização pessoal, organização dia-a-dia, organização de casa">
   <meta name="author" content="Ontem é só Memória">
   <!-- CSS externo -->
-  <link rel="stylesheet" href="https://static.staticsave.com/oesm/oesm.css">
+  <link rel="stylesheet" href="/oesm.css">
   <!-- Fim do CSS externo -->
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/a31110c105.js" crossorigin="anonymous"></script>
   <!-- Fim do Font Awesome -->
   <!-- Javascript externo -->
-  <script src="https://static.staticsave.com/oesm/oesm-java.css"></script>
+  <script src="https://static.staticsave.com/oesm/oesm.js"></script>
   <!-- Fim do Javascript externo -->
   <!-- Bots e crawlers dos motores de pesquisa -->
   <meta robots="index, follow, archive">
@@ -34,7 +34,7 @@
   <meta property="og:url" content="https://ontemesomemoria.pt">
   <meta property="og:image" content="https://i.postimg.cc/VNfy4gsQ/ontem-e-so-memoria-og-1.webp">
   <meta property="og:site_name" content="Ontem é só Memória">
-  <meta property="og:description" content="texto descrição do blog">
+  <meta property="og:description" content="Ontem é só Memória. Blog de Teresa Isabe Silva.">
   <meta property="og:article:author" content="Ontém é só Memória"/>
   <!-- Fim do Open Graph -->
 </head>
@@ -79,18 +79,20 @@
     <div class="post"><a name="<$BlogItemNumber$>"></a>
       <u><BlogItemTitle>
    <BlogItemUrl><a href="<$BlogItemUrl$>" title="external link" class="title-link"></BlogItemUrl>
-      <h2 class="post-title"><$BlogItemTitle$></h2>
-   <BlogItemUrl></a></BlogItemUrl>
+      <h2 class="post-title"><$BlogItemTitle$></h2></a>
+   <BlogItemUrl></BlogItemUrl>
       </BlogItemTitle></u>
+      <!-- Breadcrumb -->
+      <ItemPage>
+        <p>
+          <ul class="breadcrumb">
+            <li><a href="<$BlogURL$>"><< Regressar ao Início</a></li>
+            <li>Estás aqui: <b><a href="<$BlogItemPermalinkUrl$>"><$BlogItemTitle$></a></b></li>
+          </ul>
+        </p>
+      </ItemPage>
+          <!-- Fim do Breadcrumb -->
            <div class="post-body">
-            <!-- Breadcrumb -->
-            <p>
-              <ul class="breadcrumb">
-                <li><a href="<$BlogURL$>"><< Regressar ao Início</a></li>
-                <li>Estás aqui: <b><a href="<$BlogItemPermalinkUrl$>"><$BlogItemTitle$></a></b></li>
-              </ul>
-            </p>
-              <!-- Fim do Breadcrumb -->
             <p>
         <$BlogItemBody$>
       </p>
@@ -108,7 +110,7 @@
           <a href="https://twitter.com/intent/tweet?url=<$BlogItemPermalinkUrl$>" class="fa fa-twitter" target="_blank"></a>
           <a href="https://pinterest.com/pin/create/button/?url=<$BlogItemPermalinkUrl$>" class="fa-brands fa-pinterest" target="_blank"></a>
           <a href="https://www.linkedin.com/shareArticle?mini=true&url=<$BlogItemPermalinkUrl$>" class="fa-brands fa-linkedin" target="_blank"></a>
-          <a href="<$BlogItemPermalinkUrl$>" class="fa-solid fa-copy" onclick="copylinktoclipboard()"></a>
+          <a href="#" class="fa-solid fa-copy" onclick="copylinktoclipboard()"><$BlogItemPermalinkUrl$></a>
         </ul>
       </p>
       </div>
@@ -199,16 +201,6 @@
 
     <hr class="separatoraside">
 
-    <h3>ARQUIVO</h3>
-    <MainOrArchivePage>
-      <BloggerArchives>
-        <ul><a href="<$BlogArchiveURL$>"><$BlogArchiveName$></a></ul>
-      </BloggerArchives>
-          <ArchivePage><li><a href="<$BlogURL$>"><$I18NCurrentPosts$></a></li></ArchivePage>
-    </MainOrArchivePage>
-
-    <hr class="separatoraside">
-
     <h3>DONATIVO</h3>
       <p>Donativo Buy Me A Coffee</p>
 
@@ -223,6 +215,15 @@
 
     <h4>PUBLICIDADE</h4>
     <p><a href="https://ontemesomemoria.pt/p/brand-assets.html">Propostas de Patrocínio</a></p>
+
+    <hr class="separatoraside">
+
+    <h3>ARQUIVO DO BLOG</h3>
+      <BloggerArchives>
+        <ul><a href="<$BlogArchiveURL$>"><$BlogArchiveName$></a></ul>
+      </BloggerArchives>
+          <ArchivePage><li><a href="<$BlogURL$>"><$I18NCurrentPosts$></a></li></ArchivePage>
+
 </aside>
 <!-- Fim da Barra Lateral -->
 <!-- Rodapé -->
