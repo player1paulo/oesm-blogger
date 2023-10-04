@@ -214,6 +214,15 @@ h2 {
   text-transform: uppercase;
 }
 
+.post-title {
+  font-size: 22px;
+  font-family: "Bricolage Grotesque", Verdana, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #050300;
+}
+
 h3 {
   font-size: 22px;
   font-family: "Bricolage Grotesque", Verdana, sans-serif;
@@ -290,7 +299,12 @@ footer i {
   }
 
   ::-webkit-scrollbar {
-    display: none;
+    width: 8px;
+    background-color: #fffdfa;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #faac78;
   }
 
   body {
@@ -406,6 +420,15 @@ footer i {
     font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-weight: 700;
     text-transform: uppercase;
+  }
+
+  .post-title {
+    font-size: 20px;
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #050300;
   }
   
   p {
