@@ -168,13 +168,13 @@ main h2 {
   text-decoration: underline;
 }
 
-main a {
-  color: #050300;
-}
-
-main a:hover {
+main h2 a:hover {
   color: #050300;
   background-color: #fcedd4;
+}
+
+main a {
+  color: #050300;
 }
 
 main a:visited {
@@ -248,6 +248,10 @@ h2 {
   color: #050300;
 }
 
+.post-title a:hover {
+  background-color: #fcedd4;
+}
+
 h3 {
   font-size: 22px;
   font-family: "Bricolage Grotesque", Verdana, sans-serif;
@@ -279,6 +283,10 @@ p a:hover {
   color: #050300;
   text-decoration: underline;
   font-weight: 700;
+}
+
+p a:visited {
+  color: #050300;
 }
 
 footer {
