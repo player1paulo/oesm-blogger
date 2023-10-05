@@ -75,6 +75,15 @@ nav .progress--bar {
   transition: width 0.1s ease;
 }
 
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
 ul.breadcrumb {
   padding: 4px 4px;
   margin: 0;
@@ -101,15 +110,6 @@ ul.breadcrumb li a {
 ul.breadcrumb li a:hover {
   color: #050300;
   text-decoration: underline;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
 }
 
 ul.socials {
