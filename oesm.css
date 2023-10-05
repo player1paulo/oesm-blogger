@@ -36,27 +36,30 @@ nav {
   position: sticky;
   float: none;
   top: -6px;
-  padding: 8px 0px 0px 0px;
+  padding: 6px 0px 0px 0px;
   border-radius: 6px;
   border: 1px solid rgba(5, 3, 0, .1);
   background-color: #FAAB78;
   font-family: "Bricolage Grotesque", Verdana, sans-serif;
   text-align: center;
   font-size: 20px;
-  line-height: 1.7em;
+  line-height: 1.5em;
   overflow: auto;
 }
 
 nav a {
-  margin: 10px;
+  margin: 8px;
   color: #050300;
   text-decoration: none;
   font-weight: 500;
+  padding: 4px;
+  border-radius: 6px;
 }
 
 nav a:hover {
   font-weight: 500;
-  color: #fffdfa;
+  background-color: #fffdfa;
+  color: #050300;
   text-decoration: underline;
 }
 
@@ -66,10 +69,10 @@ nav progress {
 }
 nav .progress--wpr {
 	width: 100%;
-	height: 7px;
+	height: 6px;
 }
 nav .progress--bar {
-	height: 7px;
+	height: 6px;
 	background: linear-gradient(120deg, #fffdfa, #fcedd4, #fffdfa);
 	width: 0%;
   transition: width 0.1s ease;
@@ -115,13 +118,13 @@ ul.breadcrumb li a:hover {
 ul.socials {
   display: inline-block;
   font-size: 20px;
+  margin: 0px;
 }
 
 ul.socials a {
   text-decoration: none;
-  padding: 6px;
+  padding: 4px;
   color: #050300;
-  margin: 0px 4px 0px 0px;
 }
 
 ul.socials a:hover {
@@ -168,11 +171,6 @@ main h2 {
   text-decoration: underline;
 }
 
-main h2 a:hover {
-  color: #050300;
-  background-color: #fcedd4;
-}
-
 main a {
   color: #050300;
 }
@@ -184,6 +182,22 @@ main a:visited {
 article img {
   width: 100%;
   height: auto;
+}
+
+.post-title {
+  font-size: 22px;
+  font-family: "Bricolage Grotesque", Verdana, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #050300;
+}
+
+.post-title a:hover {
+  background-color: #050300;
+  color: #fffdfa;
+  padding: 4px;
+  border-radius: 6px;
 }
 
 aside {
@@ -239,19 +253,6 @@ h2 {
   text-transform: uppercase;
 }
 
-.post-title {
-  font-size: 22px;
-  font-family: "Bricolage Grotesque", Verdana, sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-decoration: underline;
-  color: #050300;
-}
-
-.post-title a:hover {
-  background-color: #fcedd4;
-}
-
 h3 {
   font-size: 22px;
   font-family: "Bricolage Grotesque", Verdana, sans-serif;
@@ -264,29 +265,6 @@ h4 {
   font-family: "Bricolage Grotesque", Verdana, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-}
-
-p {
-  font-size: 18px;
-  font-family: "Bricolage Grotesque", Verdana, sans-serif;
-  font-weight: 400;
-  color: #050300;
-}
-
-p a {
-  color: #050300;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-p a:hover {
-  color: #050300;
-  text-decoration: underline;
-  font-weight: 700;
-}
-
-p a:visited {
-  color: #050300;
 }
 
 footer {
@@ -379,6 +357,18 @@ footer i {
     font-family: "Bricolage Grotesque", Verdana, sans-serif;
   }
 
+  main p {
+    font-size: 17px;
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-weight: 400;
+    color: #050300;
+  }
+
+  main img {
+    width: 100%;
+    height: auto;
+  }
+
   article img {
     width: 100%;
     height: auto;
@@ -466,13 +456,6 @@ footer i {
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: underline;
-    color: #050300;
-  }
-  
-  p {
-    font-size: 16px;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-weight: 400;
     color: #050300;
   }
 
