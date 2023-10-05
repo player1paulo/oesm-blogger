@@ -39,12 +39,6 @@
   <!-- Fim do Pinterest Site Verification -->
 </head>
 <body>
-  <!-- Barra Indicadora de Deslocamento da Página -->
-  <div class="progress">
-    <div class="progress--wpr">
-      <div class="progress--bar"></div>
-    </div>
-  </div>
   <!-- Cabeçalho -->
   <header>
     <h1><a href="https://ontemesomemoria.pt"><img src="https://i.postimg.cc/GtGr6pZZ/ontem-e-so-memoria-logo-cabecalho-1.webp" alt="Ontem é só Memória" class="responsivetoplogo"/></a></h1>
@@ -62,6 +56,14 @@
       <li><a href="https://www.instagram.com/ontemesomemoria" target="_blank"><i class="fa-brands fa-instagram fa-lg"></i></a></li>
       <li><a href="https://www.youtube.com/@ontemesomemoria" target="_blank"><i class="fa-brands fa-youtube fa-lg"></i></a></li>
     </ul>
+    <!-- Barra Indicadora de Deslocamento da Página -->
+    <ItemPage>
+      <div class="progress">
+      <div class="progress--wpr">
+      <div class="progress--bar"></div>
+      </div>
+      </div>
+    </ItemPage>
   </nav>
 <!-- Conteúdo principal --> 
 <main>
@@ -189,8 +191,27 @@
 
     <hr class="separatoraside">
 
-    <h4>PARCEIROS</h4>
-    <p><a href="https://ontemesomemoria.pt/p/brand-assets.html">Propostas de Parceria</a></p>
+    <h3>ARQUIVO DO BLOG</h3>
+    <select>
+      <option>Clica para abrir o arquivo do blog</option>
+      <option>
+        <BloggerArchives>
+          <a href="<$BlogArchiveURL$>"><$BlogArchiveName$></a>
+        </BloggerArchives>
+      </option>
+      <option>
+        <ArchivePage><a href="<$BlogURL$>"><$I18NCurrentPosts$></a></ArchivePage>
+      </option>
+    </select>
+      <!-- <BloggerArchives>
+        <ul><a href="<$BlogArchiveURL$>"><$BlogArchiveName$></a></ul>
+      </BloggerArchives>
+        <ArchivePage><li><a href="<$BlogURL$>"><$I18NCurrentPosts$></a></li></ArchivePage> -->
+
+        <hr class="separatoraside">
+
+    <!-- <h4>PARCEIROS</h4>
+    <p><a href="https://ontemesomemoria.pt/p/propostas-de-parceria.html">Propostas de Parceria</a></p>
 
     <hr class="separatoraside">
 
@@ -207,18 +228,10 @@
     <hr class="separatoraside">
 
     <h4>PUBLICIDADE</h4>
-    <p><a href="https://ontemesomemoria.pt/p/brand-assets.html">Propostas de Patrocínio</a></p>
+    <p><a href="https://ontemesomemoria.pt/p/propostas-de-patrocinio.html">Propostas de Patrocínio</a></p> -->
 
-    <hr class="separatoraside">
-
-    <h3>ARQUIVO DO BLOG</h3>
-      <BloggerArchives>
-        <ul><a href="<$BlogArchiveURL$>"><$BlogArchiveName$></a></ul>
-      </BloggerArchives>
-          <ArchivePage><li><a href="<$BlogURL$>"><$I18NCurrentPosts$></a></li></ArchivePage>
 
 </aside>
-<!-- Fim da Barra Lateral -->
 <!-- Rodapé -->
 <footer>
   <p>
@@ -226,11 +239,11 @@
   </p>
   <p>
     <a href="https://ontemesomemoria.pt/search/label/lifestyle">LIFESTYLE</a>
-    <a href="https://ontemesomemoria.pt/search/label/organizacao-pessoal">ORGANIZAÇÃO PESSOAL</a>
+    <a href="https://ontemesomemoria.pt/search/label/organização pessoal">ORGANIZAÇÃO PESSOAL</a>
     <a href="https://ontemesomemoria.pt/search/label/organização de casa">ORGANIZAÇÃO DE CASA</a>
-    <a href="https://ontemesomemoria.pt/search/label/organizacao-dia-a-dia">ORGANIZAÇÃO DIA-A-DIA</a>
+    <a href="https://ontemesomemoria.pt/search/label/organização dia-a-dia">ORGANIZAÇÃO DIA-A-DIA</a>
   </p>
-  <p>
+  <!-- <p>
     <a href="https://ontemesomemoria.pt/p/sobre.html">Sobre</a>
     <a href="https://ontemesomemoria.pt/p/contacto.html">Contacto</a>
     <a href="https://ontemesomemoria.pt/p/media-kit.html">Media Kit</a>
@@ -239,7 +252,7 @@
     <a href="https://ontemesomemoria.pt/p/brand-assets.html">Propostas de Colaboração</a>
     <a href="https://ontemesomemoria.pt/p/brand-assets.html">Propostas de Parceria</a>
     <a href="https://ontemesomemoria.pt/p/brand-assets.html">Propostas de Patrocínio</a>
-  </p>
+  </p> -->
   <p>
     <a href="https://www.facebook.com/ontemesomemoria" target="_blank"><i class="fa-brands fa-facebook fa-lg"></i></a>
     <a href="https://www.pinterest.pt/ontemesomemoria" target="_blank"><i class="fa-brands fa-pinterest fa-lg"></i></a>
@@ -247,9 +260,8 @@
     <a href="https://www.youtube.com/@ontemesomemoria" target="_blank"><i class="fa-brands fa-youtube fa-lg"></i></a>
   </p>
   <p>
-    Copyright &copy; 2023 <a href="https://ontemesomemoria.pt"><b>Ontem é só Memória</b></a>. | Tema OESM v1.0.1.4 a cargo do <a href="https://player1paulo.com" target="_blank"><b>player1paulo</b></a>.
+    Copyright &copy; 2023 <a href="https://ontemesomemoria.pt"><b>Ontem é só Memória</b></a>. | Tema OESM v1.0.5 a cargo do <a href="https://player1paulo.com" target="_blank"><b>player1paulo</b></a>.
   </p>
 </footer>
-<!-- Fim do Rodapé -->
 </body>
 </html>
