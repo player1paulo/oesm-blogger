@@ -178,6 +178,12 @@ main a:visited {
   color: #050300;
 }
 
+article img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 6px;
+}
+
 .post-title {
   font-size: 22px;
   font-family: "Bricolage Grotesque", Verdana, sans-serif;
@@ -314,7 +320,7 @@ footer i {
 
   body {
     background-color: #fcedd4;
-    margin: 0 6px 0 6px;
+    margin: 0 8px 0 8px;
   }
   
   header {
@@ -356,6 +362,12 @@ footer i {
     font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-weight: 400;
     color: #050300;
+  }
+
+  article img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 6px;
   }
   
   aside {
