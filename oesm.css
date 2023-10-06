@@ -101,7 +101,7 @@ ul.breadcrumb li+li:before {
   padding: 4px;
   margin: 0px;
   color: #050300;
-  content: "|\00a0";
+  content: "\00B7";
 }
 
 ul.breadcrumb li a {
@@ -112,23 +112,6 @@ ul.breadcrumb li a {
 ul.breadcrumb li a:hover {
   color: #050300;
   text-decoration: underline;
-}
-
-ul.socials {
-  display: inline-block;
-  font-size: 20px;
-  margin: 0px;
-}
-
-ul.socials a {
-  text-decoration: none;
-  padding: 4px;
-  color: #050300;
-}
-
-ul.socials a:hover {
-  color: #fffdfa;
-  background-color: #050300;
 }
 
 hr.commentsseparator {
@@ -166,8 +149,11 @@ main {
 }
 
 main h2 {
+  font-size: 24px;
+  font-family: "Bricolage Grotesque", Verdana, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
   color: #050300;
-  text-decoration: underline;
 }
 
 main a {
@@ -180,12 +166,12 @@ main a:visited {
 
 article img {
   width: 100%;
-  max-width: 800px;
+  max-width: 740px;
   border-radius: 6px;
 }
 
 .post-title {
-  font-size: 22px;
+  font-size: 24px;
   font-family: "Bricolage Grotesque", Verdana, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -198,6 +184,26 @@ article img {
   color: #fffdfa;
   padding: 4px;
   border-radius: 6px;
+}
+
+ul.socials {
+  display: inline-block;
+  padding: 4px;
+  margin: 0px;
+  font-size: 18px;
+}
+
+ul.socials a {
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  color: #050300;
+  padding: 6px;
+}
+
+ul.socials a:hover {
+  color: #fffdfa;
+  background-color: #050300;
 }
 
 aside {
@@ -219,10 +225,6 @@ aside {
 aside i {
   padding: 6px;
   color: #050300;
-}
-
-aside i:hover {
-  color: #FAAB78;
 }
 
 aside a {
@@ -364,9 +366,18 @@ footer i {
     color: #050300;
   }
 
+  .post-title {
+    font-size: 20px;
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #050300;
+  }
+
   article img {
     width: 100%;
-    max-width: 200px;
+    max-width: 360px;
     border-radius: 6px;
   }
   
@@ -444,15 +455,6 @@ footer i {
     font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-weight: 700;
     text-transform: uppercase;
-  }
-
-  .post-title {
-    font-size: 20px;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: underline;
-    color: #050300;
   }
 
 }

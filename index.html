@@ -51,10 +51,10 @@
       <li><a href="https://ontemesomemoria.pt/search/label/organização pessoal">ORGANIZAÇÃO PESSOAL</a></li>
       <li><a href="https://ontemesomemoria.pt/search/label/organização de casa">ORGANIZAÇÃO DE CASA</a></li>
       <li><a href="https://ontemesomemoria.pt/search/label/organização dia-a-dia">ORGANIZAÇÃO DIA-A-DIA</a></li>
-      <li><a href="https://www.facebook.com/ontemesomemoria" target="_blank"><i class="fa-brands fa-facebook fa-lg"></i></a></li>
-      <li><a href="https://www.pinterest.pt/ontemesomemoria" target="_blank"><i class="fa-brands fa-pinterest fa-lg"></i></a></li>
+      <li><a href="https://www.facebook.com/ontemesomemoria" target="_blank"><i class="fa-brands fa fa-square-facebook fa-lg"></i></a></li>
       <li><a href="https://www.instagram.com/ontemesomemoria" target="_blank"><i class="fa-brands fa-instagram fa-lg"></i></a></li>
       <li><a href="https://www.youtube.com/@ontemesomemoria" target="_blank"><i class="fa-brands fa-youtube fa-lg"></i></a></li>
+      <li><a href="https://www.pinterest.pt/ontemesomemoria" target="_blank"><i class="fa-brands fa-pinterest fa-lg"></i></a></li>
       <li><a href="#" target="_blank"><i class="fa-solid fa-magnifying-glass fa-lg"></i></a></li>
     </ul>
     <!-- Barra Indicadora de Deslocamento da Página -->
@@ -80,8 +80,8 @@
       <ItemPage>
         <p>
           <ul class="breadcrumb">
-            <li><a href="<$BlogURL$>"><< Regressar ao Início</a></li>
-            <li>Estás aqui: <b><a href="<$BlogItemPermalinkUrl$>"><$BlogItemTitle$></a></b></li>
+            <li><a href="<$BlogURL$>">&#10094; Página inicial</a></li>
+            <li>&#160;<u><a href="<$BlogItemPermalinkUrl$>"><$BlogItemTitle$></u></a></li>
           </ul>
         </p>
       </ItemPage>
@@ -98,16 +98,15 @@
         </BlogItemCommentsEnabled>
    <$BlogItemControl$>
       </p>
-      <p>Partilha este artigo:
-        <ul class="socials">
-          <a href="https://www.facebook.com/sharer/sharer.php?u=<$BlogItemPermalinkUrl$>" class="fa fa-facebook" target="_blank"></a>
-          <a href="https://twitter.com/intent/tweet?url=<$BlogItemPermalinkUrl$>" class="fa fa-twitter" target="_blank"></a>
-          <a href="https://pinterest.com/pin/create/button/?url=<$BlogItemPermalinkUrl$>" class="fa-brands fa-pinterest" target="_blank"></a>
-          <a href="https://www.linkedin.com/shareArticle?mini=true&url=<$BlogItemPermalinkUrl$>" class="fa-brands fa-linkedin" target="_blank"></a>
-          <a href="<$BlogItemPermalinkUrl$>" class="fa-solid fa-copy" onclick="copylinktoclipboard()"></a>
-        </ul>
-      </p>
       </div>
+      Partilha este artigo:
+      <ul class="socials">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=<$BlogItemPermalinkUrl$>" class="fa-brands fa-square-facebook" target="_blank"></a>
+        <a href="https://twitter.com/intent/tweet?url=<$BlogItemPermalinkUrl$>" class="fa fa-twitter" target="_blank"></a>
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=<$BlogItemPermalinkUrl$>" class="fa-brands fa-linkedin" target="_blank"></a>
+        <a href="https://pinterest.com/pin/create/button/?url=<$BlogItemPermalinkUrl$>" class="fa-brands fa-pinterest" target="_blank"></a>
+        <a href="<$BlogItemPermalinkUrl$>" class="fa-solid fa-copy" onclick="copylinktoclipboard()"></a>
+      </ul>
     <!-- End .post -->
   </article>
     <!-- Begin #comments -->
@@ -174,50 +173,48 @@
       </p>
       <li><a href="https://ontemesomemoria.pt/p/sobre.html">Sobre</a></li>
       <li><a href="https://ontemesomemoria.pt/p/contacto.html">Contacto</a></li>
-      <p>
-        <a href="https://ontemesomemoria.pt/p/sobre.html">Sabe mais sobre a autora e sobre o blog...</a>
-      </p>
-      <a href="https://www.facebook.com/ontemesomemoria" target="_blank"><i class="fa-brands fa-facebook fa-lg"></i></a>
-      <a href="https://www.pinterest.pt/ontemesomemoria" target="_blank"><i class="fa-brands fa-pinterest fa-lg"></i></a>
+      <br>
+      <a href="https://www.facebook.com/ontemesomemoria" target="_blank"><i class="fa-brands fa-square-facebook fa-lg"></i></a>
       <a href="https://www.instagram.com/ontemesomemoria" target="_blank"><i class="fa-brands fa-instagram fa-lg"></i></a>
       <a href="https://www.youtube.com/@ontemesomemoria" target="_blank"><i class="fa-brands fa-youtube fa-lg"></i></a>
+      <a href="https://www.pinterest.pt/ontemesomemoria" target="_blank"><i class="fa-brands fa-pinterest fa-lg"></i></a>
 
       <hr class="separatoraside">
 
     <h3>ARTIGOS RECENTES</h3>
     <BloggerPreviousItems>
-      <ul><a href="<$BlogItemPermalinkURL$>"><$BlogPreviousItemTitle$></a></ul>
+      <li><a href="<$BlogItemPermalinkURL$>"><$BlogPreviousItemTitle$></a></li>
     </BloggerPreviousItems>
 
-    <hr class="separatoraside">
+    <!-- <hr class="separatoraside">
 
-    <!-- <h3>ARQUIVO DO BLOG</h3>
+     <h3>ARQUIVO DO BLOG</h3>
     <select>
       <option>Clica para abrir o arquivo do blog</option>
       <option>
-        <ul>
         <li>
         <BloggerArchives>
           <a href="<$BlogArchiveURL$>"><$BlogArchiveName$></a>
-        </BloggerArchives></li></ul>
+        </BloggerArchives>
+      </li>
       </option>
     </select>
     <br>
     <select>
       <option>
-        <ul>
           <li>
         <ArchivePage><a href="<$BlogURL$>"><$I18NCurrentPosts$></a></ArchivePage>
-      </option></li></ul>
+      </option>
+    </li>
     </select>
        <BloggerArchives>
-        <ul><a href="<$BlogArchiveURL$>"><$BlogArchiveName$></a></ul>
+        <li><a href="<$BlogArchiveURL$>"><$BlogArchiveName$></a></li>
       </BloggerArchives>
         <ArchivePage><li><a href="<$BlogURL$>"><$I18NCurrentPosts$></a></li></ArchivePage> 
 
-        <hr class="separatoraside"> -->
+    <hr class="separatoraside"> 
 
-    <!-- <h4>PARCEIROS</h4>
+    <h4>PARCEIROS</h4>
     <p><a href="https://ontemesomemoria.pt/p/propostas-de-parceria.html">Propostas de Parceria</a></p>
 
     <hr class="separatoraside">
