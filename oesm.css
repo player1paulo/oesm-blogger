@@ -167,6 +167,7 @@ main a:visited {
 article img {
   width: 100%;
   max-width: 740px;
+  height: auto;
   border-radius: 6px;
 }
 
@@ -378,6 +379,7 @@ footer i {
   article img {
     width: 100%;
     max-width: 360px;
+    height: auto;
     border-radius: 6px;
   }
   
