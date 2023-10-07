@@ -222,6 +222,13 @@ aside {
   font-family: "Bricolage Grotesque", Verdana, sans-serif;
 }
 
+aside img {
+  max-width: 280px;
+  height: auto;
+  border: 1px solid rgba(250, 171, 120, .4);
+  border-radius: 6px;
+}
+
 aside i {
   padding: 6px;
   color: #050300;
@@ -396,6 +403,13 @@ footer i {
     font-size: 17px;
     font-family: "Bricolage Grotesque", Verdana, sans-serif;
     text-align: center;
+  }
+
+  aside img {
+    max-width: 240px;
+    height: auto;
+    border: 1px solid rgba(250, 171, 120, .4);
+    border-radius: 6px;
   }
   
   aside i {
