@@ -18,11 +18,18 @@ document.addEventListener("DOMContentLoaded", function() {
 	}
 });
 
-function readingTime() {
-	const text = document.getElementById("article").innerText;
-	const wpm = 225;
-	const words = text.trim().split(/\s+/).length;
-	const time = Math.ceil(words / wpm);
-	document.getElementById("time").innerText = time;
+// Calcula o tempo estimado de leitura
+function calculateReadingTime() {
+	var words = document.querySelector(".postreadingtime .content").textContent.split(" ");
+	var readingTime = Math.ceil(words.length / 238);
+	return readingTime;
   }
-  readingTime();
+  
+  // Exibe o tempo estimado de leitura
+  function showReadingTime() {
+	var readingTime = calculateReadingTime();
+	document.querySelector("#reading-time").textContent = readingTime + " minutos";
+  }
+  
+  // Chama a função de cálculo do tempo estimado de leitura
+  window.onload = showReadingTime;
