@@ -135,7 +135,7 @@ hr.separatoraside {
 main {
   display: block;
   float: left;
-  width: auto;
+  width: 64%;
   background-color: #fffdfa;
   padding: 0px 40px 0 40px;
   margin-top: 20px;
@@ -165,7 +165,7 @@ main a:visited {
 }
 
 article img {
-  max-width: 740px;
+  max-width: 72%;
   height: auto;
   border-radius: 6px;
   margin: 0%;
@@ -385,7 +385,7 @@ footer i {
   }
 
   article img {
-    max-width: 340px;
+    max-width: 80%;
     height: auto;
     border-radius: 6px;
     margin: 0%;
@@ -410,7 +410,7 @@ footer i {
   }
 
   aside img {
-    max-width: 240px;
+    max-width: 280px;
     height: auto;
     border: 1px solid rgba(250, 171, 120, .4);
     border-radius: 6px;
