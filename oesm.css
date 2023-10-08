@@ -168,6 +168,8 @@ article img {
   max-width: 740px;
   height: auto;
   border-radius: 6px;
+  margin: 0%;
+  padding: 0%;
 }
 
 .post-title {
@@ -383,9 +385,11 @@ footer i {
   }
 
   article img {
-    max-width: 440px;
+    max-width: 340px;
     height: auto;
     border-radius: 6px;
+    margin: 0%;
+    padding: 0%;
   }
   
   aside {
