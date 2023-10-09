@@ -1,4 +1,8 @@
+/* Importação da família de font utilizada no tema e conteúdo em texto presente no blog */
+
 @import url(https://fonts.googleapis.com/css?family=Bricolage+Grotesque);
+
+/* Estilos base para os diferentes blocos */
 
 ::-webkit-scrollbar {
   width: 12px;
@@ -135,7 +139,7 @@ hr.separatoraside {
 main {
   display: block;
   float: left;
-  width: 64%;
+  width: 62%;
   background-color: #fffdfa;
   padding: 0px 40px 0 40px;
   margin-top: 20px;
@@ -165,7 +169,7 @@ main a:visited {
 }
 
 article img {
-  max-width: 72%;
+  max-width: 70%;
   height: auto;
   border-radius: 6px;
   margin: 0%;
@@ -173,11 +177,13 @@ article img {
 }
 
 .post-title {
+  border-radius: 6px;
   font-size: 24px;
   font-family: "Bricolage Grotesque", Verdana, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: underline;
+  line-height: 1.5em;
   color: #050300;
 }
 
@@ -251,6 +257,31 @@ aside a:visited {
   color: #050300;
 }
 
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  display: block;
+  color: #000000;
+  padding: 5px;
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  color: #FFFFFF;
+  background-color: #00A4BD;
+}
+
 h1 {
   font-size: 26px;
   font-family: "Bricolage Grotesque", Verdana, sans-serif;
@@ -313,8 +344,10 @@ footer i {
   margin: 10px;
 }
 
+/* Estilos do tema do blog Ontem é só Memória para dispositivos móveis */
+
 @media only screen and (max-width: 768px) {
-  /* Estilos para dispositivos móveis */
+  /* Estilos para dispositivos móveis com largura máxima de 768px */
 
   .progress {
     display: none;
@@ -381,11 +414,12 @@ footer i {
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: underline;
+    line-height: 1.5em;
     color: #050300;
   }
 
   article img {
-    max-width: 80%;
+    max-width: 70%;
     height: auto;
     border-radius: 6px;
     margin: 0%;

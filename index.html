@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ontem é só Memória</title>
-  <!--Favicon -->
-  <link rel="icon" href="https://i.postimg.cc/sXB39mKf/ontem-e-so-memoria-favicon-1.webp" type="image/x-icon" sizes="any" />
   <meta description="Ontem é só Memória. Blog de Teresa Isabe Silva.">
   <meta keywords="ontem é só memória, teresa isabel silva, blog, lifestyle, organização pessoal, organização dia-a-dia, organização de casa">
   <meta name="author" content="Ontem é só Memória">
+  <!--Favicon -->
+  <link rel="icon" href="https://i.postimg.cc/sXB39mKf/ontem-e-so-memoria-favicon-1.webp" type="image/x-icon" sizes="any" />
   <!-- CSS externo -->
   <link rel="stylesheet" href="https://static.staticsave.com/oesm/oesm.css">
   <!-- Font Awesome -->
@@ -51,11 +51,6 @@
       <li><a href="https://ontemesomemoria.pt/search/label/organização pessoal">ORGANIZAÇÃO PESSOAL</a></li>
       <li><a href="https://ontemesomemoria.pt/search/label/organização de casa">ORGANIZAÇÃO DE CASA</a></li>
       <li><a href="https://ontemesomemoria.pt/search/label/organização dia-a-dia">ORGANIZAÇÃO DIA-A-DIA</a></li>
-      <li><a href="https://www.facebook.com/ontemesomemoria" target="_blank"><i class="fa-brands fa fa-square-facebook fa-lg"></i></a></li>
-      <li><a href="https://www.instagram.com/ontemesomemoria" target="_blank"><i class="fa-brands fa-instagram fa-lg"></i></a></li>
-      <li><a href="https://www.youtube.com/@ontemesomemoria" target="_blank"><i class="fa-brands fa-youtube fa-lg"></i></a></li>
-      <li><a href="https://www.pinterest.pt/ontemesomemoria" target="_blank"><i class="fa-brands fa-pinterest fa-lg"></i></a></li>
-      <li><a href="#" target="_blank"><i class="fa-solid fa-magnifying-glass fa-lg"></i></a></li>
     </ul>
     <!-- Barra Indicadora de Deslocamento da Página -->
       <div class="progress">
@@ -105,7 +100,9 @@
         <a href="https://twitter.com/intent/tweet?url=<$BlogItemPermalinkUrl$>" class="fa fa-twitter" target="_blank"></a>
         <a href="https://www.linkedin.com/shareArticle?mini=true&url=<$BlogItemPermalinkUrl$>" class="fa-brands fa-linkedin" target="_blank"></a>
         <a href="https://pinterest.com/pin/create/button/?url=<$BlogItemPermalinkUrl$>" class="fa-brands fa-pinterest" target="_blank"></a>
-        <a href="<$BlogItemPermalinkUrl$>" class="fa-solid fa-copy" onclick="copylinktoclipboard()"></a>
+        <a href="#" class="fa-brands fa-telegram"></a>
+        <a href="#" class="fa-brands fa-whatsapp"></a>
+        <a href="#" class="fa-solid fa-copy" onclick="copylinktoclipboard()"></a>
       </ul>
     <!-- End .post -->
   </article>
@@ -118,7 +115,7 @@
     <div id="comments">
   <BlogItemCommentsEnabled><a name="comments"></a>
   
-          <h3><$I18NNumComments$>:</h3>
+          <h3><i class="fa-regular fa-comments"></i> <$I18NNumComments$>:</h3>
   
           <dl id="comments-block">
             <$CommentPager$>
@@ -150,8 +147,18 @@
       </BlogItemCommentsEnabled>    
 
   <p style="padding-left:20px;">
-  <a href="<$BlogURL$>">&lt;&lt; <$I18NHome$></a>
+  <a href="<$BlogURL$>">&#10094; <$I18NHome$></a>
       </p>
+
+      <!-- Breadcrumb -->
+  <p>
+    <ul class="breadcrumb">
+      <li><a href="<$BlogURL$>">&#10094; Página inicial</a></li>
+      <li>&#160;<u><a href="<$BlogItemPermalinkUrl$>"><$BlogItemTitle$></u></a></li>
+    </ul>
+  </p>
+    <!-- Fim do Breadcrumb -->
+
       </div>
   </ItemPage>
     <!-- End #comments -->
@@ -178,6 +185,7 @@
       <a href="https://www.instagram.com/ontemesomemoria" target="_blank"><i class="fa-brands fa-instagram fa-lg"></i></a>
       <a href="https://www.youtube.com/@ontemesomemoria" target="_blank"><i class="fa-brands fa-youtube fa-lg"></i></a>
       <a href="https://www.pinterest.pt/ontemesomemoria" target="_blank"><i class="fa-brands fa-pinterest fa-lg"></i></a>
+      <a href="#" target="_blank"><i class="fa-solid fa-magnifying-glass fa-lg"></i></a>
 
       <hr class="separatoraside">
 
@@ -186,32 +194,23 @@
       <li><a href="<$BlogItemPermalinkURL$>"><$BlogPreviousItemTitle$></a></li>
     </BloggerPreviousItems>
 
-    <!-- <hr class="separatoraside">
+    <hr class="separatoraside">
 
      <h3>ARQUIVO DO BLOG</h3>
-    <select>
-      <option>Clica para abrir o arquivo do blog</option>
-      <option>
-        <li>
-        <BloggerArchives>
-          <a href="<$BlogArchiveURL$>"><$BlogArchiveName$></a>
-        </BloggerArchives>
-      </li>
-      </option>
-    </select>
-    <br>
-    <select>
-      <option>
-          <li>
-        <ArchivePage><a href="<$BlogURL$>"><$I18NCurrentPosts$></a></ArchivePage>
-      </option>
-    </li>
-    </select>
-       <BloggerArchives>
-        <li><a href="<$BlogArchiveURL$>"><$BlogArchiveName$></a></li>
-      </BloggerArchives>
-        <ArchivePage><li><a href="<$BlogURL$>"><$I18NCurrentPosts$></a></li></ArchivePage> 
 
+      <div class="dropdown">
+  <button>Clica para abrir o arquivo mensal</button>
+  <div class="dropdown-content">
+  <BloggerArchives>
+         <a href="<$BlogArchiveURL$>"><$BlogArchiveName$></a>
+      </BloggerArchives>
+         <ArchivePage>
+           <a href="<$BlogURL$>"><$I18NCurrentPosts$></a>
+         </ArchivePage>
+  </div>
+</div>
+      
+<!--
     <hr class="separatoraside"> 
 
     <h4>PARCEIROS</h4>
@@ -262,7 +261,7 @@
     <a href="https://www.pinterest.pt/ontemesomemoria" target="_blank"><i class="fa-brands fa-pinterest fa-lg"></i></a>
   </p>
   <p>
-    Copyright &copy; 2023 <a href="https://ontemesomemoria.pt"><b>Ontem é só Memória</b></a>. | Tema OESM v1.0.5 a cargo do <a href="https://player1paulo.com" target="_blank"><b>player1paulo</b></a>.
+    Copyright &copy; 2023 <a href="https://ontemesomemoria.pt"><b>Ontem é só Memória</b></a>. | Tema OESM v1.0.6 a cargo do <a href="https://player1paulo.com" target="_blank"><b>player1paulo</b></a>.
   </p>
 </footer>
 </body>
