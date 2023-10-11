@@ -95,7 +95,7 @@
    <$BlogItemControl$>
       </p>
       </div>
-      Partilha este artigo:
+      Partilha este artigo nas redes sociais:
       <ul class="socials">
         <a href="https://www.facebook.com/sharer/sharer.php?u=<$BlogItemPermalinkUrl$>" class="fa-brands fa-square-facebook" target="_blank"></a>
         <a href="https://twitter.com/intent/tweet?url=<$BlogItemPermalinkUrl$>" class="fa fa-twitter" target="_blank"></a>
@@ -161,7 +161,6 @@
     <!-- End #comments -->
     <hr class="separadorposts">
   </Blogger>
-  
   </div></div></div>
 </article>
 <!-- End #main -->
@@ -194,72 +193,38 @@
 
     <hr class="separatoraside">
 
-     <h3>ARQUIVO DO BLOG</h3>
-
-      <div class="dropdown">
-  <button>Clica para abrir o arquivo mensal</button>
-  <div class="dropdown-content">
-  <BloggerArchives>
-         <a href="<$BlogArchiveURL$>"><$BlogArchiveName$></a>
-      </BloggerArchives>
-         <ArchivePage>
-           <a href="<$BlogURL$>"><$I18NCurrentPosts$></a>
-         </ArchivePage>
-  </div>
-</div>
-      
-<!--
-    <hr class="separatoraside"> 
-
-    <h4>PARCEIROS</h4>
-    <p><a href="https://ontemesomemoria.pt/p/propostas-de-parceria.html">Propostas de Parceria</a></p>
-
-    <hr class="separatoraside">
-
-    <h3>DONATIVO</h3>
-      <p>Donativo Buy Me A Coffee</p>
-
-      <p><a href="https://ontemesomemoria.pt/p/donativo.html">Donativo</a></p>
-
-    <hr class="separatoraside">
-
-    <h3>NEWSLETTER</h3>
-    <p>Subscreve a newsletter Ontem é só Memória.</p>
-
-    <hr class="separatoraside">
-
-    <h4>PUBLICIDADE</h4>
-    <p><a href="https://ontemesomemoria.pt/p/propostas-de-patrocinio.html">Propostas de Patrocínio</a></p> -->
+    <h3>ARQUIVO DO BLOG</h3>
+    <div class="dropdown">
+      <button onclick="myDropdownArquivo()" class="dropbtn">CLICA PARA MOSTRAR / ESCONDER O ARQUIVO</button>
+      <div id="myDropdown" class="dropdown-content">
+        <BloggerArchives>
+          <a href="<$BlogArchiveURL$>"><$BlogArchiveName$></a>
+        </BloggerArchives>
+        <ArchivePage>
+          <a href="<$BlogURL$>"><$I18NCurrentPosts$></a>
+        </ArchivePage>
+      </div>
+    </div>
 </aside>
 <!-- Rodapé -->
 <footer>
   <p>
     <a href="https://ontemesomemoria.pt"><img src="https://i.postimg.cc/pTgR0j1f/ontem-e-so-memoria-logo-rodape-1.webp" loading="lazy" alt="ontem é só memória logo rodapé com lazy load"/></a>
   </p>
-  <p>
+  <p class="paragraforodape1">
     <a href="https://ontemesomemoria.pt/search/label/lifestyle">LIFESTYLE</a>
     <a href="https://ontemesomemoria.pt/search/label/organização pessoal">ORGANIZAÇÃO PESSOAL</a>
     <a href="https://ontemesomemoria.pt/search/label/organização de casa">ORGANIZAÇÃO DE CASA</a>
     <a href="https://ontemesomemoria.pt/search/label/organização dia-a-dia">ORGANIZAÇÃO DIA-A-DIA</a>
   </p>
-  <!-- <p>
-    <a href="https://ontemesomemoria.pt/p/sobre.html">Sobre</a>
-    <a href="https://ontemesomemoria.pt/p/contacto.html">Contacto</a>
-    <a href="https://ontemesomemoria.pt/p/media-kit.html">Media Kit</a>
-    <a href="https://ontemesomemoria.pt/p/brand-assets.html">Brand Assets</a>
-    <a href="https://ontemesomemoria.pt/p/donativo.html">Donativo</a>
-    <a href="https://ontemesomemoria.pt/p/brand-assets.html">Propostas de Colaboração</a>
-    <a href="https://ontemesomemoria.pt/p/brand-assets.html">Propostas de Parceria</a>
-    <a href="https://ontemesomemoria.pt/p/brand-assets.html">Propostas de Patrocínio</a>
-  </p> -->
-  <p>
+  <p class="paragraforodape2">
     <a href="https://www.facebook.com/ontemesomemoria" target="_blank"><i class="fa-brands fa-facebook fa-lg"></i></a>
     <a href="https://www.instagram.com/ontemesomemoria" target="_blank"><i class="fa-brands fa-instagram fa-lg"></i></a>
     <a href="https://www.youtube.com/@ontemesomemoria" target="_blank"><i class="fa-brands fa-youtube fa-lg"></i></a>
     <a href="https://www.pinterest.pt/ontemesomemoria" target="_blank"><i class="fa-brands fa-pinterest fa-lg"></i></a>
   </p>
-  <p>
-    <i class="fa-regular fa-copyright"></i> <a href="https://ontemesomemoria.pt"><b>Ontem é só Memória</b></a> todos os direitos reservados. | <i class="fa-regular fa-keyboard"></i> Tema OESM v1.0.6 a cargo do <a href="https://player1paulo.com" target="_blank"><b>player1paulo</b></a>.
+  <p class="paragraforodape3">
+    <i class="fa-regular fa-copyright"></i> <a href="https://ontemesomemoria.pt"><b>Ontem é só Memória</b></a> todos os direitos reservados. | <i class="fa-regular fa-keyboard"></i> Tema OESM v1.0.7 a cargo do <a href="https://player1paulo.com" target="_blank"><b>player1paulo</b></a>.
   </p>
 </footer>
 </body>
