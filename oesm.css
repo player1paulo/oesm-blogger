@@ -1,69 +1,51 @@
-/* Importação da família de font utilizada no tema e conteúdo em texto presente no blog */
-
+/* Estilos base gerais para todos os breakpoints do blog ontem é só memória */
 @import url(https://fonts.googleapis.com/css?family=Bricolage+Grotesque);
-
-/* Estilos base para os diferentes blocos */
-
+/* Cor de fundo da seleção de texto */
+::selection {
+  background: #FAAB78;
+}
+/* Smooth Scroll */
+html{
+  scroll-behavior: smooth;
+  }
+/* Scrollbar personalizada */
 ::-webkit-scrollbar {
   width: 12px;
   background-color: #fffdfa;
 }
-
 ::-webkit-scrollbar-thumb {
   background-color: #FAAB78;
 }
-
-::selection {
-  background: #FAAB78;
+/* Ion Icons */
+ion-icon {
+  font-size: 32px;
 }
-
-html{
-  scroll-behavior: smooth;
-  }
-
-body {
-  background-color: #fcedd4;
-  margin: 0 80px 0 80px;
-}
-
-header {
-  display: block;
-  float: none;
-  width: auto;
+/* Estilo do Header 1 H1 aplicável a todo o tema */
+h1 {
+  font-size: 26px;
   font-family: "Bricolage Grotesque", Verdana, sans-serif;
-  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
 }
-
+/* Estilos da barra de navegação aplicáveis a todo o tema */
 nav {
-  display: block;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  float: none;
   top: -6px;
-  padding: 6px 0px 0px 0px;
+  padding: 8px 0px 0px 0px;
+  line-height: 1.6em;
+}
+nav a {
+  padding: 3px 6px 3px 6px;
   border-radius: 6px;
   border: none;
-  outline: 1px solid #fffdfa;
-  background-color: #FAAB78;
-  font-family: "Bricolage Grotesque", Verdana, sans-serif;
-  text-align: center;
-  font-size: 20px;
-  line-height: 1.5em;
-  overflow: auto;
-}
-
-nav a {
-  padding: 2px 6px 2px 6px;
-  border-radius: 6px 6px 0px 0px;
   color: #050300;
   text-decoration: none;
 }
-
 nav a:hover {
   background-color: #fffdfa;
-  text-decoration: underline;
+  border: none;
+  outline: 1px solid #05030040;
 }
-
+/* Efeito do indicador da barra de scroll aplicável a todo o tema */
 nav progress {
 	position: fixed;
 	width: 100%;
@@ -78,128 +60,65 @@ nav .progress--bar {
 	width: 0%;
   transition: width 0.5s ease;
 }
-
-nav ul {
-  margin: 0;
-  padding: 0;
+/* Efeito nos campos de input de texto aplicável a todo o tema */
+input:focus {
+  outline: 2px solid #FAAB78;
 }
-
-nav li {
-  display: inline-block;
+main a {
+  color: #050300;
 }
-
+main a:visited {
+  color: #050300;
+}
+.post-title {
+  font-size: 20px;
+  text-decoration: underline;
+  color: #050300;
+}
+.post-title a {
+  padding: 4px 6px 4px 6px;
+  background-color: #fffdfa;
+  border-radius: 6px;
+  border: none;
+  text-decoration: underline;
+}
+.post-title a:hover {
+  text-decoration: none;
+  background-color: #fffdfa;
+  color: #050300;
+  border-radius: 6px;
+  border: none;
+  outline: 1px solid #05030060;
+}
 ul.breadcrumb {
   padding: 4px 4px;
   margin: 0;
   font-family: "Bricolage Grotesque", Verdana, sans-serif;
 }
-
 ul.breadcrumb li {
   display: inline-block;
   font-size: 18px;
 }
-
 ul.breadcrumb li+li:before {
   padding: 4px;
   margin: 0px;
   color: #050300;
   content: "\00B7";
 }
-
 ul.breadcrumb li a {
   color: #050300;
   text-decoration: none;
 }
-
 ul.breadcrumb li a:hover {
   color: #050300;
   text-decoration: underline;
 }
-
-hr.commentsseparator {
-  border-top: 1px solid rgba(250, 171, 120, .4);
-  margin-top: 24px;
-  margin-bottom: 24px;
-}
-
-hr.separadorposts {
-  border-top: 2px solid rgba(250, 171, 120, .4);
-  margin-top: 32px;
-  margin-bottom: 32px;
-}
-
-hr.separatoraside {
-  border-top: 1px solid rgba(250, 171, 120, .4);
-  margin-top: 24px;
-  margin-bottom: 24px;
-}
-
-main {
-  display: block;
-  float: left;
-  width: 62%;
-  background-color: #fffdfa;
-  padding: 0px 40px 0 40px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 0px;
-  margin-right: 5px;
-  border-radius: 6px;
-  border: none;
-  outline: 1px solid rgba(250, 171, 120, .4);
-  font-size: 18px;
-  font-family: "Bricolage Grotesque", Verdana, sans-serif;
-}
-
-main h2 {
-  font-size: 24px;
-  font-family: "Bricolage Grotesque", Verdana, sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #050300;
-}
-
-main a {
-  color: #050300;
-}
-
-main a:visited {
-  color: #050300;
-}
-
-article img {
-  max-width: 70%;
-  height: auto;
-  border-radius: 6px;
-  margin: 0%;
-  padding: 0%;
-}
-
-.post-title {
-  border-radius: 6px;
-  font-size: 24px;
-  font-family: "Bricolage Grotesque", Verdana, sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-decoration: underline;
-  line-height: 1.5em;
-  color: #050300;
-}
-
-.post-title a:hover {
-  background-color: #050300;
-  color: #fffdfa;
-  padding: 4px;
-  border-radius: 6px;
-}
-
 ul.socials {
   display: inline-block;
   padding: 4px;
   margin: 0px;
   font-size: 18px;
 }
-
 ul.socials a {
   font-size: 20px;
   text-decoration: none;
@@ -207,71 +126,33 @@ ul.socials a {
   color: #050300;
   padding: 6px;
 }
-
 ul.socials a:hover {
   color: #fffdfa;
   background-color: #050300;
 }
-
-aside {
-  display: block;
-  float: left;
-  width: auto;
-  padding: 0px 24px 20px 24px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 5px;
-  margin-right: 0px;
-  outline: 1px solid rgba(250, 171, 120, .4);
-  border-radius: 6px;
-  border: none;
-  background-color: #fffdfa;
-  font-size: 18px;
-  font-family: "Bricolage Grotesque", Verdana, sans-serif;
-}
-
-aside img {
-  max-width: 280px;
-  height: auto;
-  outline: 1px solid rgba(250, 171, 120, .4);
-  border-radius: 6px;
-}
-
-aside i {
-  padding: 6px;
-  color: #050300;
-}
-
 aside a {
   color: #050300;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: normal;
 }
-
 aside a:hover {
   color: #050300;
   text-decoration: underline;
 }
-
 aside a:visited {
   color: #050300;
 }
-
-/* Pesquisa */
-input {
+/* Caixa de Pesquisa na barra lateral */
+.searchboxaside {
   display: block;
-  min-width: 70%;
-  margin: 0px;
+  min-width: 80%;
+  margin: 20px 0px 20px 0px;
   padding: 10px 10px 10px 10px;
   border: none;
   border-radius: 6px;
   outline: 1px solid rgba(250, 171, 120, .4);
   font-family: "Bricolage Grotesque", Verdana, sans-serif;
   font-size: 18px;
-}
-
-input:focus {
-  outline: 2px solid #FAAB78;
 }
 
 /* Dropdown Button */
@@ -287,13 +168,11 @@ input:focus {
   outline: 2px solid #FAAB78;
   cursor: pointer;
 }
-
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
   display: inline-block;
 }
-
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
@@ -304,7 +183,6 @@ input:focus {
   box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
-
 /* Links inside the dropdown */
 .dropdown-content a {
   color: #050300;
@@ -312,257 +190,1305 @@ input:focus {
   text-decoration: none;
   display: block;
 }
-
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #fcedd4;
   border-radius: 6px;
 }
-
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
-
-h1 {
-  font-size: 26px;
-  font-family: "Bricolage Grotesque", Verdana, sans-serif;
-  text-transform: uppercase;
+.show {
+  display:block;
 }
-
-h2 {
-  font-size: 24px;
-  font-family: "Bricolage Grotesque", Verdana, sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-h3 {
-  font-size: 22px;
-  font-family: "Bricolage Grotesque", Verdana, sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-h4 {
-  font-size: 20px;
-  font-family: "Bricolage Grotesque", Verdana, sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-footer {
-  content: "";
-  clear: both;
-  display: block;
-  float: none;
-  padding: 10px 0px 10px 0px;
-  margin-bottom: 20px;
-  border-radius: 6px;
-  border: none;
-  background-color: #FAAB78;
-  outline: 1px solid #fffdfa;
-  color: #050300;
-  text-align: center;
-  font-family: "Bricolage Grotesque", Verdana, sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.5em;
-  overflow: auto;
-}
-
 footer a {
   color: #050300;
   text-decoration: none;
-  font-weight: 500;
 }
-
 footer a:hover {
-  font-weight: 500;
   color: #fffdfa;
   text-decoration: underline;
 }
 
-footer i {
-  margin: 10px;
-}
-
-footer p.paragraforodape1 {
-  font-size: 20px;
-}
-
-footer p.paragraforodape2 {
-  font-size: 24px;
-}
-
-footer p.paragraforodape3 {
-  font-size: 18px;
-}
-
-/* Estilos do tema do blog Ontem é só Memória para dispositivos móveis */
-
-@media only screen and (max-width: 768px) {
-  /* Estilos para dispositivos móveis com largura máxima de 768px */
-
-  .progress {
-    display: none;
-  }
-
-  ::-webkit-scrollbar {
-    width: 8px;
-    background-color: #fffdfa;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background-color: #faac78;
-  }
-
+/* Estilos para com resolução de largura máxima de 480px */
+@media only screen and (max-width: 480px) {
   body {
     background-color: #fcedd4;
-    margin: 0 8px 0 8px;
+    margin: 0px 0px 0px 0px;
   }
-  
   header {
     display: block;
-    padding: 0px;
     float: none;
-    width: auto;
     font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: none;
+    font-weight: normal;
     text-align: center;
   }
-
-  .responsivetoplogo {
-    width: 60%;
-    height: auto;
-  }
-
   nav {
-    display: none;
-  }
-
-  main {
     display: block;
     float: none;
-    width: auto;
+    width: 100%;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    border-radius: 6px;
+    background-color: #FAAB78;
+    border-bottom: 1px solid #05030010;
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #050300;
+    text-align: center;
+  }
+  main {
+    display: block;
     background-color: #fffdfa;
-    padding: 0px 14px 0 14px;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    margin-left: 0px;
-    margin-right: 0px;
     border-radius: 6px;
     border: none;
     outline: 1px solid rgba(250, 171, 120, .4);
-    font-size: 17px;
     font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
   }
-
-  main p {
-    font-size: 17px;
+  main h2 {
     font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-weight: 400;
-    color: #050300;
-  }
-
-  .post-title {
-    font-size: 20px;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-weight: 700;
+    font-size: 24px;
+    font-weight: 600;
     text-transform: uppercase;
-    text-decoration: underline;
-    line-height: 1.5em;
     color: #050300;
   }
-
+  main h3 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  main h4 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  section {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  article {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  .post-title {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: ;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.6em;
+  }
+  .breadcrumbs {
+    display: inline-block;
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
   article img {
     max-width: 70%;
     height: auto;
     border-radius: 6px;
-    margin: 0%;
-    padding: 0%;
   }
-  
+  .botoesdepartilharedesociais {
+    display: inline-block;
+  }
   aside {
     display: block;
-    float: none;
-    width: auto;
-    padding: 0px 14px 20px 14px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 0px;
-    margin-right: 0px;
-    outline: 1px solid rgba(250, 171, 120, .4);
     border-radius: 6px;
-    border: none;
     background-color: #fffdfa;
-    font-size: 17px;
+    border: none;
+    outline: 1px solid rgba(250, 171, 120, .4);
     font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    text-align: center;
-  }
-
-  aside img {
-    max-width: 280px;
-    height: auto;
-    border: 1px solid rgba(250, 171, 120, .4);
-    border-radius: 6px;
-  }
-  
-  aside i {
-    padding: 4px;
+    font-size: 18px;
+    font-weight: normal;
     color: #050300;
   }
-  
-  aside i:hover {
-    color: #FAAB78;
+  aside h2 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
   }
-
+  aside h3 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  aside h4 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  aside img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 6px;
+  }
   footer {
     content: "";
     clear: both;
     display: block;
     float: none;
-    background-color: #FAAB78;
-    padding: 0px 14px 0px 14px;
-    margin-bottom: 10px;
     border-radius: 6px;
     border: none;
-    outline: 1px solid #fffdfa;
+    background-color: #FAAB78;
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    color: #050300;
+  }
+}
+/* Estilos para com resolução de largura máxima de 568px */
+@media only screen and (max-width: 568px) {
+  body {
+    background-color: #fcedd4;
+    margin: 0px 0px 0px 0px;
+  }
+  header {
+    display: block;
+    float: none;
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: none;
+    font-weight: normal;
+    text-align: center;
+  }
+  nav {
+    display: block;
+    float: none;
+    width: 100%;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    border-radius: 6px;
+    background-color: #FAAB78;
+    border-bottom: 1px solid #05030010;
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
     color: #050300;
     text-align: center;
+  }
+  main {
+    display: block;
+    background-color: #fffdfa;
+    border-radius: 6px;
+    border: none;
+    outline: 1px solid rgba(250, 171, 120, .4);
     font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-size: 17px;
-    font-weight: 500;
-    line-height: 1.5em;
-    overflow: auto;
-  }
-
-  footer i {
-    margin: 6px;
-  }
-
-  h1 {
-    font-size: 22px;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    text-transform: uppercase;
-  }
-  
-  h2 {
-    font-size: 20px;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-  
-  h3 {
     font-size: 18px;
+    font-weight: normal;
+  }
+  main h2 {
     font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-weight: 700;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  main h3 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  main h4 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  section {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  article {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  .post-title {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: ;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.6em;
+  }
+  .breadcrumbs {
+    display: inline-block;
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  article img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 6px;
+  }
+  .botoesdepartilharedesociais {
+    display: inline-block;
+  }
+  aside {
+    display: block;
+    border-radius: 6px;
+    background-color: #fffdfa;
+    border: none;
+    outline: 1px solid rgba(250, 171, 120, .4);
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #050300;
+  }
+  aside img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 6px;
+  }
+  aside h2 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  aside h3 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  aside h4 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  footer {
+    content: "";
+    clear: both;
+    display: block;
+    float: none;
+    border-radius: 6px;
+    border: none;
+    background-color: #FAAB78;
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    color: #050300;
+  }
+}
+/* Estilos para dispositivos móveis com resolução de largura máxima de 768px */
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: #fcedd4;
+    margin: 0px 0px 0px 0px;
+  }
+  header {
+    display: block;
+    float: none;
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: none;
+    font-weight: normal;
+    text-align: center;
+  }
+  nav {
+    display: block;
+    float: none;
+    width: 100%;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    border-radius: 6px;
+    background-color: #FAAB78;
+    border-bottom: 1px solid #05030010;
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #050300;
+    text-align: center;
+  }
+  main {
+    display: block;
+    background-color: #fffdfa;
+    border-radius: 6px;
+    border: none;
+    outline: 1px solid rgba(250, 171, 120, .4);
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  main h2 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  main h3 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  main h4 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  section {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  article {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  .post-title {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: ;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.6em;
+  }
+  .breadcrumbs {
+    display: inline-block;
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  article img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 6px;
+  }
+  .botoesdepartilharedesociais {
+    display: inline-block;
+  }
+  aside {
+    display: block;
+    border-radius: 6px;
+    background-color: #fffdfa;
+    border: none;
+    outline: 1px solid rgba(250, 171, 120, .4);
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #050300;
+  }
+  aside h2 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  aside h3 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  aside h4 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  aside img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 6px;
+  }
+  footer {
+    content: "";
+    clear: both;
+    display: block;
+    float: none;
+    border-radius: 6px;
+    border: none;
+    background-color: #FAAB78;
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    color: #050300;
+  }
+}
+/* Estilos para com resolução de largura máxima de 1024px */
+@media only screen and (max-width: 1024px) {
+  body {
+    background-color: #fcedd4;
+    margin: 0px 0px 0px 0px;
+  }
+  header {
+    display: block;
+    float: none;
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: none;
+    font-weight: normal;
+    text-align: center;
+  }
+  nav {
+    display: block;
+    float: none;
+    width: 100%;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    border-radius: 6px;
+    background-color: #FAAB78;
+    border-bottom: 1px solid #05030010;
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #050300;
+    text-align: center;
+  }
+  main {
+    display: block;
+    background-color: #fffdfa;
+    border-radius: 6px;
+    border: none;
+    outline: 1px solid rgba(250, 171, 120, .4);
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  main h2 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  main h3 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  main h4 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  section {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size:18px ;
+    font-weight: normal;
+  }
+  article {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  .post-title {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: ;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.6em;
+  }
+  .breadcrumbs {
+    display: inline-block;
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  article img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 6px;
+  }
+  .botoesdepartilharedesociais {
+    display: inline-block;
+  }
+  aside {
+    display: block;
+    border-radius: 6px;
+    background-color: #fffdfa;
+    border: none;
+    outline: 1px solid rgba(250, 171, 120, .4);
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #050300;
+  }
+  aside h2 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  aside h3 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  aside h4 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  aside img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 6px;
+  }
+  footer {
+    content: "";
+    clear: both;
+    display: block;
+    float: none;
+    border-radius: 6px;
+    border: none;
+    background-color: #FAAB78;
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    color: #050300;
+  }
+}
+/* Estilos para com resolução de largura máxima de 1280px */
+@media only screen and (max-width: 1280px) {
+  body {
+    background-color: #fcedd4;
+    margin: 0px 0px 0px 0px;
+  }
+  header {
+    display: block;
+    float: none;
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: none;
+    font-weight: normal;
+    text-align: center;
+  }
+  nav {
+    display: block;
+    float: none;
+    width: 100%;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    border-radius: 6px;
+    background-color: #FAAB78;
+    border-bottom: 1px solid #05030010;
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #050300;
+    text-align: center;
+  }
+  main {
+    display: block;
+    background-color: #fffdfa;
+    border-radius: 6px;
+    border: none;
+    outline: 1px solid rgba(250, 171, 120, .4);
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  main h2 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  main h3 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  main h4 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  section {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  article {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  .post-title {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: ;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.6em;
+  }
+  .breadcrumbs {
+    display: inline-block;
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  article img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 6px;
+  }
+  .botoesdepartilharedesociais {
+    display: inline-block;
+  }
+  aside {
+    display: block;
+    border-radius: 6px;
+    background-color: #fffdfa;
+    border: none;
+    outline: 1px solid rgba(250, 171, 120, .4);
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #050300;
+  }
+  aside h2 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  aside h3 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  aside h4 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  aside img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 6px;
+  }
+  footer {
+    content: "";
+    clear: both;
+    display: block;
+    float: none;
+    border-radius: 6px;
+    border: none;
+    background-color: #FAAB78;
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    color: #050300;
+  }
+}
+/* Estilos para com resolução de largura máxima de 1366px */
+@media only screen and (max-width: 1366px) {
+  body {
+    background-color: #fcedd4;
+    margin: 0px 0px 0px 0px;
+  }
+  header {
+    display: block;
+    float: none;
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: none;
+    font-weight: normal;
+    text-align: center;
+  }
+  nav {
+    display: block;
+    float: none;
+    width: 100%;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    border-radius: 6px;
+    background-color: #FAAB78;
+    border-bottom: 1px solid #05030010;
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #050300;
+    text-align: center;
+  }
+  main {
+    display: block;
+    background-color: #fffdfa;
+    border-radius: 6px;
+    border: none;
+    outline: 1px solid rgba(250, 171, 120, .4);
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  main h2 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  main h3 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  main h4 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  section {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  article {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  .post-title {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: ;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.6em;
+  }
+  .breadcrumbs {
+    display: inline-block;
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  article img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 6px;
+  }
+  .botoesdepartilharedesociais {
+    display: inline-block;
+  }
+  aside {
+    display: block;
+    border-radius: 6px;
+    background-color: #fffdfa;
+    border: none;
+    outline: 1px solid rgba(250, 171, 120, .4);
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #050300;
+  }
+  aside h2 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  aside h3 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  aside h4 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  aside img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 6px;
+  }
+  footer {
+    content: "";
+    clear: both;
+    display: block;
+    float: none;
+    border-radius: 6px;
+    border: none;
+    background-color: #FAAB78;
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    color: #050300;
+  }
+}
+/* Estilos para com resolução de largura máxima de 1920px */
+@media only screen and (max-width: 1920px) {
+  body {
+    background-color: #fcedd4;
+    margin: 0px 0px 0px 0px;
+  }
+  header {
+    display: block;
+    float: none;
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: none;
+    font-weight: normal;
+    text-align: center;
+  }
+  nav {
+    display: block;
+    float: none;
+    width: 100%;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    border-radius: 6px;
+    background-color: #FAAB78;
+    border-bottom: 1px solid #05030010;
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #050300;
+    text-align: center;
+  }
+  main {
+    display: block;
+    background-color: #fffdfa;
+    border-radius: 6px;
+    border: none;
+    outline: 1px solid rgba(250, 171, 120, .4);
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  main h2 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  main h3 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  main h4 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  section {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  article {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  .post-title {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: ;
+    font-weight: bold;
     text-transform: uppercase;
   }
-
-  h4 {
-    font-size: 16px;
+  .breadcrumbs {
+    display: inline-block;
     font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  article img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 6px;
+  }
+  .botoesdepartilharedesociais {
+    display: inline-block;
+  }
+  aside {
+    display: block;
+    border-radius: 6px;
+    background-color: #fffdfa;
+    border: none;
+    outline: 1px solid rgba(250, 171, 120, .4);
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #050300;
+  }
+  aside img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 6px;
+  }
+  aside h2 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  aside h3 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  aside h4 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  footer {
+    content: "";
+    clear: both;
+    display: block;
+    float: none;
+    border-radius: 6px;
+    border: none;
+    background-color: #FAAB78;
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    color: #050300;
+  }
+}
+/* Estilos para com resolução de largura máxima de 2560px */
+@media only screen and (max-width: 2560px) {
+  body {
+    background-color: #fcedd4;
+    margin: 0px 0px 0px 0px;
+  } 
+  header {
+    display: block;
+    float: none;
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: none;
+    font-weight: normal;
+    text-align: center;
+  }
+  nav {
+    display: block;
+    float: none;
+    width: 100%;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    border-radius: 6px;
+    background-color: #FAAB78;
+    border-bottom: 1px solid #05030010;
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #050300;
+    text-align: center;
+  }
+  main {
+    display: block;
+    background-color: #fffdfa;
+    border-radius: 6px;
+    border: none;
+    outline: 1px solid rgba(250, 171, 120, .4);
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  main h2 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  main h3 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  main h4 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  section {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  article {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  .post-title {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: ;
+    font-weight: bold;
     text-transform: uppercase;
   }
-
+  .breadcrumbs {
+    display: inline-block;
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  article img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 6px;
+  }
+  .botoesdepartilharedesociais {
+    display: inline-block;
+  }
+  aside {
+    display: block;
+    border-radius: 6px;
+    background-color: #fffdfa;
+    border: none;
+    outline: 1px solid rgba(250, 171, 120, .4);
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #050300;
+  }
+  aside h2 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  aside h3 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  aside h4 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  aside img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 6px;
+  }
+  footer {
+    content: "";
+    clear: both;
+    display: block;
+    float: none;
+    border-radius: 6px;
+    border: none;
+    background-color: #FAAB78;
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    color: #050300;
+  }
+}
+/* Estilos para com resolução de largura máxima de 3840px */
+@media only screen and (max-width: 3840px) {
+  body {
+    background-color: #fcedd4;
+    margin: 0px 0px 0px 0px;
+  }
+  header {
+    display: block;
+    float: none;
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: none;
+    font-weight: normal;
+    text-align: center;
+  }
+  nav {
+    display: block;
+    float: none;
+    width: 100%;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    border-radius: 6px;
+    background-color: #FAAB78;
+    border-bottom: 1px solid #05030010;
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #050300;
+    text-align: center;
+  }
+  main {
+    display: block;
+    background-color: #fffdfa;
+    border-radius: 6px;
+    border: none;
+    outline: 1px solid rgba(250, 171, 120, .4);
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  main h2 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  main h3 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  main h4 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  section {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  article {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  .post-title {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: ;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .breadcrumbs {
+    display: inline-block;
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  article img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 6px;
+  }
+  .botoesdepartilharedesociais {
+    display: inline-block;
+  }
+  aside {
+    display: block;
+    border-radius: 6px;
+    background-color: #fffdfa;
+    border: none;
+    outline: 1px solid rgba(250, 171, 120, .4);
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #050300;
+  }
+  aside img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 6px;
+  }
+  aside h2 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  aside h3 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  aside h4 {
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  footer {
+    content: "";
+    clear: both;
+    display: block;
+    float: none;
+    border-radius: 6px;
+    border: none;
+    background-color: #FAAB78;
+    font-family: "Bricolage Grotesque", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    color: #050300;
+  }
 }
