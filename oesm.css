@@ -269,7 +269,7 @@ input:focus {
     border-bottom: 1px solid #05030010;
     border-left: 1px solid #05030010;
     border-right: 1px solid #05030010;
-    font-size: 20px;
+    font-size: 18px;
   }
   main {
     display: block;
@@ -279,7 +279,7 @@ input:focus {
     border-radius: 6px;
     border: none;
     outline: 1px solid rgba(250, 171, 120, .4);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: normal;
     color: #050300;
   }
@@ -303,12 +303,12 @@ input:focus {
   }
   section {
     font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: normal;
   }
   article {
     font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: normal;
   }
   .post-title {
@@ -317,7 +317,7 @@ input:focus {
   .breadcrumbs {
     display: inline-block;
     font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: normal;
   }
   article img {
@@ -335,7 +335,7 @@ input:focus {
     background-color: #fffdfa;
     border: none;
     outline: 1px solid rgba(250, 171, 120, .4);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: normal;
     color: #050300;
   }
@@ -383,7 +383,7 @@ input:focus {
     border-bottom: 1px solid #05030010;
     border-left: 1px solid #05030010;
     border-right: 1px solid #05030010;
-    font-size: 20px;
+    font-size: 18px;
   }
   main {
     display: block;
@@ -393,7 +393,7 @@ input:focus {
     border-radius: 6px;
     border: none;
     outline: 1px solid rgba(250, 171, 120, .4);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: normal;
     color: #050300;
   }
@@ -417,12 +417,12 @@ input:focus {
   }
   section {
     font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: normal;
   }
   article {
     font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: normal;
   }
   .post-title {
@@ -431,7 +431,7 @@ input:focus {
   .breadcrumbs {
     display: inline-block;
     font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: normal;
   }
   article img {
@@ -449,7 +449,7 @@ input:focus {
     background-color: #fffdfa;
     border: none;
     outline: 1px solid rgba(250, 171, 120, .4);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: normal;
     color: #050300;
   }
@@ -483,7 +483,7 @@ input:focus {
 /* Estilos para resolução máxima de 768px */
 @media (min-width: 569px) and (max-width: 768px) {
   body {
-    margin: 20px 10px 20px 10px;
+    margin: 20px 20px 20px 20px;
   }
   header {
     text-align: center;
@@ -829,7 +829,7 @@ input:focus {
 /* Estilos para resolução máxima de 1366px */
 @media (min-width: 1281px) and (max-width: 1366px) {
   body {
-    margin: 20px 140px 20px 140px;
+    margin: 20px 100px 20px 100px;
   }
   header {
     text-align: center;
@@ -944,7 +944,7 @@ input:focus {
 /* Estilos para resolução máxima de 1919px */
 @media (min-width: 1367px) and (max-width: 1919px) {
   body {
-    margin: 20px 180px 20px 180px;
+    margin: 20px 160px 20px 160px;
   }
   header {
     text-align: center;
