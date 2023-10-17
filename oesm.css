@@ -16,22 +16,20 @@ html{
 ::-webkit-scrollbar-thumb {
   background-color: #FAAB78;
 }
-/* Ion Icons */
-ion-icon {
-  font-size: 32px;
-}
-/* Estilo do Header 1 H1 aplicável a todo o tema */
-h1 {
-  font-size: 26px;
-  font-family: "Bricolage Grotesque", Verdana, sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
+/* Estilos do Header aplicáveis a todo o tema */
+header {
+  display: block;
+  float: none;
 }
 /* Estilos da barra de navegação aplicáveis a todo o tema */
 nav {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
   top: -6px;
   padding: 8px 0px 0px 0px;
   line-height: 1.6em;
+  font-family: "Bricolage Grotesque", Verdana, sans-serif;
+  text-align: center;
 }
 nav a {
   padding: 3px 6px 3px 6px;
@@ -39,6 +37,7 @@ nav a {
   border: none;
   color: #050300;
   text-decoration: none;
+  font-weight: bold;
 }
 nav a:hover {
   background-color: #fffdfa;
@@ -60,18 +59,71 @@ nav .progress--bar {
 	width: 0%;
   transition: width 0.5s ease;
 }
-/* Efeito nos campos de input de texto aplicável a todo o tema */
-input:focus {
-  outline: 2px solid #FAAB78;
+/* Estilo do Header 1 H1 aplicável a todo o tema */
+h1 {
+  font-size: 26px;
+  font-family: "Bricolage Grotesque", Verdana, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* Estilos da cor dos links e links já visitados dentro do main aplicável a todo o tema */
+main {
+  font-family: "Bricolage Grotesque", Verdana, sans-serif;
 }
 main a {
   color: #050300;
 }
+main a:hover {
+  color: #050300;
+  text-decoration: underline;
+}
 main a:visited {
   color: #050300;
 }
+/* Estilos da cor dos links e links já visitados dentro do aside aplicável a todo o tema */
+aside{
+  font-family: "Bricolage Grotesque", Verdana, sans-serif;
+}
+aside a {
+  color: #050300;
+  text-decoration: none;
+  font-weight: normal;
+}
+aside a:hover {
+  color: #050300;
+  text-decoration: underline;
+}
+aside a:visited {
+  color: #050300;
+}
+/* Estilos da cor dos links e links já visitados dentro do footer aplicável a todo o tema */
+footer {
+  content: "";
+  clear: both;
+  display: block;
+  float: none;
+  border-radius: 6px;
+  border: none;
+  background-color: #FAAB78;
+  font-family: "Bricolage Grotesque", Verdana, sans-serif;
+  font-weight: normal;
+  text-align: center;
+  color: #050300;
+}
+footer a {
+  color: #050300;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #fffdfa;
+  text-decoration: underline;
+}
+/* Estilos do título dos posts aplicável a todo o tema */
 .post-title {
-  font-size: 20px;
+  font-family: "Bricolage Grotesque", Verdana, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.6em;
   text-decoration: underline;
   color: #050300;
 }
@@ -90,6 +142,7 @@ main a:visited {
   border: none;
   outline: 1px solid #05030060;
 }
+/* Estilos do breadcrumbs nos posts aplicável a todo o tema */
 ul.breadcrumb {
   padding: 4px 4px;
   margin: 0;
@@ -130,18 +183,6 @@ ul.socials a:hover {
   color: #fffdfa;
   background-color: #050300;
 }
-aside a {
-  color: #050300;
-  text-decoration: none;
-  font-weight: normal;
-}
-aside a:hover {
-  color: #050300;
-  text-decoration: underline;
-}
-aside a:visited {
-  color: #050300;
-}
 /* Caixa de Pesquisa na barra lateral */
 .searchboxaside {
   display: block;
@@ -154,7 +195,6 @@ aside a:visited {
   font-family: "Bricolage Grotesque", Verdana, sans-serif;
   font-size: 18px;
 }
-
 /* Dropdown Button */
 .dropbtn {
   background-color: #fffdfa;
@@ -199,70 +239,58 @@ aside a:visited {
 .show {
   display:block;
 }
-footer a {
-  color: #050300;
-  text-decoration: none;
+/* Ion Icons */
+ion-icon {
+  font-size: 32px;
 }
-footer a:hover {
-  color: #fffdfa;
-  text-decoration: underline;
+/* Efeito nos campos de input de texto aplicável a todo o tema */
+input:focus {
+  outline: 2px solid #FAAB78;
 }
 
 /* Estilos para com resolução de largura máxima de 480px */
 @media only screen and (max-width: 480px) {
   body {
     background-color: #fcedd4;
-    margin: 0px 0px 0px 0px;
+    margin: 20px 10px 20px 10px;
   }
   header {
-    display: block;
-    float: none;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-size: none;
-    font-weight: normal;
     text-align: center;
   }
   nav {
     display: block;
     float: none;
     width: 100%;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
     border-radius: 6px;
     background-color: #FAAB78;
     border-bottom: 1px solid #05030010;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 20px;
-    font-weight: bold;
-    color: #050300;
-    text-align: center;
   }
   main {
     display: block;
+    float: none;
+    width: auto;
     background-color: #fffdfa;
     border-radius: 6px;
     border: none;
     outline: 1px solid rgba(250, 171, 120, .4);
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 18px;
     font-weight: normal;
+    color: #050300;
   }
   main h2 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
     color: #050300;
   }
   main h3 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 22px;
     font-weight: 600;
     text-transform: uppercase;
     color: #050300;
   }
   main h4 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
@@ -279,11 +307,7 @@ footer a:hover {
     font-weight: normal;
   }
   .post-title {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-size: ;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1.6em;
+    font-size: 22px;
   }
   .breadcrumbs {
     display: inline-block;
@@ -301,31 +325,28 @@ footer a:hover {
   }
   aside {
     display: block;
+    float: none;
     border-radius: 6px;
     background-color: #fffdfa;
     border: none;
     outline: 1px solid rgba(250, 171, 120, .4);
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 18px;
     font-weight: normal;
     color: #050300;
   }
   aside h2 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
     color: #050300;
   }
   aside h3 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 22px;
     font-weight: 600;
     text-transform: uppercase;
     color: #050300;
   }
   aside h4 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
@@ -337,75 +358,52 @@ footer a:hover {
     border-radius: 6px;
   }
   footer {
-    content: "";
-    clear: both;
-    display: block;
-    float: none;
-    border-radius: 6px;
-    border: none;
-    background-color: #FAAB78;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 18px;
-    font-weight: normal;
-    text-align: center;
-    color: #050300;
   }
 }
 /* Estilos para com resolução de largura máxima de 568px */
 @media only screen and (max-width: 568px) {
   body {
     background-color: #fcedd4;
-    margin: 0px 0px 0px 0px;
+    margin: 20px 10px 20px 10px;
   }
   header {
-    display: block;
-    float: none;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-size: none;
-    font-weight: normal;
     text-align: center;
   }
   nav {
     display: block;
     float: none;
     width: 100%;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
     border-radius: 6px;
     background-color: #FAAB78;
     border-bottom: 1px solid #05030010;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 20px;
-    font-weight: bold;
-    color: #050300;
-    text-align: center;
   }
   main {
     display: block;
+    float: none;
+    width: auto;
     background-color: #fffdfa;
     border-radius: 6px;
     border: none;
     outline: 1px solid rgba(250, 171, 120, .4);
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 18px;
     font-weight: normal;
+    color: #050300;
   }
   main h2 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
     color: #050300;
   }
   main h3 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 22px;
     font-weight: 600;
     text-transform: uppercase;
     color: #050300;
   }
   main h4 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
@@ -422,11 +420,7 @@ footer a:hover {
     font-weight: normal;
   }
   .post-title {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-size: ;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1.6em;
+    font-size: 22px;
   }
   .breadcrumbs {
     display: inline-block;
@@ -444,11 +438,11 @@ footer a:hover {
   }
   aside {
     display: block;
+    float: none;
     border-radius: 6px;
     background-color: #fffdfa;
     border: none;
     outline: 1px solid rgba(250, 171, 120, .4);
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 18px;
     font-weight: normal;
     color: #050300;
@@ -459,96 +453,70 @@ footer a:hover {
     border-radius: 6px;
   }
   aside h2 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
     color: #050300;
   }
   aside h3 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 22px;
     font-weight: 600;
     text-transform: uppercase;
     color: #050300;
   }
   aside h4 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
     color: #050300;
   }
   footer {
-    content: "";
-    clear: both;
-    display: block;
-    float: none;
-    border-radius: 6px;
-    border: none;
-    background-color: #FAAB78;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 18px;
-    font-weight: normal;
-    text-align: center;
-    color: #050300;
   }
 }
 /* Estilos para dispositivos móveis com resolução de largura máxima de 768px */
 @media only screen and (max-width: 768px) {
   body {
     background-color: #fcedd4;
-    margin: 0px 0px 0px 0px;
+    margin: 20px 10px 20px 10px;
   }
   header {
-    display: block;
-    float: none;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-size: none;
-    font-weight: normal;
     text-align: center;
   }
   nav {
     display: block;
     float: none;
     width: 100%;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
     border-radius: 6px;
     background-color: #FAAB78;
     border-bottom: 1px solid #05030010;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 20px;
-    font-weight: bold;
-    color: #050300;
-    text-align: center;
   }
   main {
     display: block;
+    float: left;
+    width: 60%;
     background-color: #fffdfa;
     border-radius: 6px;
     border: none;
     outline: 1px solid rgba(250, 171, 120, .4);
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 18px;
     font-weight: normal;
+    color: #050300;
   }
   main h2 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
     color: #050300;
   }
   main h3 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 22px;
     font-weight: 600;
     text-transform: uppercase;
     color: #050300;
   }
   main h4 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
@@ -565,11 +533,7 @@ footer a:hover {
     font-weight: normal;
   }
   .post-title {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-size: ;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1.6em;
+    font-size: 22px;
   }
   .breadcrumbs {
     display: inline-block;
@@ -587,31 +551,30 @@ footer a:hover {
   }
   aside {
     display: block;
+    float: none;
+    float: left;
+    width: 40%;
     border-radius: 6px;
     background-color: #fffdfa;
     border: none;
     outline: 1px solid rgba(250, 171, 120, .4);
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 18px;
     font-weight: normal;
     color: #050300;
   }
   aside h2 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
     color: #050300;
   }
   aside h3 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 22px;
     font-weight: 600;
     text-transform: uppercase;
     color: #050300;
   }
   aside h4 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
@@ -623,75 +586,52 @@ footer a:hover {
     border-radius: 6px;
   }
   footer {
-    content: "";
-    clear: both;
-    display: block;
-    float: none;
-    border-radius: 6px;
-    border: none;
-    background-color: #FAAB78;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 18px;
-    font-weight: normal;
-    text-align: center;
-    color: #050300;
   }
 }
 /* Estilos para com resolução de largura máxima de 1024px */
 @media only screen and (max-width: 1024px) {
   body {
     background-color: #fcedd4;
-    margin: 0px 0px 0px 0px;
+    margin: 20px 60px 20px 60px;
   }
   header {
-    display: block;
-    float: none;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-size: none;
-    font-weight: normal;
     text-align: center;
   }
   nav {
     display: block;
     float: none;
     width: 100%;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
     border-radius: 6px;
     background-color: #FAAB78;
     border-bottom: 1px solid #05030010;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 20px;
-    font-weight: bold;
-    color: #050300;
-    text-align: center;
   }
   main {
     display: block;
+    float: left;
+    width: 60%;
     background-color: #fffdfa;
     border-radius: 6px;
     border: none;
     outline: 1px solid rgba(250, 171, 120, .4);
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 18px;
     font-weight: normal;
+    color: #050300;
   }
   main h2 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
     color: #050300;
   }
   main h3 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 22px;
     font-weight: 600;
     text-transform: uppercase;
     color: #050300;
   }
   main h4 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
@@ -708,11 +648,7 @@ footer a:hover {
     font-weight: normal;
   }
   .post-title {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-size: ;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1.6em;
+    font-size: 22px;
   }
   .breadcrumbs {
     display: inline-block;
@@ -730,31 +666,29 @@ footer a:hover {
   }
   aside {
     display: block;
+    float: left;
+    width: 40%;
     border-radius: 6px;
     background-color: #fffdfa;
     border: none;
     outline: 1px solid rgba(250, 171, 120, .4);
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 18px;
     font-weight: normal;
     color: #050300;
   }
   aside h2 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
     color: #050300;
   }
   aside h3 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 22px;
     font-weight: 600;
     text-transform: uppercase;
     color: #050300;
   }
   aside h4 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
@@ -766,75 +700,52 @@ footer a:hover {
     border-radius: 6px;
   }
   footer {
-    content: "";
-    clear: both;
-    display: block;
-    float: none;
-    border-radius: 6px;
-    border: none;
-    background-color: #FAAB78;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 18px;
-    font-weight: normal;
-    text-align: center;
-    color: #050300;
   }
 }
 /* Estilos para com resolução de largura máxima de 1280px */
 @media only screen and (max-width: 1280px) {
   body {
     background-color: #fcedd4;
-    margin: 0px 0px 0px 0px;
+    margin: 20px 80px 20px 80px;
   }
   header {
-    display: block;
-    float: none;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-size: none;
-    font-weight: normal;
     text-align: center;
   }
   nav {
     display: block;
     float: none;
     width: 100%;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
     border-radius: 6px;
     background-color: #FAAB78;
     border-bottom: 1px solid #05030010;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 20px;
-    font-weight: bold;
-    color: #050300;
-    text-align: center;
   }
   main {
     display: block;
+    float: left;
+    width: 60%;
     background-color: #fffdfa;
     border-radius: 6px;
     border: none;
     outline: 1px solid rgba(250, 171, 120, .4);
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 18px;
     font-weight: normal;
+    color: #050300;
   }
   main h2 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
     color: #050300;
   }
   main h3 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 22px;
     font-weight: 600;
     text-transform: uppercase;
     color: #050300;
   }
   main h4 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
@@ -851,11 +762,7 @@ footer a:hover {
     font-weight: normal;
   }
   .post-title {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-size: ;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1.6em;
+    font-size: 22px;
   }
   .breadcrumbs {
     display: inline-block;
@@ -873,31 +780,29 @@ footer a:hover {
   }
   aside {
     display: block;
+    float: left;
+    width: 40%;
     border-radius: 6px;
     background-color: #fffdfa;
     border: none;
     outline: 1px solid rgba(250, 171, 120, .4);
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 18px;
     font-weight: normal;
     color: #050300;
   }
   aside h2 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
     color: #050300;
   }
   aside h3 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 22px;
     font-weight: 600;
     text-transform: uppercase;
     color: #050300;
   }
   aside h4 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
@@ -909,75 +814,52 @@ footer a:hover {
     border-radius: 6px;
   }
   footer {
-    content: "";
-    clear: both;
-    display: block;
-    float: none;
-    border-radius: 6px;
-    border: none;
-    background-color: #FAAB78;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 18px;
-    font-weight: normal;
-    text-align: center;
-    color: #050300;
   }
 }
 /* Estilos para com resolução de largura máxima de 1366px */
 @media only screen and (max-width: 1366px) {
   body {
     background-color: #fcedd4;
-    margin: 0px 0px 0px 0px;
+    margin: 20px 140px 20px 140px;
   }
   header {
-    display: block;
-    float: none;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-size: none;
-    font-weight: normal;
     text-align: center;
   }
   nav {
     display: block;
     float: none;
     width: 100%;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
     border-radius: 6px;
     background-color: #FAAB78;
     border-bottom: 1px solid #05030010;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 20px;
-    font-weight: bold;
-    color: #050300;
-    text-align: center;
   }
   main {
     display: block;
+    float: left;
+    width: 60%;
     background-color: #fffdfa;
     border-radius: 6px;
     border: none;
     outline: 1px solid rgba(250, 171, 120, .4);
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 18px;
     font-weight: normal;
+    color: #050300;
   }
   main h2 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
     color: #050300;
   }
   main h3 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 22px;
     font-weight: 600;
     text-transform: uppercase;
     color: #050300;
   }
   main h4 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
@@ -994,11 +876,7 @@ footer a:hover {
     font-weight: normal;
   }
   .post-title {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-size: ;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1.6em;
+    font-size: 22px;
   }
   .breadcrumbs {
     display: inline-block;
@@ -1016,31 +894,29 @@ footer a:hover {
   }
   aside {
     display: block;
+    float: left;
+    width: 40%;
     border-radius: 6px;
     background-color: #fffdfa;
     border: none;
     outline: 1px solid rgba(250, 171, 120, .4);
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 18px;
     font-weight: normal;
     color: #050300;
   }
   aside h2 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
     color: #050300;
   }
   aside h3 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 22px;
     font-weight: 600;
     text-transform: uppercase;
     color: #050300;
   }
   aside h4 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
@@ -1052,75 +928,52 @@ footer a:hover {
     border-radius: 6px;
   }
   footer {
-    content: "";
-    clear: both;
-    display: block;
-    float: none;
-    border-radius: 6px;
-    border: none;
-    background-color: #FAAB78;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 18px;
-    font-weight: normal;
-    text-align: center;
-    color: #050300;
   }
 }
 /* Estilos para com resolução de largura máxima de 1920px */
 @media only screen and (max-width: 1920px) {
   body {
     background-color: #fcedd4;
-    margin: 0px 0px 0px 0px;
+    margin: 20px 200px 20px 200px;
   }
   header {
-    display: block;
-    float: none;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-size: none;
-    font-weight: normal;
     text-align: center;
   }
   nav {
     display: block;
     float: none;
     width: 100%;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
     border-radius: 6px;
     background-color: #FAAB78;
     border-bottom: 1px solid #05030010;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 20px;
-    font-weight: bold;
-    color: #050300;
-    text-align: center;
   }
   main {
     display: block;
+    float: left;
+    width: 60%;
     background-color: #fffdfa;
     border-radius: 6px;
     border: none;
     outline: 1px solid rgba(250, 171, 120, .4);
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 18px;
     font-weight: normal;
+    color: #050300;
   }
   main h2 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
     color: #050300;
   }
   main h3 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 22px;
     font-weight: 600;
     text-transform: uppercase;
     color: #050300;
   }
   main h4 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
@@ -1137,10 +990,7 @@ footer a:hover {
     font-weight: normal;
   }
   .post-title {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-size: ;
-    font-weight: bold;
-    text-transform: uppercase;
+    font-size: 22px;
   }
   .breadcrumbs {
     display: inline-block;
@@ -1158,11 +1008,12 @@ footer a:hover {
   }
   aside {
     display: block;
+    float: left;
+    width: 40%;
     border-radius: 6px;
     background-color: #fffdfa;
     border: none;
     outline: 1px solid rgba(250, 171, 120, .4);
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 18px;
     font-weight: normal;
     color: #050300;
@@ -1173,96 +1024,70 @@ footer a:hover {
     border-radius: 6px;
   }
   aside h2 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
     color: #050300;
   }
   aside h3 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 22px;
     font-weight: 600;
     text-transform: uppercase;
     color: #050300;
   }
   aside h4 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
     color: #050300;
   }
   footer {
-    content: "";
-    clear: both;
-    display: block;
-    float: none;
-    border-radius: 6px;
-    border: none;
-    background-color: #FAAB78;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 18px;
-    font-weight: normal;
-    text-align: center;
-    color: #050300;
   }
 }
 /* Estilos para com resolução de largura máxima de 2560px */
 @media only screen and (max-width: 2560px) {
   body {
     background-color: #fcedd4;
-    margin: 0px 0px 0px 0px;
+    margin: 20px 240px 20px 240px;
   } 
   header {
-    display: block;
-    float: none;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-size: none;
-    font-weight: normal;
     text-align: center;
   }
   nav {
     display: block;
     float: none;
     width: 100%;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
     border-radius: 6px;
     background-color: #FAAB78;
     border-bottom: 1px solid #05030010;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 20px;
-    font-weight: bold;
-    color: #050300;
-    text-align: center;
   }
   main {
     display: block;
+    float: left;
+    width: 60%;
     background-color: #fffdfa;
     border-radius: 6px;
     border: none;
     outline: 1px solid rgba(250, 171, 120, .4);
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 18px;
     font-weight: normal;
+    color: #050300;
   }
   main h2 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
     color: #050300;
   }
   main h3 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 22px;
     font-weight: 600;
     text-transform: uppercase;
     color: #050300;
   }
   main h4 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
@@ -1279,10 +1104,7 @@ footer a:hover {
     font-weight: normal;
   }
   .post-title {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-size: ;
-    font-weight: bold;
-    text-transform: uppercase;
+    font-size: 22px;
   }
   .breadcrumbs {
     display: inline-block;
@@ -1300,31 +1122,29 @@ footer a:hover {
   }
   aside {
     display: block;
+    float: left;
+    width: 40%;
     border-radius: 6px;
     background-color: #fffdfa;
     border: none;
     outline: 1px solid rgba(250, 171, 120, .4);
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 18px;
     font-weight: normal;
     color: #050300;
   }
   aside h2 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
     color: #050300;
   }
   aside h3 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 22px;
     font-weight: 600;
     text-transform: uppercase;
     color: #050300;
   }
   aside h4 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
@@ -1336,75 +1156,52 @@ footer a:hover {
     border-radius: 6px;
   }
   footer {
-    content: "";
-    clear: both;
-    display: block;
-    float: none;
-    border-radius: 6px;
-    border: none;
-    background-color: #FAAB78;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 18px;
-    font-weight: normal;
-    text-align: center;
-    color: #050300;
   }
 }
 /* Estilos para com resolução de largura máxima de 3840px */
 @media only screen and (max-width: 3840px) {
   body {
     background-color: #fcedd4;
-    margin: 0px 0px 0px 0px;
+    margin: 20px 10px 20px 10px;
   }
   header {
-    display: block;
-    float: none;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-size: none;
-    font-weight: normal;
     text-align: center;
   }
   nav {
     display: block;
     float: none;
     width: 100%;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
     border-radius: 6px;
     background-color: #FAAB78;
     border-bottom: 1px solid #05030010;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 20px;
-    font-weight: bold;
-    color: #050300;
-    text-align: center;
   }
   main {
     display: block;
+    float: left;
+    width: 60%;
     background-color: #fffdfa;
     border-radius: 6px;
     border: none;
     outline: 1px solid rgba(250, 171, 120, .4);
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 18px;
     font-weight: normal;
+    color: #050300;
   }
   main h2 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
     color: #050300;
   }
   main h3 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 22px;
     font-weight: 600;
     text-transform: uppercase;
     color: #050300;
   }
   main h4 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
@@ -1421,10 +1218,7 @@ footer a:hover {
     font-weight: normal;
   }
   .post-title {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-size: ;
-    font-weight: bold;
-    text-transform: uppercase;
+    font-size: 22px;
   }
   .breadcrumbs {
     display: inline-block;
@@ -1442,11 +1236,12 @@ footer a:hover {
   }
   aside {
     display: block;
+    float: left;
+    width: 40%;
     border-radius: 6px;
     background-color: #fffdfa;
     border: none;
     outline: 1px solid rgba(250, 171, 120, .4);
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 18px;
     font-weight: normal;
     color: #050300;
@@ -1457,38 +1252,24 @@ footer a:hover {
     border-radius: 6px;
   }
   aside h2 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
     color: #050300;
   }
   aside h3 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 22px;
     font-weight: 600;
     text-transform: uppercase;
     color: #050300;
   }
   aside h4 {
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
     color: #050300;
   }
   footer {
-    content: "";
-    clear: both;
-    display: block;
-    float: none;
-    border-radius: 6px;
-    border: none;
-    background-color: #FAAB78;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 18px;
-    font-weight: normal;
-    text-align: center;
-    color: #050300;
   }
 }
