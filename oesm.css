@@ -20,6 +20,14 @@ html{
 ::-webkit-scrollbar-thumb {
   background-color: #FAAB78;
 }
+/* Ion Icons */
+ion-icon {
+  font-size: 32px;
+}
+/* Efeito nos campos de input de texto aplicável a todo o tema */
+input:focus {
+  outline: 2px solid #FAAB78;
+}
 /* Estilos do Header aplicáveis a todo o tema */
 header {
   display: block;
@@ -30,7 +38,6 @@ nav {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: -6px;
-  padding: 8px 0px 0px 0px;
   line-height: 1.6em;
   font-family: "Bricolage Grotesque", Verdana, sans-serif;
   text-align: center;
@@ -63,7 +70,7 @@ nav .progress--bar {
 	width: 0%;
   transition: width 0.5s ease;
 }
-/* Estilo do Header 1 H1 aplicável a todo o tema */
+/* Estilo do HEADER 1 H1 aplicável a todo o tema */
 h1 {
   font-size: 26px;
   font-family: "Bricolage Grotesque", Verdana, sans-serif;
@@ -243,19 +250,10 @@ ul.socials a:hover {
 .show {
   display:block;
 }
-/* Ion Icons */
-ion-icon {
-  font-size: 32px;
-}
-/* Efeito nos campos de input de texto aplicável a todo o tema */
-input:focus {
-  outline: 2px solid #FAAB78;
-}
-
 /* Dispositivos com resolução máxima até 480px de largura */
 @media (max-width: 480px) {
   body {
-    margin: 20px 20px 20px 20px;
+    margin: 0px 2% 0px 2%;
   }
   header {
     text-align: center;
@@ -264,17 +262,18 @@ input:focus {
     display: block;
     float: none;
     width: 100%;
+    padding: 8px 0px 0px 0px;
     border-radius: 6px;
     background-color: #FAAB78;
     border-bottom: 1px solid #05030010;
-    border-left: 1px solid #05030010;
-    border-right: 1px solid #05030010;
     font-size: 20px;
   }
   main {
     display: block;
-    float: left;
-    width: 65%;
+    float: none;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
     background-color: #fffdfa;
     border-radius: 6px;
     border: none;
@@ -331,8 +330,7 @@ input:focus {
   aside {
     display: block;
     float: none;
-    float: left;
-    width: 35%;
+    width: 100%;
     border-radius: 6px;
     background-color: #fffdfa;
     border: none;
@@ -365,13 +363,15 @@ input:focus {
     border-radius: 6px;
   }
   footer {
+    margin: 20px 0px 30px 0px;
+    padding: 2px 0px 2px 0px;
     font-size: 18px;
   }
 }
 /* Dispositivos com resolução máxima até 767px de largura */
 @media (min-width:481px) and (max-width:767px) {
   body {
-    margin: 20px 60px 20px 60px;
+    margin: 0px 2% 0px 2%;
   }
   header {
     text-align: center;
@@ -380,17 +380,18 @@ input:focus {
     display: block;
     float: none;
     width: 100%;
+    padding: 8px 0px 0px 0px;
     border-radius: 6px;
     background-color: #FAAB78;
     border-bottom: 1px solid #05030010;
-    border-left: 1px solid #05030010;
-    border-right: 1px solid #05030010;
     font-size: 20px;
   }
   main {
     display: block;
-    float: left;
-    width: 65%;
+    float: none;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
     background-color: #fffdfa;
     border-radius: 6px;
     border: none;
@@ -446,8 +447,8 @@ input:focus {
   }
   aside {
     display: block;
-    float: left;
-    width: 35%;
+    float: none;
+    width: 100%;
     border-radius: 6px;
     background-color: #fffdfa;
     border: none;
@@ -480,13 +481,15 @@ input:focus {
     border-radius: 6px;
   }
   footer {
+    margin: 20px 0px 30px 0px;
+    padding: 2px 0px 2px 0px;
     font-size: 18px;
   }
 }
 /* Dispositivos com resolução máxima até 991px de largura */
 @media (min-width:768px) and (max-width:991px) {
   body {
-    margin: 20px 80px 20px 80px;
+    margin: 0px 4% 0px 4%;
   }
   header {
     text-align: center;
@@ -495,17 +498,18 @@ input:focus {
     display: block;
     float: none;
     width: 100%;
+    padding: 8px 0px 0px 0px;
     border-radius: 6px;
     background-color: #FAAB78;
     border-bottom: 1px solid #05030010;
-    border-left: 1px solid #05030010;
-    border-right: 1px solid #05030010;
     font-size: 20px;
   }
   main {
     display: block;
-    float: left;
-    width: 65%;
+    float: none;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
     background-color: #fffdfa;
     border-radius: 6px;
     border: none;
@@ -561,8 +565,8 @@ input:focus {
   }
   aside {
     display: block;
-    float: left;
-    width: 35%;
+    float: none;
+    width: 100%;
     border-radius: 6px;
     background-color: #fffdfa;
     border: none;
@@ -595,13 +599,15 @@ input:focus {
     border-radius: 6px;
   }
   footer {
+    margin: 20px 0px 30px 0px;
+    padding: 2px 0px 2px 0px;
     font-size: 18px;
   }
 }
 /* Dispositivos com resolução máxima até 991px de largura */
 @media (min-width:992px) and (max-width:1199px) {
   body {
-    margin: 20px 100px 20px 100px;
+    margin: 0px 5% 0px 5%;
   }
   header {
     text-align: center;
@@ -610,17 +616,18 @@ input:focus {
     display: block;
     float: none;
     width: 100%;
+    padding: 8px 0px 0px 0px;
     border-radius: 6px;
     background-color: #FAAB78;
     border-bottom: 1px solid #05030010;
-    border-left: 1px solid #05030010;
-    border-right: 1px solid #05030010;
     font-size: 20px;
   }
   main {
     display: block;
     float: left;
-    width: 65%;
+    width: 70%;
+    margin: 0px;
+    padding: 0px;
     background-color: #fffdfa;
     border-radius: 6px;
     border: none;
@@ -677,7 +684,7 @@ input:focus {
   aside {
     display: block;
     float: left;
-    width: 35%;
+    width: 30%;
     border-radius: 6px;
     background-color: #fffdfa;
     border: none;
@@ -710,13 +717,15 @@ input:focus {
     border-radius: 6px;
   }
   footer {
+    margin: 20px 0px 30px 0px;
+    padding: 2px 0px 2px 0px;
     font-size: 18px;
   }
 }
 /* Dispositivos com resolução máxima até 1919px de largura */
 @media (min-width:1200px) and (max-width:1919px) {
   body {
-    margin: 20px 160px 20px 160px;
+    margin: 0px 12% 0px 12%;
   }
   header {
     text-align: center;
@@ -725,17 +734,18 @@ input:focus {
     display: block;
     float: none;
     width: 100%;
+    padding: 8px 0px 0px 0px;
     border-radius: 6px;
     background-color: #FAAB78;
     border-bottom: 1px solid #05030010;
-    border-left: 1px solid #05030010;
-    border-right: 1px solid #05030010;
     font-size: 20px;
   }
   main {
     display: block;
     float: left;
-    width: 65%;
+    width: 70%;
+    margin: 0px;
+    padding: 0px;
     background-color: #fffdfa;
     border-radius: 6px;
     border: none;
@@ -792,7 +802,7 @@ input:focus {
   aside {
     display: block;
     float: left;
-    width: 35%;
+    width: 30%;
     border-radius: 6px;
     background-color: #fffdfa;
     border: none;
@@ -825,13 +835,15 @@ input:focus {
     color: #050300;
   }
   footer {
+    margin: 20px 0px 30px 0px;
+    padding: 2px 0px 2px 0px;
     font-size: 18px;
   }
 }
 /* Dispositivos com resolução máxima até 1920px de largura */
 @media (min-width: 1920px) {
   body {
-    margin: 20px 180px 20px 180px;
+    margin: 0px 14% 0px 14%;
   }
   header {
     text-align: center;
@@ -840,17 +852,18 @@ input:focus {
     display: block;
     float: none;
     width: 100%;
+    padding: 8px 0px 0px 0px;
     border-radius: 6px;
     background-color: #FAAB78;
     border-bottom: 1px solid #05030010;
-    border-left: 1px solid #05030010;
-    border-right: 1px solid #05030010;
     font-size: 20px;
   }
   main {
     display: block;
     float: left;
-    width: 65%;
+    width: 70%;
+    margin: 0px;
+    padding: 0px;
     background-color: #fffdfa;
     border-radius: 6px;
     border: none;
@@ -907,7 +920,7 @@ input:focus {
   aside {
     display: block;
     float: left;
-    width: 35%;
+    width: 30%;
     border-radius: 6px;
     background-color: #fffdfa;
     border: none;
@@ -940,6 +953,8 @@ input:focus {
     color: #050300;
   }
   footer {
+    margin: 20px 0px 30px 0px;
+    padding: 2px 0px 2px 0px;
     font-size: 18px;
   }
 }
