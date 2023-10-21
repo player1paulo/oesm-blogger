@@ -22,7 +22,7 @@ html{
 }
 /* Ion Icons */
 ion-icon {
-  font-size: 32px;
+  font-size: 26px;
 }
 /* Efeito nos campos de input de texto aplicável a todo o tema */
 input:focus {
@@ -120,6 +120,7 @@ footer {
   font-weight: normal;
   text-align: center;
   color: #050300;
+  line-height: 1.6em;
 }
 footer a {
   color: #050300;
@@ -258,6 +259,9 @@ ul.socials a:hover {
   header {
     text-align: center;
   }
+  header img {
+    max-width: ;
+  }
   nav {
     display: block;
     float: none;
@@ -375,6 +379,9 @@ ul.socials a:hover {
   }
   header {
     text-align: center;
+  }
+  header img {
+    max-width: ;
   }
   nav {
     display: block;
@@ -494,6 +501,9 @@ ul.socials a:hover {
   header {
     text-align: center;
   }
+  header img {
+    max-width: ;
+  }
   nav {
     display: block;
     float: none;
@@ -611,6 +621,9 @@ ul.socials a:hover {
   }
   header {
     text-align: center;
+  }
+  header img {
+    max-width: ;
   }
   nav {
     display: block;
@@ -730,6 +743,9 @@ ul.socials a:hover {
   header {
     text-align: center;
   }
+  header img {
+    max-width: ;
+  }
   nav {
     display: block;
     float: none;
@@ -847,6 +863,9 @@ ul.socials a:hover {
   }
   header {
     text-align: center;
+  }
+  header img {
+    max-width: ;
   }
   nav {
     display: block;
