@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function() {
 	document.addEventListener("scroll", function() {
 		getProgress();
 	});
-
 	function getProgress() {					
 		var topPos = document.documentElement.scrollTop;
 		// Alternatively, you can use document.body.scrollTop || document.documentElement.scrollTop;
@@ -22,7 +21,6 @@ document.addEventListener("DOMContentLoaded", function() {
 function myDropdownArquivo() {
 	document.getElementById("myDropdown").classList.toggle("show");
   }
-  
   // Close the dropdown menu if the user clicks outside of it
   window.onclick = function(event) {
 	if (!event.target.matches('.dropbtn')) {
