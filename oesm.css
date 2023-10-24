@@ -1,6 +1,6 @@
 /* Estilos base gerais para todos os breakpoints do blog ontem é só memória */
 @import url(https://fonts.googleapis.com/css?family=Bricolage+Grotesque);
-/* Cor de fundo */
+/* Cor de fundo do tema */
 body {
   background-color: #fcedd4;
 }
@@ -37,6 +37,7 @@ header {
 nav {
   position: -webkit-sticky; /* Safari */
   position: sticky;
+  z-index: 1;
   top: -6px;
   line-height: 1.6em;
   font-family: "Bricolage Grotesque", Verdana, sans-serif;
@@ -273,24 +274,25 @@ ul.socials a:hover {
     display: block;
     float: none;
     width: auto;
+    position: static;
     font-size: 16px;
     font-weight: normal;
     color: #050300;
   }
   main h2 {
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #050300;
-  }
-  main h3 {
     font-size: 22px;
     font-weight: bold;
     text-transform: uppercase;
     color: #050300;
   }
-  main h4 {
+  main h3 {
     font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  main h4 {
+    font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
     color: #050300;
@@ -332,6 +334,7 @@ ul.socials a:hover {
     display: block;
     float: none;
     width: auto;
+    position: static;
     margin: 20px 0px 20px 0px;
     padding: 1px 10px 20px 10px;
     border-radius: 6px;
@@ -343,19 +346,19 @@ ul.socials a:hover {
     color: #050300;
   }
   aside h2 {
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #050300;
-  }
-  aside h3 {
     font-size: 22px;
     font-weight: bold;
     text-transform: uppercase;
     color: #050300;
   }
-  aside h4 {
+  aside h3 {
     font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #050300;
+  }
+  aside h4 {
+    font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
     color: #050300;
@@ -393,6 +396,7 @@ ul.socials a:hover {
     display: block;
     float: none;
     width: auto;
+    position: static;
     font-size: 16px;
     font-weight: normal;
     color: #050300;
@@ -452,6 +456,7 @@ ul.socials a:hover {
     display: block;
     float: none;
     width: auto;
+    position: static;
     margin: 20px 0px 20px 0px;
     padding: 1px 10px 20px 10px;
     border-radius: 6px;
@@ -512,6 +517,7 @@ ul.socials a:hover {
   main {
     display: block;
     float: none;
+    position: static;
     font-size: 18px;
     font-weight: normal;
     color: #050300;
@@ -570,6 +576,7 @@ ul.socials a:hover {
   aside {
     display: block;
     float: none;
+    position: static;
     margin: 20px 0px 20px 0px;
     padding: 1px 10px 20px 10px;
     border-radius: 6px;
@@ -630,6 +637,7 @@ ul.socials a:hover {
   main {
     display: block;
     float: left;
+    position: static;
     min-width: 70%;
     max-width: 70%;
     font-size: 18px;
@@ -690,6 +698,7 @@ ul.socials a:hover {
   aside {
     display: block;
     float: left;
+    position: static;
     min-width: 27%;
     max-width: 27%;
     margin: 20px 0px 20px 5px;
@@ -752,6 +761,7 @@ ul.socials a:hover {
   main {
     display: block;
     float: left;
+    position: static;
     min-width: 70%;
     max-width: 70%;
     font-size: 18px;
@@ -812,8 +822,9 @@ ul.socials a:hover {
   aside {
     display: block;
     float: left;
-    min-width: 27.24%;
-    max-width: 27.24%;
+    position: static;
+    min-width: 27.23%;
+    max-width: 27.23%;
     margin: 20px 0px 20px 5px;
     padding: 1px 10px 20px 10px;
     border-radius: 6px;
@@ -874,6 +885,7 @@ ul.socials a:hover {
   main {
     display: block;
     float: left;
+    position: static;
     min-width: 70%;
     max-width: 70%;
     font-size: 18px;
@@ -934,6 +946,7 @@ ul.socials a:hover {
   aside {
     display: block;
     float: left;
+    position: static;
     min-width: 28.1%;
     max-width: 28.1%;
     margin: 20px 0px 20px 5px;
