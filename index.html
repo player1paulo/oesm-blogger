@@ -95,10 +95,12 @@
    <$BlogItemControl$>
       </p>
       </div>
+      <MainPage>
       <p class="linkcomentario">
       <a href="<$BlogItemCommentCreate$>"<$BlogItemCommentFormOnclick$>>&#9998; Comentar o artigo</a>
       </p>
-      Partilha este artigo:
+      </MainPage>
+      <b>Partilha este artigo:</b>
       <ul class="socials">
         <a href="https://www.facebook.com/sharer/sharer.php?u=<$BlogItemPermalinkUrl$>" class="fa-brands fa-square-facebook" target="_blank"></a>
         <a href="https://twitter.com/intent/tweet?url=<$BlogItemPermalinkUrl$>" class="fa fa-twitter" target="_blank"></a>
@@ -146,10 +148,10 @@
       </div>
   </ItemPage>
   <!-- End #comments -->
-  </Blogger>
-  </div></div></div>
   <!-- Separador entre os posts -->
   <hr class="separadorentreposts" />
+  </Blogger>
+  </div></div></div>
 </article>
 <!-- End #main -->
 </main>
@@ -183,12 +185,17 @@
       </p>
   <!-- Separador barra lateral -->
   <hr class="separadoresbarralateral" />
+  <!-- Google AdSense barra lateral -->
+  <ins class="adsbygoogle" style="display:inline-block;width:100%;height:auto" data-ad-client="ca-pub-9271243691582466" data-ad-slot="2595715196"></ins>
+  <script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  <!-- Separador barra lateral -->
+  <hr class="separadoresbarralateral" />
   <h3>ARTIGOS RECENTES</h3>
-    <li>
       <BloggerPreviousItems>
-        <a href="<$BlogItemPermalinkURL$>"><$BlogPreviousItemTitle$></a>
+        <li><a href="<$BlogItemPermalinkURL$>"><$BlogPreviousItemTitle$></a></li>
       </BloggerPreviousItems>
-    </li>
   <!-- Separador barra lateral -->
   <hr class="separadoresbarralateral" />
     <h3>ARQUIVO DO BLOG</h3>
@@ -203,7 +210,39 @@
         </ArchivePage>
       </div>
     </div>
-    <!-- <h4>Publicidade Google Ads</h4> -->
+    <!-- Separador barra lateral -->
+  <hr class="separadoresbarralateral" />
+  <h3>NEWSLETTER</h3>
+  <div id="mc_embed_shell">
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+      #mc_embed_signup{clear:left; font:16px Helvetica,Arial,sans-serif; width: 100%;}
+      /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+         We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+  <form action="https://ontemesomemoria.us10.list-manage.com/subscribe/post?u=924a09affe53e05d43f3f102b&amp;id=491b06a556&amp;f_id=0048e7e5f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+      <div id="mc_embed_signup_scroll">
+          <div class="indicates-required"><span class="asterisk">*</span> campo obrigatório</div>
+          <div class="mc-field-group"><label for="mce-EMAIL">Endereço de e-mail <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div><div class="mc-field-group"><label for="mce-FNAME">Nome </label><input type="text" name="FNAME" class=" text" id="mce-FNAME" value=""></div><div class="mc-field-group size1of2"><label for="mce-BIRTHDAY-month">Data de nascimento </label><div class="datefield"><span class="subfield monthfield"><input class="birthday REQ_CSS" type="text" pattern="[0-9]*" placeholder="MM" size="2" maxlength="2" name="BIRTHDAY[month]" id="mce-BIRTHDAY-month" value=""></span> /<span class="subfield dayfield"><input class="birthday REQ_CSS" type="text" pattern="[0-9]*" placeholder="DD" size="2" maxlength="2" name="BIRTHDAY[day]" id="mce-BIRTHDAY-day" value=""></span><span class="small-meta nowrap">(mm / dd)</span></div></div>
+      <div id="mce-responses" class="clear foot">
+          <div class="response" id="mce-error-response" style="display: none;"></div>
+          <div class="response" id="mce-success-response" style="display: none;"></div>
+      </div>
+  <div style="position: absolute; left: -5000px;" aria-hidden="true">
+      /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
+      <input type="text" name="b_924a09affe53e05d43f3f102b_491b06a556" tabindex="-1" value="">
+  </div>
+      <div class="optionalParent">
+          <div class="clear foot">
+              <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscrever">
+              <p style="margin: 0px auto;"><a href="http://eepurl.com/iylMEU" title="Mailchimp - marketing por e-mail fácil e divertido"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"><img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a></p>
+          </div>
+      </div>
+  </div>
+</form>
+</div>
+<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[5]='BIRTHDAY';ftypes[5]='birthday';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
 </aside>
 <!-- Rodapé -->
 <footer>
@@ -224,7 +263,7 @@
     <a href="mailto:ontemesomemoria@gmail.com" target="_blank"><ion-icon name="mail-outline"></ion-icon></a>
   </p>
   <p class="paragraforodape3">
-    <ion-icon name="information-circle-outline"></ion-icon> <a href="https://ontemesomemoria.pt"><b translate="no">Ontem é só Memória</b></a> todos os direitos reservados. | <ion-icon name="logo-html5"></ion-icon> <ion-icon name="logo-css3"></ion-icon> <ion-icon name="logo-javascript"></ion-icon> do tema OESM v1.0.12 a cargo do <a href="https://player1paulo.com" target="_blank"><b><em>player1paulo</em></b></a>.
+    <ion-icon name="information-circle-outline"></ion-icon> <a href="https://ontemesomemoria.pt"><b translate="no">Ontem é só Memória</b></a> todos os direitos reservados. | <ion-icon name="logo-html5"></ion-icon> <ion-icon name="logo-css3"></ion-icon> <ion-icon name="logo-javascript"></ion-icon> do tema OESM v1.0.15 a cargo do <a href="https://player1paulo.com" target="_blank"><b><em>player1paulo</em></b></a>.
   </p>
 </footer>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

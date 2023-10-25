@@ -266,8 +266,8 @@ ul.socials a:hover {
 /* Estilo do separador entre zona do post e zona de comentários */
 .separadorpostzonacomentarios {
   width: 50%;
-  margin-top: 14px;
-  margin-bottom: 14px;
+  margin-top: 16px;
+  margin-bottom: 16px;
   background-color: #05030050;
   border: none;
   height: 1px;
@@ -275,8 +275,8 @@ ul.socials a:hover {
 /* Estilo do separador entre post do blog */
 .separadorentreposts {
   width: 100%;
-  margin-top: 28px;
-  margin-bottom: 24px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   background-color: #05030096;
   border: none;
   height: 2px;
@@ -284,8 +284,8 @@ ul.socials a:hover {
 /* Estilo do separador entre post do blog */
 .separadoresbarralateral {
   width: 100%;
-  margin-top: 24px;
-  margin-bottom: 24px;
+  margin-top: 26px;
+  margin-bottom: 26px;
   background-color: #05030050;
   border: none;
   height: 1px;
@@ -293,12 +293,14 @@ ul.socials a:hover {
 /* Estilo do texto para comentar o artigo */
 .linkcomentario {
   text-decoration: none;
+  font-weight: bold;
 }
 .linkcomentario a {
   padding: 4px 14px 4px 14px;
   border: none;
   border-radius: 8px;
   outline: 1px solid #050300;
+  background-color: #ffffff;
   text-decoration: none;
 }
 .linkcomentario a:hover {
