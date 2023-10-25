@@ -76,7 +76,7 @@
       <ItemPage>
         <p>
           <ul class="breadcrumb">
-            <li><a href="<$BlogURL$>">&#10094; Página inicial</a></li>
+            <li><a href="<$BlogURL$>">&#10096; Página inicial</a></li>
             <li>&#160;<u><a href="<$BlogItemPermalinkUrl$>"><$BlogItemTitle$></u></a></li>
           </ul>
         </p>
@@ -95,7 +95,10 @@
    <$BlogItemControl$>
       </p>
       </div>
-      Partilha este artigo nas redes sociais:
+      <p class="linkcomentario">
+      <a href="<$BlogItemCommentCreate$>"<$BlogItemCommentFormOnclick$>>&#9998; Comentar o artigo</a>
+      </p>
+      Partilha este artigo:
       <ul class="socials">
         <a href="https://www.facebook.com/sharer/sharer.php?u=<$BlogItemPermalinkUrl$>" class="fa-brands fa-square-facebook" target="_blank"></a>
         <a href="https://twitter.com/intent/tweet?url=<$BlogItemPermalinkUrl$>" class="fa fa-twitter" target="_blank"></a>
@@ -107,6 +110,8 @@
     <!-- End .post -->
     <!-- Begin #comments -->
    <ItemPage>
+    <!-- Separador entre os posts e zona de comentários -->
+    <hr class="separadorpostzonacomentarios" />
     <div id="comments">
   <BlogItemCommentsEnabled><a name="comments"></a>
     <ion-icon name="chatbubbles-outline"></ion-icon><$I18NNumComments$>:
@@ -133,7 +138,7 @@
   <!-- Breadcrumb -->
   <p>
     <ul class="breadcrumb">
-      <li><a href="<$BlogURL$>">&#10094; Regressar à página inicial</a></li>
+      <li><a href="<$BlogURL$>">&#10096; Regressar à página inicial</a></li>
       <li>&#160;<u><a href="<$BlogItemPermalinkUrl$>"><$BlogItemTitle$></u></a></li>
     </ul>
   </p>
@@ -143,30 +148,52 @@
   <!-- End #comments -->
   </Blogger>
   </div></div></div>
+  <!-- Separador entre os posts -->
+  <hr class="separadorentreposts" />
 </article>
 <!-- End #main -->
 </main>
 <!-- Barra Lateral -->
 <aside>
-  <input class="searchboxaside" type="text" placeholder="O que procuras aqui no blog?">
-  <h3>A AUTORA</h3>
+  <!-- Caixa de pesquisa na barra lateral -->
+  <input class="searchboxaside" type="text" placeholder="O que procuras no blog?">
+  <!-- Separador barra lateral -->
+  <hr class="separadoresbarralateral" />
+  <h3>SOBRE A AUTORA</h3>
   <img src="https://i.postimg.cc/CMc8FVsc/ontem-e-so-memoria-autora.webp" loading="lazy" alt="Teresa Isabel Silva"/>
       <p>
-        <em>Teresa Isabel Silva, autora do blog Ontem é só Memória</em>.
+        <em>Teresa Isabel Silva</em>, autora do blog <em>Ontem é só Memória</em>.
+      </p>
+  <!-- Separador barra lateral -->
+  <hr class="separadoresbarralateral" />
+  <h3>ENTRA EM CONTACTO</h3>
+      <p>
+        Podes entrar em contacto direto comigo através de email. Basta dares um clique ou toque no ícone do envelope em baixo.
       </p>
       <a href="mailto:ontemesomemoria@gmail.com" target="_blank"><ion-icon name="mail-outline"></ion-icon></a>
+  <!-- Separador barra lateral -->
+  <hr class="separadoresbarralateral" />
+    <h3>REDES SOCIAIS</h3>
       <a href="https://www.facebook.com/ontemesomemoria" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
       <a href="https://www.instagram.com/ontemesomemoria" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
       <a href="https://www.youtube.com/@ontemesomemoria" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
       <a href="https://www.pinterest.pt/ontemesomemoria" target="_blank"><ion-icon name="logo-pinterest"></ion-icon></a>
-      
-    <h3>ARTIGOS RECENTES</h3>
-    <BloggerPreviousItems>
-      <a href="<$BlogItemPermalinkURL$>"><$BlogPreviousItemTitle$></a>
-    </BloggerPreviousItems>
+      <p>
+        Segue o <em>Ontem é só Memória</em> nas redes sociais.
+      </p>
+  <!-- Separador barra lateral -->
+  <hr class="separadoresbarralateral" />
+  <h3>ARTIGOS RECENTES</h3>
+    <li>
+      <BloggerPreviousItems>
+        <a href="<$BlogItemPermalinkURL$>"><$BlogPreviousItemTitle$></a>
+      </BloggerPreviousItems>
+    </li>
+  <!-- Separador barra lateral -->
+  <hr class="separadoresbarralateral" />
     <h3>ARQUIVO DO BLOG</h3>
     <div class="dropdown">
-      <button onclick="myDropdownArquivo()" class="dropbtn">CLICA PARA MOSTRAR / ESCONDER</button>
+      <button onclick="myDropdownArquivo()" class="dropbtn">Clicar para abrir ou fechar arquivo</button>
       <div id="myDropdown" class="dropdown-content">
         <BloggerArchives>
           <a href="<$BlogArchiveURL$>"><$BlogArchiveName$></a>
@@ -181,7 +208,7 @@
 <!-- Rodapé -->
 <footer>
   <p>
-    <a href="https://ontemesomemoria.pt"><img src="https://i.postimg.cc/pTgR0j1f/ontem-e-so-memoria-logo-rodape-1.webp" loading="lazy" alt="ontem é só memória logo rodapé com lazy load"/></a>
+    <a href="https://ontemesomemoria.pt"><img src="https://i.postimg.cc/pTgR0j1f/ontem-e-so-memoria-logo-rodape-1.webp" loading="lazy" alt="ontem é só memória"/></a>
   </p>
   <p class="paragraforodape1">
     <a href="https://ontemesomemoria.pt/search/label/lifestyle">LIFESTYLE</a>
@@ -197,7 +224,7 @@
     <a href="mailto:ontemesomemoria@gmail.com" target="_blank"><ion-icon name="mail-outline"></ion-icon></a>
   </p>
   <p class="paragraforodape3">
-    <ion-icon name="information-circle-outline"></ion-icon> <a href="https://ontemesomemoria.pt"><b translate="no">Ontem é só Memória</b></a> todos os direitos reservados. | <ion-icon name="logo-html5"></ion-icon> <ion-icon name="logo-css3"></ion-icon> <ion-icon name="logo-javascript"></ion-icon> do tema OESM v1.0.11 a cargo do <a href="https://player1paulo.com" target="_blank"><b><em>player1paulo</em></b></a>.
+    <ion-icon name="information-circle-outline"></ion-icon> <a href="https://ontemesomemoria.pt"><b translate="no">Ontem é só Memória</b></a> todos os direitos reservados. | <ion-icon name="logo-html5"></ion-icon> <ion-icon name="logo-css3"></ion-icon> <ion-icon name="logo-javascript"></ion-icon> do tema OESM v1.0.12 a cargo do <a href="https://player1paulo.com" target="_blank"><b><em>player1paulo</em></b></a>.
   </p>
 </footer>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
