@@ -8,8 +8,8 @@ body {
 ::selection {
   background: #FAAB78;
 }
-/* Smooth Scroll */
-html{
+/* Deslocação suave e barra de deslocação */
+html {
   scroll-behavior: smooth;
   }
 /* Scrollbar personalizada */
@@ -182,6 +182,7 @@ ul.breadcrumb li+li:before {
 ul.breadcrumb li a {
   color: #050300;
   text-decoration: none;
+  font-weight: bold;
 }
 ul.breadcrumb li a:hover {
   color: #050300;
@@ -374,12 +375,13 @@ ul.socials a:hover {
   }
   .post-title {
     font-size: 18px;
+    text-align: center;
   }
   .breadcrumbs {
     display: inline-block;
     font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 16px;
-    font-weight: normal;
+    font-weight: bold;
   }
   article img {
     max-width: 70%;
@@ -508,12 +510,13 @@ ul.socials a:hover {
   }
   .post-title {
     font-size: 20px;
+    text-align: center;
   }
   .breadcrumbs {
     display: inline-block;
     font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 16px;
-    font-weight: normal;
+    font-weight: bold;
   }
   article img {
     max-width: 70%;
@@ -641,12 +644,13 @@ ul.socials a:hover {
   }
   .post-title {
     font-size: 20px;
+    text-align: center;
   }
   .breadcrumbs {
     display: inline-block;
     font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 18px;
-    font-weight: normal;
+    font-weight: bold;
   }
   article img {
     max-width: 70%;
@@ -775,12 +779,13 @@ ul.socials a:hover {
   }
   .post-title {
     font-size: 20px;
+    text-align: center;
   }
   .breadcrumbs {
     display: inline-block;
     font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 18px;
-    font-weight: normal;
+    font-weight: bold;
   }
   article img {
     max-width: 70%;
@@ -792,7 +797,7 @@ ul.socials a:hover {
   }
   aside {
     display: block;
-    float: left;
+    float: right;
     position: static;
     min-width: 27%;
     max-width: 27%;
@@ -848,7 +853,7 @@ ul.socials a:hover {
   }
 }
 /* Dispositivos com resolução máxima até 1919px de largura */
-@media (min-width:1200px) and (max-width:1919px) {
+@media (min-width:1200px) and (max-width:1920px) {
   body {
     margin: 0px 12% 0px 12%;
   }
@@ -911,12 +916,13 @@ ul.socials a:hover {
   }
   .post-title {
     font-size: 20px;
+    text-align: center;
   }
   .breadcrumbs {
     display: inline-block;
     font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 18px;
-    font-weight: normal;
+    font-weight: bold;
   }
   article img {
     max-width: 70%;
@@ -928,7 +934,7 @@ ul.socials a:hover {
   }
   aside {
     display: block;
-    float: left;
+    float: right;
     position: static;
     min-width: 27.23%;
     max-width: 27.23%;
@@ -983,8 +989,8 @@ ul.socials a:hover {
     color: #fffdfa;
   }
 }
-/* Dispositivos com resolução máxima até 1920px de largura */
-@media (min-width: 1920px) {
+/* Dispositivos com resolução minima até 1920px de largura */
+@media (min-width: 1921px) {
   body {
     margin: 0px 14% 0px 14%;
   }
@@ -1047,12 +1053,13 @@ ul.socials a:hover {
   }
   .post-title {
     font-size: 20px;
+    text-align: center;
   }
   .breadcrumbs {
     display: inline-block;
     font-family: "Bricolage Grotesque", Verdana, sans-serif;
     font-size: 18px;
-    font-weight: normal;
+    font-weight: bold;
   }
   article img {
     max-width: 70%;
@@ -1064,7 +1071,7 @@ ul.socials a:hover {
   }
   aside {
     display: block;
-    float: left;
+    float: right;
     position: static;
     min-width: 28.1%;
     max-width: 28.1%;
