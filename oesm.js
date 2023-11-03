@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function() {
 		document.querySelector(".progress--bar").style.width = percentage + "%";
 	}
 });
-
 /* Função Dropdown arquivo mensal */
 function myDropdownArquivo() {
 	document.getElementById("myDropdown").classList.toggle("show");
@@ -32,5 +31,21 @@ function myDropdownArquivo() {
 		  openDropdown.classList.remove('show');
 		}
 	  }
+	}
+  }
+/* Função mostrar mais mostrar menos texto */
+function myFunctionMostrarMais() {
+	var dots = document.getElementById("pontos");
+	var moreText = document.getElementById("mais");
+	var btnText = document.getElementById("myBtn");
+  
+	if (dots.style.display === "none") {
+	  dots.style.display = "inline";
+	  btnText.innerHTML = "Mostrar mais";
+	  moreText.style.display = "none";
+	} else {
+	  dots.style.display = "none";
+	  btnText.innerHTML = "Mostrar menos";
+	  moreText.style.display = "inline";
 	}
   }
