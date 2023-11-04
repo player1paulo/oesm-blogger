@@ -52,7 +52,7 @@ header {
 nav {
   font-family: "Bricolage Grotesque", Verdana, sans-serif;
   text-align: center;
-  line-height: 1.6em;
+  line-height: 1.7em;
   z-index: 3;
 }
 nav a {
@@ -156,7 +156,7 @@ footer {
   font-weight: normal;
   text-align: center;
   color: #050300;
-  line-height: 1.6em;
+  line-height: 1.7em;
 }
 footer a {
   color: #050300;
@@ -170,24 +170,7 @@ footer a:hover {
 .post-title {
   font-family: "Bricolage Grotesque", Verdana, sans-serif;
   text-align: center;
-  line-height: 1.6em;
-}
-.post-title a {
-  padding: 6px 12px 6px 12px;
-  background-color: #FAAB78;
-  border-radius: 6px;
-  border: none;
-  color: #050300;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-.post-title a:hover {
-  background-color: #ffffff;
-  border-radius: 6px;
-  border: none;
-  outline: 2px solid #FAAB78;
-  color: #050300;
-  text-decoration: none;
+  line-height: normal;
 }
 /* Estilos do breadcrumbs nos posts aplicável a todo o tema */
 ul.breadcrumb {
@@ -295,9 +278,9 @@ ul.socials a:hover {
 }
 /* Estilo do separador (linha divisória) entre zona do post e zona de comentários */
 .separadorpostzonacomentarios {
-  width: 50%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  width: 60%;
+  margin-top: 24px;
+  margin-bottom: 24px;
   background-color: #05030050;
   border: none;
   height: 1px;
@@ -313,7 +296,7 @@ ul.socials a:hover {
 }
 /* Estilo do separador entre post do blog */
 .separadoresbarralateral {
-  width: 80%;
+  width: 96%;
   margin-top: 28px;
   margin-bottom: 28px;
   background-color: #05030050;
@@ -372,24 +355,6 @@ ul.socials a:hover {
     font-weight: normal;
     color: #050300;
   }
-  main h2 {
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #050300;
-  }
-  main h3 {
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #050300;
-  }
-  main h4 {
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #050300;
-  }
   article {
     background-color: #fffdfa;
     border-radius: 6px;
@@ -404,6 +369,23 @@ ul.socials a:hover {
   }
   .post-title {
     font-size: 16px;
+  }
+  .post-title a {
+    padding: 6px 12px 6px 12px;
+    background-color: #FAAB78;
+    border-radius: 6px;
+    border: none;
+    color: #050300;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .post-title a:hover {
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: none;
+    outline: 2px solid #FAAB78;
+    color: #050300;
+    text-decoration: none;
   }
   aside {
     display: block;
@@ -420,19 +402,19 @@ ul.socials a:hover {
     font-weight: normal;
     color: #050300;
   }
-  aside h2 {
+  h2 {
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
     color: #050300;
   }
-  aside h3 {
+  h3 {
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
     color: #050300;
   }
-  aside h4 {
+  h4 {
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
@@ -501,24 +483,6 @@ ul.socials a:hover {
     font-weight: normal;
     color: #050300;
   }
-  main h2 {
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #050300;
-  }
-  main h3 {
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #050300;
-  }
-  main h4 {
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #050300;
-  }
   article {
     background-color: #fffdfa;
     border-radius: 6px;
@@ -533,6 +497,23 @@ ul.socials a:hover {
   }
   .post-title {
     font-size: 16px;
+  }
+  .post-title a {
+    padding: 6px 12px 6px 12px;
+    background-color: #FAAB78;
+    border-radius: 6px;
+    border: none;
+    color: #050300;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .post-title a:hover {
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: none;
+    outline: 2px solid #FAAB78;
+    color: #050300;
+    text-decoration: none;
   }
   aside {
     display: block;
@@ -549,19 +530,19 @@ ul.socials a:hover {
     font-weight: normal;
     color: #050300;
   }
-  aside h2 {
+  h2 {
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
     color: #050300;
   }
-  aside h3 {
+  h3 {
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
     color: #050300;
   }
-  aside h4 {
+  h4 {
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
@@ -630,24 +611,6 @@ ul.socials a:hover {
     font-weight: normal;
     color: #050300;
   }
-  main h2 {
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #050300;
-  }
-  main h3 {
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #050300;
-  }
-  main h4 {
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #050300;
-  }
   article {
     background-color: #fffdfa;
     border-radius: 6px;
@@ -662,6 +625,23 @@ ul.socials a:hover {
   }
   .post-title {
     font-size: 18px;
+  }
+  .post-title a {
+    padding: 6px 12px 6px 12px;
+    background-color: #FAAB78;
+    border-radius: 6px;
+    border: none;
+    color: #050300;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .post-title a:hover {
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: none;
+    outline: 2px solid #FAAB78;
+    color: #050300;
+    text-decoration: none;
   }
   aside {
     display: block;
@@ -678,19 +658,19 @@ ul.socials a:hover {
     font-weight: normal;
     color: #050300;
   }
-  aside h2 {
+  h2 {
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
     color: #050300;
   }
-  aside h3 {
+  h3 {
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
     color: #050300;
   }
-  aside h4 {
+  h4 {
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
@@ -759,24 +739,6 @@ ul.socials a:hover {
     font-weight: normal;
     color: #050300;
   }
-  main h2 {
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #050300;
-  }
-  main h3 {
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #050300;
-  }
-  main h4 {
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #050300;
-  }
   article {
     background-color: #fffdfa;
     border-radius: 6px;
@@ -791,6 +753,23 @@ ul.socials a:hover {
   }
   .post-title {
     font-size: 18px;
+  }
+  .post-title a {
+    padding: 6px 12px 6px 12px;
+    background-color: #FAAB78;
+    border-radius: 6px;
+    border: none;
+    color: #050300;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .post-title a:hover {
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: none;
+    outline: 2px solid #FAAB78;
+    color: #050300;
+    text-decoration: none;
   }
   aside {
     display: block;
@@ -807,19 +786,19 @@ ul.socials a:hover {
     font-weight: normal;
     color: #050300;
   }
-  aside h2 {
+  h2 {
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
     color: #050300;
   }
-  aside h3 {
+  h3 {
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
     color: #050300;
   }
-  aside h4 {
+  h4 {
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
@@ -887,24 +866,6 @@ ul.socials a:hover {
     font-weight: normal;
     color: #050300;
   }
-  main h2 {
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #050300;
-  }
-  main h3 {
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #050300;
-  }
-  main h4 {
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #050300;
-  }
   article {
     background-color: #fffdfa;
     border-radius: 6px;
@@ -920,6 +881,23 @@ ul.socials a:hover {
   .post-title {
     font-size: 18px;
   }
+  .post-title a {
+    padding: 6px 12px 6px 12px;
+    background-color: #FAAB78;
+    border-radius: 6px;
+    border: none;
+    color: #050300;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .post-title a:hover {
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: none;
+    outline: 2px solid #FAAB78;
+    color: #050300;
+    text-decoration: none;
+  }
   aside {
     display: block;
     float: none;
@@ -934,19 +912,19 @@ ul.socials a:hover {
     font-weight: normal;
     color: #050300;
   }
-  aside h2 {
+  h2 {
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
     color: #050300;
   }
-  aside h3 {
+  h3 {
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
     color: #050300;
   }
-  aside h4 {
+  h4 {
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
@@ -1018,24 +996,6 @@ ul.socials a:hover {
     font-weight: normal;
     color: #050300;
   }
-  main h2 {
-    font-size: 22px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #050300;
-  }
-  main h3 {
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #050300;
-  }
-  main h4 {
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #050300;
-  }
   article {
     background-color: #fffdfa;
     border-radius: 6px;
@@ -1050,6 +1010,23 @@ ul.socials a:hover {
   }
   .post-title {
     font-size: 18px;
+  }
+  .post-title a {
+    padding: 6px 12px 6px 12px;
+    background-color: #FAAB78;
+    border-radius: 6px;
+    border: none;
+    color: #050300;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .post-title a:hover {
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: none;
+    outline: 2px solid #FAAB78;
+    color: #050300;
+    text-decoration: none;
   }
   aside {
     display: block;
@@ -1067,19 +1044,19 @@ ul.socials a:hover {
     font-weight: normal;
     color: #050300;
   }
-  aside h2 {
+  h2 {
     font-size: 22px;
     font-weight: bold;
     text-transform: uppercase;
     color: #050300;
   }
-  aside h3 {
+  h3 {
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
     color: #050300;
   }
-  aside h4 {
+  h4 {
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
@@ -1151,24 +1128,6 @@ ul.socials a:hover {
     font-weight: normal;
     color: #050300;
   }
-  main h2 {
-    font-size: 22px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #050300;
-  }
-  main h3 {
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #050300;
-  }
-  main h4 {
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #050300;
-  }
   article {
     background-color: #fffdfa;
     border-radius: 6px;
@@ -1183,6 +1142,23 @@ ul.socials a:hover {
   }
   .post-title {
     font-size: 18px;
+  }
+  .post-title a {
+    padding: 6px 12px 6px 12px;
+    background-color: #FAAB78;
+    border-radius: 6px;
+    border: none;
+    color: #050300;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .post-title a:hover {
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: none;
+    outline: 2px solid #FAAB78;
+    color: #050300;
+    text-decoration: none;
   }
   aside {
     display: block;
@@ -1200,19 +1176,19 @@ ul.socials a:hover {
     font-weight: normal;
     color: #050300;
   }
-  aside h2 {
+  h2 {
     font-size: 22px;
     font-weight: bold;
     text-transform: uppercase;
     color: #050300;
   }
-  aside h3 {
+  h3 {
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
     color: #050300;
   }
-  aside h4 {
+  h4 {
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
@@ -1284,24 +1260,6 @@ ul.socials a:hover {
     font-weight: normal;
     color: #050300;
   }
-  main h2 {
-    font-size: 22px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #050300;
-  }
-  main h3 {
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #050300;
-  }
-  main h4 {
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #050300;
-  }
   article {
     background-color: #fffdfa;
     border-radius: 6px;
@@ -1316,6 +1274,23 @@ ul.socials a:hover {
   }
   .post-title {
     font-size: 18px;
+  }
+  .post-title a {
+    padding: 6px 12px 6px 12px;
+    background-color: #FAAB78;
+    border-radius: 6px;
+    border: none;
+    color: #050300;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .post-title a:hover {
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: none;
+    outline: 2px solid #FAAB78;
+    color: #050300;
+    text-decoration: none;
   }
   aside {
     display: block;
@@ -1333,19 +1308,19 @@ ul.socials a:hover {
     font-weight: normal;
     color: #050300;
   }
-  aside h2 {
+  h2 {
     font-size: 22px;
     font-weight: bold;
     text-transform: uppercase;
     color: #050300;
   }
-  aside h3 {
+  h3 {
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
     color: #050300;
   }
-  aside h4 {
+  h4 {
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
@@ -1417,24 +1392,6 @@ ul.socials a:hover {
     font-weight: normal;
     color: #050300;
   }
-  main h2 {
-    font-size: 22px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #050300;
-  }
-  main h3 {
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #050300;
-  }
-  main h4 {
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #050300;
-  }
   article {
     background-color: #fffdfa;
     border-radius: 6px;
@@ -1449,6 +1406,23 @@ ul.socials a:hover {
   }
   .post-title {
     font-size: 18px;
+  }
+  .post-title a {
+    padding: 6px 12px 6px 12px;
+    background-color: #FAAB78;
+    border-radius: 6px;
+    border: none;
+    color: #050300;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .post-title a:hover {
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: none;
+    outline: 2px solid #FAAB78;
+    color: #050300;
+    text-decoration: none;
   }
   aside {
     display: block;
@@ -1466,19 +1440,19 @@ ul.socials a:hover {
     font-weight: normal;
     color: #050300;
   }
-  aside h2 {
+  h2 {
     font-size: 22px;
     font-weight: bold;
     text-transform: uppercase;
     color: #050300;
   }
-  aside h3 {
+  h3 {
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
     color: #050300;
   }
-  aside h4 {
+  h4 {
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
@@ -1550,24 +1524,6 @@ ul.socials a:hover {
     font-weight: normal;
     color: #050300;
   }
-  main h2 {
-    font-size: 22px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #050300;
-  }
-  main h3 {
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #050300;
-  }
-  main h4 {
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #050300;
-  }
   article {
     background-color: #fffdfa;
     border-radius: 6px;
@@ -1582,6 +1538,23 @@ ul.socials a:hover {
   }
   .post-title {
     font-size: 18px;
+  }
+  .post-title a {
+    padding: 6px 12px 6px 12px;
+    background-color: #FAAB78;
+    border-radius: 6px;
+    border: none;
+    color: #050300;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .post-title a:hover {
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: none;
+    outline: 2px solid #FAAB78;
+    color: #050300;
+    text-decoration: none;
   }
   aside {
     display: block;
@@ -1599,19 +1572,19 @@ ul.socials a:hover {
     font-weight: normal;
     color: #050300;
   }
-  aside h2 {
+  h2 {
     font-size: 22px;
     font-weight: bold;
     text-transform: uppercase;
     color: #050300;
   }
-  aside h3 {
+  h3 {
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
     color: #050300;
   }
-  aside h4 {
+  h4 {
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
@@ -1677,28 +1650,10 @@ ul.socials a:hover {
     display: block;
     float: left;
     position: static;
-    min-width: 70%;
-    max-width: 70%;
+    min-width: 69%;
+    max-width: 69%;
     font-size: 18px;
     font-weight: normal;
-    color: #050300;
-  }
-  main h2 {
-    font-size: 22px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #050300;
-  }
-  main h3 {
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #050300;
-  }
-  main h4 {
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
     color: #050300;
   }
   article {
@@ -1716,6 +1671,23 @@ ul.socials a:hover {
   .post-title {
     font-size: 18px;
   }
+  .post-title a {
+    padding: 6px 12px 6px 12px;
+    background-color: #FAAB78;
+    border-radius: 6px;
+    border: none;
+    color: #050300;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .post-title a:hover {
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: none;
+    outline: 2px solid #FAAB78;
+    color: #050300;
+    text-decoration: none;
+  }
   aside {
     display: block;
     float: right;
@@ -1723,7 +1695,7 @@ ul.socials a:hover {
     min-width: 28%;
     max-width: 28%;
     margin: 20px 0px 20px 5px;
-    padding: 1px 10px 20px 10px;
+    padding: 1px 16px 20px 16px;
     border-radius: 6px;
     background-color: #fffdfa;
     border: none;
@@ -1732,24 +1704,19 @@ ul.socials a:hover {
     font-weight: normal;
     color: #050300;
   }
-  aside img {
-    max-width: 80%;
-    height: auto;
-    border-radius: 6px;
-  }
-  aside h2 {
+  h2 {
     font-size: 22px;
     font-weight: bold;
     text-transform: uppercase;
     color: #050300;
   }
-  aside h3 {
+  h3 {
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
     color: #050300;
   }
-  aside h4 {
+  h4 {
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
@@ -1815,28 +1782,10 @@ ul.socials a:hover {
     display: block;
     float: left;
     position: static;
-    min-width: 70%;
-    max-width: 70%;
+    min-width: 69%;
+    max-width: 69%;
     font-size: 18px;
     font-weight: normal;
-    color: #050300;
-  }
-  main h2 {
-    font-size: 22px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #050300;
-  }
-  main h3 {
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #050300;
-  }
-  main h4 {
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
     color: #050300;
   }
   article {
@@ -1854,6 +1803,23 @@ ul.socials a:hover {
   .post-title {
     font-size: 18px;
   }
+  .post-title a {
+    padding: 6px 12px 6px 12px;
+    background-color: #FAAB78;
+    border-radius: 6px;
+    border: none;
+    color: #050300;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .post-title a:hover {
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: none;
+    outline: 2px solid #FAAB78;
+    color: #050300;
+    text-decoration: none;
+  }
   aside {
     display: block;
     float: right;
@@ -1861,7 +1827,7 @@ ul.socials a:hover {
     min-width: 28.1%;
     max-width: 28.1%;
     margin: 20px 0px 20px 5px;
-    padding: 1px 10px 20px 10px;
+    padding: 1px 20px 20px 20px;
     border-radius: 6px;
     background-color: #fffdfa;
     border: none;
@@ -1870,19 +1836,19 @@ ul.socials a:hover {
     font-weight: normal;
     color: #050300;
   }
-  aside h2 {
+  h2 {
     font-size: 22px;
     font-weight: bold;
     text-transform: uppercase;
     color: #050300;
   }
-  aside h3 {
+  h3 {
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
     color: #050300;
   }
-  aside h4 {
+  h4 {
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
