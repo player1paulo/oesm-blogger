@@ -81,7 +81,7 @@ nav .progress--bar {
 	height: 6px;
 	background-color: #fffdfa;
 	width: 0%;
-  transition: width 0.5s ease;
+  transition: width 0.4s ease;
 }
 /* Estilo do HEADER 1 H1 aplicável a todo o tema */
 h1 {
@@ -105,6 +105,12 @@ main a:hover {
 main a:visited {
   color: #050300;
 }
+/* Estilos das imagens no artigo aplicável a todo o tema */
+article img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 6px;
+}
 /* Estilos da cor dos links e links já visitados dentro do aside aplicável a todo o tema */
 aside {
   font-family: "Bricolage Grotesque", Verdana, sans-serif;
@@ -122,11 +128,19 @@ aside a:hover {
 aside a:visited {
   color: #050300;
 }
+/* Estilos das imagens na barra lateral aplicável a todos o tema */
+aside img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 6px;
+}
 /* Estilo da data de publicação aplicável a todo o tema */
 .date-header {
+  font-family: "Bricolage Grotesque", Verdana, sans-serif;
   text-align: center;
   font-style: italic;
   font-size: 18px;
+  text-decoration: underline;
   color: #050300;
 }
 /* Estilos da cor dos links e links já visitados dentro do footer aplicável a todo o tema */
@@ -155,65 +169,66 @@ footer a:hover {
 /* Estilos do título dos posts aplicável a todo o tema */
 .post-title {
   font-family: "Bricolage Grotesque", Verdana, sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
+  text-align: center;
   line-height: 1.6em;
-  text-decoration: underline;
-  color: #050300;
 }
 .post-title a {
   padding: 6px 12px 6px 12px;
-  background-color: #ffffff;
+  background-color: #FAAB78;
   border-radius: 6px;
   border: none;
-  outline: 1px solid #05030040;
-  text-decoration: underline;
+  color: #050300;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 .post-title a:hover {
-  text-decoration: none;
   background-color: #ffffff;
   border-radius: 6px;
   border: none;
   outline: 2px solid #FAAB78;
+  color: #050300;
+  text-decoration: none;
 }
 /* Estilos do breadcrumbs nos posts aplicável a todo o tema */
 ul.breadcrumb {
-  padding: 4px 4px;
+  padding: 0px;
   margin: 0;
   font-family: "Bricolage Grotesque", Verdana, sans-serif;
+  text-align: left;
+  font-size: 17px;
+  color: #050300;
 }
 ul.breadcrumb li {
   display: inline-block;
-  font-size: 16px;
 }
 ul.breadcrumb li+li:before {
-  padding: 4px;
+  padding: 0px;
   margin: 0px;
   color: #050300;
-  content: "\00B7";
 }
 ul.breadcrumb li a {
-  color: #050300;
   text-decoration: none;
   font-weight: normal;
+  color: #050300;
 }
 ul.breadcrumb li a:hover {
-  color: #050300;
-  text-decoration: underline;
+  text-decoration: none;
   font-weight: bold;
+  color: #050300;
 }
+/* Estilos dos botões de partilha nas redes sociais aplicável a todo o tema */
 ul.socials {
   display: inline-block;
-  padding: 4px;
+  padding: 0px;
   margin: 0px;
   font-size: 18px;
 }
 ul.socials a {
-  font-size: 20px;
-  text-decoration: none;
   border-radius: 6px;
-  color: #050300;
   padding: 6px;
+  font-size: 22px;
+  text-decoration: none;
+  color: #050300;
 }
 ul.socials a:hover {
   color: #fffdfa;
@@ -278,16 +293,16 @@ ul.socials a:hover {
 .show {
   display:block;
 }
-/* Estilo do separador entre zona do post e zona de comentários */
+/* Estilo do separador (linha divisória) entre zona do post e zona de comentários */
 .separadorpostzonacomentarios {
   width: 50%;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   background-color: #05030050;
   border: none;
   height: 1px;
 }
-/* Estilo do separador entre post do blog */
+/* Estilo do separador (linha divisória) entre posts (artigos) do blog na página inicial */
 .separadorentreposts {
   width: 100%;
   margin-top: 30px;
@@ -298,9 +313,9 @@ ul.socials a:hover {
 }
 /* Estilo do separador entre post do blog */
 .separadoresbarralateral {
-  width: 100%;
-  margin-top: 26px;
-  margin-bottom: 26px;
+  width: 80%;
+  margin-top: 28px;
+  margin-bottom: 28px;
   background-color: #05030050;
   border: none;
   height: 1px;
@@ -389,21 +404,6 @@ ul.socials a:hover {
   }
   .post-title {
     font-size: 16px;
-    text-align: center;
-  }
-  .breadcrumbs {
-    display: inline-block;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-  }
-  article img {
-    max-width: 70%;
-    height: auto;
-    border-radius: 6px;
-  }
-  .botoesdepartilharedesociais {
-    display: inline-block;
   }
   aside {
     display: block;
@@ -437,11 +437,6 @@ ul.socials a:hover {
     font-weight: bold;
     text-transform: uppercase;
     color: #050300;
-  }
-  aside img {
-    max-width: 60%;
-    height: auto;
-    border-radius: 6px;
   }
   footer {
     position: static;
@@ -538,21 +533,6 @@ ul.socials a:hover {
   }
   .post-title {
     font-size: 16px;
-    text-align: center;
-  }
-  .breadcrumbs {
-    display: inline-block;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-  }
-  article img {
-    max-width: 70%;
-    height: auto;
-    border-radius: 6px;
-  }
-  .botoesdepartilharedesociais {
-    display: inline-block;
   }
   aside {
     display: block;
@@ -586,11 +566,6 @@ ul.socials a:hover {
     font-weight: bold;
     text-transform: uppercase;
     color: #050300;
-  }
-  aside img {
-    max-width: 60%;
-    height: auto;
-    border-radius: 6px;
   }
   footer {
     position: static;
@@ -687,21 +662,6 @@ ul.socials a:hover {
   }
   .post-title {
     font-size: 18px;
-    text-align: center;
-  }
-  .breadcrumbs {
-    display: inline-block;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-  }
-  article img {
-    max-width: 70%;
-    height: auto;
-    border-radius: 6px;
-  }
-  .botoesdepartilharedesociais {
-    display: inline-block;
   }
   aside {
     display: block;
@@ -735,11 +695,6 @@ ul.socials a:hover {
     font-weight: bold;
     text-transform: uppercase;
     color: #050300;
-  }
-  aside img {
-    max-width: 68%;
-    height: auto;
-    border-radius: 6px;
   }
   footer {
     position: static;
@@ -836,21 +791,6 @@ ul.socials a:hover {
   }
   .post-title {
     font-size: 18px;
-    text-align: center;
-  }
-  .breadcrumbs {
-    display: inline-block;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-  }
-  article img {
-    max-width: 70%;
-    height: auto;
-    border-radius: 6px;
-  }
-  .botoesdepartilharedesociais {
-    display: inline-block;
   }
   aside {
     display: block;
@@ -884,11 +824,6 @@ ul.socials a:hover {
     font-weight: bold;
     text-transform: uppercase;
     color: #050300;
-  }
-  aside img {
-    max-width: 68%;
-    height: auto;
-    border-radius: 6px;
   }
   footer {
     position: static;
@@ -984,21 +919,6 @@ ul.socials a:hover {
   }
   .post-title {
     font-size: 18px;
-    text-align: center;
-  }
-  .breadcrumbs {
-    display: inline-block;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-  }
-  article img {
-    max-width: 70%;
-    height: auto;
-    border-radius: 6px;
-  }
-  .botoesdepartilharedesociais {
-    display: inline-block;
   }
   aside {
     display: block;
@@ -1031,11 +951,6 @@ ul.socials a:hover {
     font-weight: bold;
     text-transform: uppercase;
     color: #050300;
-  }
-  aside img {
-    max-width: 60%;
-    height: auto;
-    border-radius: 6px;
   }
   footer {
     position: static;
@@ -1135,21 +1050,6 @@ ul.socials a:hover {
   }
   .post-title {
     font-size: 18px;
-    text-align: center;
-  }
-  .breadcrumbs {
-    display: inline-block;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  article img {
-    max-width: 80%;
-    height: auto;
-    border-radius: 6px;
-  }
-  .botoesdepartilharedesociais {
-    display: inline-block;
   }
   aside {
     display: block;
@@ -1184,11 +1084,6 @@ ul.socials a:hover {
     font-weight: bold;
     text-transform: uppercase;
     color: #050300;
-  }
-  aside img {
-    max-width: 74%;
-    height: auto;
-    border-radius: 6px;
   }
   footer {
     position: static;
@@ -1288,21 +1183,6 @@ ul.socials a:hover {
   }
   .post-title {
     font-size: 18px;
-    text-align: center;
-  }
-  .breadcrumbs {
-    display: inline-block;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  article img {
-    max-width: 70%;
-    height: auto;
-    border-radius: 6px;
-  }
-  .botoesdepartilharedesociais {
-    display: inline-block;
   }
   aside {
     display: block;
@@ -1319,11 +1199,6 @@ ul.socials a:hover {
     font-size: 18px;
     font-weight: normal;
     color: #050300;
-  }
-  aside img {
-    max-width: 70%;
-    height: auto;
-    border-radius: 6px;
   }
   aside h2 {
     font-size: 22px;
@@ -1441,21 +1316,6 @@ ul.socials a:hover {
   }
   .post-title {
     font-size: 18px;
-    text-align: center;
-  }
-  .breadcrumbs {
-    display: inline-block;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  article img {
-    max-width: 70%;
-    height: auto;
-    border-radius: 6px;
-  }
-  .botoesdepartilharedesociais {
-    display: inline-block;
   }
   aside {
     display: block;
@@ -1472,11 +1332,6 @@ ul.socials a:hover {
     font-size: 18px;
     font-weight: normal;
     color: #050300;
-  }
-  aside img {
-    max-width: 70%;
-    height: auto;
-    border-radius: 6px;
   }
   aside h2 {
     font-size: 22px;
@@ -1594,21 +1449,6 @@ ul.socials a:hover {
   }
   .post-title {
     font-size: 18px;
-    text-align: center;
-  }
-  .breadcrumbs {
-    display: inline-block;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  article img {
-    max-width: 70%;
-    height: auto;
-    border-radius: 6px;
-  }
-  .botoesdepartilharedesociais {
-    display: inline-block;
   }
   aside {
     display: block;
@@ -1625,11 +1465,6 @@ ul.socials a:hover {
     font-size: 18px;
     font-weight: normal;
     color: #050300;
-  }
-  aside img {
-    max-width: 70%;
-    height: auto;
-    border-radius: 6px;
   }
   aside h2 {
     font-size: 22px;
@@ -1747,21 +1582,6 @@ ul.socials a:hover {
   }
   .post-title {
     font-size: 18px;
-    text-align: center;
-  }
-  .breadcrumbs {
-    display: inline-block;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  article img {
-    max-width: 70%;
-    height: auto;
-    border-radius: 6px;
-  }
-  .botoesdepartilharedesociais {
-    display: inline-block;
   }
   aside {
     display: block;
@@ -1778,11 +1598,6 @@ ul.socials a:hover {
     font-size: 18px;
     font-weight: normal;
     color: #050300;
-  }
-  aside img {
-    max-width: 70%;
-    height: auto;
-    border-radius: 6px;
   }
   aside h2 {
     font-size: 22px;
@@ -1900,21 +1715,6 @@ ul.socials a:hover {
   }
   .post-title {
     font-size: 18px;
-    text-align: center;
-  }
-  .breadcrumbs {
-    display: inline-block;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  article img {
-    max-width: 70%;
-    height: auto;
-    border-radius: 6px;
-  }
-  .botoesdepartilharedesociais {
-    display: inline-block;
   }
   aside {
     display: block;
@@ -1933,7 +1733,7 @@ ul.socials a:hover {
     color: #050300;
   }
   aside img {
-    max-width: 70%;
+    max-width: 80%;
     height: auto;
     border-radius: 6px;
   }
@@ -2053,21 +1853,6 @@ ul.socials a:hover {
   }
   .post-title {
     font-size: 18px;
-    text-align: center;
-  }
-  .breadcrumbs {
-    display: inline-block;
-    font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  article img {
-    max-width: 70%;
-    height: auto;
-    border-radius: 6px;
-  }
-  .botoesdepartilharedesociais {
-    display: inline-block;
   }
   aside {
     display: block;
@@ -2084,11 +1869,6 @@ ul.socials a:hover {
     font-size: 18px;
     font-weight: normal;
     color: #050300;
-  }
-  aside img {
-    max-width: 70%;
-    height: auto;
-    border-radius: 6px;
   }
   aside h2 {
     font-size: 22px;
