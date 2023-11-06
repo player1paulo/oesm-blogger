@@ -69,9 +69,9 @@
       </BlogItemTitle>
     <!-- Breadcrumb de início no artigo -->
       <ItemPage>
-        <ul class="breadcrumb">
-          <li>&#10096; <a href="<$BlogURL$>">Regressar à página inicial</a></li>
-        </ul>
+        <p class="breadcrumbs">
+          &#10096; <a href="<$BlogURL$>">Regressar à página inicial</a>
+        </p>
       </ItemPage>
     <!-- Fim do Breadcrumb no cabeçalho do artigo -->
         <p>
@@ -86,26 +86,42 @@
         </BlogItemBacklinksEnabled>
           <$BlogItemControl$>
         </p>
+        <p class="partilhanasredessociais">
+          Partilha o artigo:
+          <a href="https://www.facebook.com/sharer/sharer.php?u=<$BlogItemPermalinkUrl$>" target="_blank"></a>
+          <a href="https://twitter.com/intent/tweet?url=<$BlogItemPermalinkUrl$>" target="_blank"></a>
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url=<$BlogItemPermalinkUrl$>" target="_blank"></a>
+          <a href="https://pinterest.com/pin/create/button/?url=<$BlogItemPermalinkUrl$>" target="_blank"></a>
+          <a href="https://t.me/share/url?url=<$BlogItemPermalinkUrl$>"></a>
+          <a href="https://api.whatsapp.com/send?text=<$BlogItemPermalinkUrl$>" data-action="share/whatsapp/share"></a>
+        </p>
       <MainPage>
-        <p class="linkcomentario">
-        <a href="<$BlogItemCommentCreate$>"<$BlogItemCommentFormOnclick$>>&#9998; comenta o artigo</a>
+        <p class="botaohomepagecomentarartigo">
+        <a href="<$BlogItemCommentCreate$>"<$BlogItemCommentFormOnclick$>>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="iconcomentario" viewBox="0 0 16 16">
+            <path d="M2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm6 3.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+          </svg>
+           comenta o artigo</a>
         </p>
       </MainPage>
-      Partilha este artigo:
-      <ul class="socials">
-        <a href="https://www.facebook.com/sharer/sharer.php?u=<$BlogItemPermalinkUrl$>" class="fa-brands fa-square-facebook" target="_blank"></a>
-        <a href="https://twitter.com/intent/tweet?url=<$BlogItemPermalinkUrl$>" class="fa fa-twitter" target="_blank"></a>
-        <a href="https://www.linkedin.com/shareArticle?mini=true&url=<$BlogItemPermalinkUrl$>" class="fa-brands fa-linkedin" target="_blank"></a>
-        <a href="https://pinterest.com/pin/create/button/?url=<$BlogItemPermalinkUrl$>" class="fa-brands fa-pinterest" target="_blank"></a>
-        <a href="https://t.me/share/url?url=<$BlogItemPermalinkUrl$>" class="fa-brands fa-telegram"></a>
-        <a href="https://api.whatsapp.com/send?text=<$BlogItemPermalinkUrl$>" data-action="share/whatsapp/share" class="fa-brands fa-whatsapp"></a>
-      </ul>
+      <p class="partilhanasredessociais">
+        Partilha o artigo:
+        <a href="https://www.facebook.com/sharer/sharer.php?u=<$BlogItemPermalinkUrl$>" target="_blank"></a>
+        <a href="https://twitter.com/intent/tweet?url=<$BlogItemPermalinkUrl$>" target="_blank"></a>
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=<$BlogItemPermalinkUrl$>" target="_blank"></a>
+        <a href="https://pinterest.com/pin/create/button/?url=<$BlogItemPermalinkUrl$>" target="_blank"></a>
+        <a href="https://t.me/share/url?url=<$BlogItemPermalinkUrl$>"></a>
+        <a href="https://api.whatsapp.com/send?text=<$BlogItemPermalinkUrl$>" data-action="share/whatsapp/share"></a>
+      </p>
     <!-- Fim do artigo -->
     <!-- Início dos comentários -->
    <ItemPage>
     <!-- Separador entre os posts e zona de comentários -->
     <hr class="separadorpostzonacomentarios">
-    <BlogItemCommentsEnabled><a name="comments"></a>
+      <BlogItemCommentsEnabled><a name="comments"></a>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="iconcomentario" viewBox="0 0 16 16">
+          <path d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2ZM8 3.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+        </svg>
       <h4><$BlogItemCommentCount$> Comentário(s):</h4>
       <dl id="comments-block">
       <BlogItemComments>
@@ -144,9 +160,9 @@
       </p>
       </BlogItemBacklinksEnabled>
   <!-- Breadcrumb de rodapé -->
-    <ul class="breadcrumb">
-      <li>&#10096; <a href="<$BlogURL$>">Regressar à página inicial</a></li>
-    </ul>
+    <p class="breadcrumbs">
+      &#10096; <a href="<$BlogURL$>">Regressar à página inicial</a>
+    </p>
   <!-- Fim do Breadcrumb de rodapé do artigo -->
   </ItemPage>
   <!-- Fim dos comentários -->

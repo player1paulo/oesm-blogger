@@ -1,7 +1,5 @@
 /* Estilos base gerais para todos os breakpoints do blog ontem é só memória */
 @import url("https://fonts.googleapis.com/css?family=Bricolage+Grotesque");
-/* Bootstrap Icons do Tema (aplicável em todo o tema) */
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
 /* Deslocação suave e barra de deslocação */
 html {
   scroll-behavior: smooth;
@@ -170,51 +168,6 @@ footer a:hover {
   text-align: center;
   line-height: normal;
 }
-/* Estilos do breadcrumbs nos posts aplicável a todo o tema */
-ul.breadcrumb {
-  padding: 0px;
-  margin: 0;
-  font-family: "Bricolage Grotesque", Verdana, sans-serif;
-  text-align: left;
-  font-size: 17px;
-  color: #050300;
-}
-ul.breadcrumb li {
-  display: inline-block;
-}
-ul.breadcrumb li+li:before {
-  padding: 0px;
-  margin: 0px;
-  color: #050300;
-}
-ul.breadcrumb li a {
-  text-decoration: none;
-  font-weight: normal;
-  color: #050300;
-}
-ul.breadcrumb li a:hover {
-  text-decoration: none;
-  font-weight: bold;
-  color: #050300;
-}
-/* Estilos dos botões de partilha nas redes sociais aplicável a todo o tema */
-ul.socials {
-  display: inline-block;
-  padding: 0px;
-  margin: 0px;
-  font-size: 18px;
-}
-ul.socials a {
-  border-radius: 6px;
-  padding: 6px;
-  font-size: 22px;
-  text-decoration: none;
-  color: #050300;
-}
-ul.socials a:hover {
-  color: #fffdfa;
-  background-color: #050300;
-}
 /* Caixa de Pesquisa na barra lateral */
 .searchboxaside {
   display: block;
@@ -301,27 +254,6 @@ ul.socials a:hover {
   border: none;
   height: 1px;
 }
-/* Estilo do texto do botão para comentar o artigo */
-.linkcomentario {
-  text-decoration: none;
-  font-weight: normal;
-}
-.linkcomentario a {
-  padding: 4px 14px 4px 14px;
-  border: none;
-  border-radius: 6px;
-  outline: 1px solid #05030040;
-  background-color: #ffffff;
-  text-decoration: none;
-}
-.linkcomentario a:hover {
-  border: none;
-  border-radius: 6px;
-  outline: 2px solid #FAAB78;
-  background-color: #ffffff;
-  color: #050300;
-  text-decoration: none;
-}
 /* Dispositivos com resolução máxima até 414px de largura */
 @media (max-width:414px) {
   body {
@@ -387,9 +319,39 @@ ul.socials a:hover {
   }
   .breadcrumbs {
     display: inline-block;
+    font-size: 18px;
+  }
+  .breadcrumbs a {
+
+  }
+  .breadcrumbs a:hover {
+
   }
   .partilhanasredessociais {
     display: inline-block;
+    font-size: 18px;
+  }
+  .partilhanasredessociais a {
+
+  }
+  .partilhanasredessociais a:hover {
+
+  }
+  .botaohomepagecomentarartigo {
+    display:inline-block;
+    font-size: 18px;
+  }
+  .botaohomepagecomentarartigo a {
+    text-decoration: none;
+  }
+  .botaohomepagecomentarartigo a:hover {
+    text-decoration: none;
+  }
+  .iconcomentario {
+    display: inline-block;
+    width: 30px;
+    height: auto;
+    color: #050300;
   }
   aside {
     display: block;
@@ -542,9 +504,39 @@ ul.socials a:hover {
   }
   .breadcrumbs {
     display: inline-block;
+    font-size: 18px;
+  }
+  .breadcrumbs a {
+
+  }
+  .breadcrumbs a:hover {
+    
   }
   .partilhanasredessociais {
     display: inline-block;
+    font-size: 18px;
+  }
+  .partilhanasredessociais a {
+    
+  }
+  .partilhanasredessociais a:hover {
+
+  }
+  .botaohomepagecomentarartigo {
+    display:inline-block;
+    font-size: 18px;
+  }
+  .botaohomepagecomentarartigo a {
+    text-decoration: none;
+  }
+  .botaohomepagecomentarartigo a:hover {
+    text-decoration: none;
+  }
+  .iconcomentario {
+    display: inline-block;
+    width: 30px;
+    height: auto;
+    color: #050300;
   }
   aside {
     display: block;
@@ -697,9 +689,39 @@ ul.socials a:hover {
   }
   .breadcrumbs {
     display: inline-block;
+    font-size: 18px;
+  }
+  .breadcrumbs a {
+
+  }
+  .breadcrumbs a:hover {
+    
   }
   .partilhanasredessociais {
     display: inline-block;
+    font-size: 18px;
+  }
+  .partilhanasredessociais a {
+    
+  }
+  .partilhanasredessociais a:hover {
+
+  }
+  .botaohomepagecomentarartigo {
+    display:inline-block;
+    font-size: 18px;
+  }
+  .botaohomepagecomentarartigo a {
+    text-decoration: none;
+  }
+  .botaohomepagecomentarartigo a:hover {
+    text-decoration: none;
+  }
+  .iconcomentario {
+    display: inline-block;
+    width: 30px;
+    height: auto;
+    color: #050300;
   }
   aside {
     display: block;
@@ -852,9 +874,39 @@ ul.socials a:hover {
   }
   .breadcrumbs {
     display: inline-block;
+    font-size: 18px;
+  }
+  .breadcrumbs a {
+
+  }
+  .breadcrumbs a:hover {
+    
   }
   .partilhanasredessociais {
     display: inline-block;
+    font-size: 18px;
+  }
+  .partilhanasredessociais a {
+    
+  }
+  .partilhanasredessociais a:hover {
+
+  }
+  .botaohomepagecomentarartigo {
+    display:inline-block;
+    font-size: 18px;
+  }
+  .botaohomepagecomentarartigo a {
+    text-decoration: none;
+  }
+  .botaohomepagecomentarartigo a:hover {
+    text-decoration: none;
+  }
+  .iconcomentario {
+    display: inline-block;
+    width: 30px;
+    height: auto;
+    color: #050300;
   }
   aside {
     display: block;
@@ -1006,9 +1058,39 @@ ul.socials a:hover {
   }
   .breadcrumbs {
     display: inline-block;
+    font-size: 18px;
+  }
+  .breadcrumbs a {
+
+  }
+  .breadcrumbs a:hover {
+    
   }
   .partilhanasredessociais {
     display: inline-block;
+    font-size: 18px;
+  }
+  .partilhanasredessociais a {
+    
+  }
+  .partilhanasredessociais a:hover {
+
+  }
+  .botaohomepagecomentarartigo {
+    display:inline-block;
+    font-size: 18px;
+  }
+  .botaohomepagecomentarartigo a {
+    text-decoration: none;
+  }
+  .botaohomepagecomentarartigo a:hover {
+    text-decoration: none;
+  }
+  .iconcomentario {
+    display: inline-block;
+    width: 30px;
+    height: auto;
+    color: #050300;
   }
   aside {
     display: block;
@@ -1163,9 +1245,39 @@ ul.socials a:hover {
   }
   .breadcrumbs {
     display: inline-block;
+    font-size: 18px;
+  }
+  .breadcrumbs a {
+
+  }
+  .breadcrumbs a:hover {
+    
   }
   .partilhanasredessociais {
     display: inline-block;
+    font-size: 18px;
+  }
+  .partilhanasredessociais a {
+    
+  }
+  .partilhanasredessociais a:hover {
+
+  }
+  .botaohomepagecomentarartigo {
+    display:inline-block;
+    font-size: 18px;
+  }
+  .botaohomepagecomentarartigo a {
+    text-decoration: none;
+  }
+  .botaohomepagecomentarartigo a:hover {
+    text-decoration: none;
+  }
+  .iconcomentario {
+    display: inline-block;
+    width: 30px;
+    height: auto;
+    color: #050300;
   }
   aside {
     display: block;
@@ -1322,9 +1434,39 @@ ul.socials a:hover {
   }
   .breadcrumbs {
     display: inline-block;
+    font-size: 18px;
+  }
+  .breadcrumbs a {
+
+  }
+  .breadcrumbs a:hover {
+    
   }
   .partilhanasredessociais {
     display: inline-block;
+    font-size: 18px;
+  }
+  .partilhanasredessociais a {
+    
+  }
+  .partilhanasredessociais a:hover {
+
+  }
+  .botaohomepagecomentarartigo {
+    display:inline-block;
+    font-size: 18px;
+  }
+  .botaohomepagecomentarartigo a {
+    text-decoration: none;
+  }
+  .botaohomepagecomentarartigo a:hover {
+    text-decoration: none;
+  }
+  .iconcomentario {
+    display: inline-block;
+    width: 30px;
+    height: auto;
+    color: #050300;
   }
   aside {
     display: block;
@@ -1481,9 +1623,39 @@ ul.socials a:hover {
   }
   .breadcrumbs {
     display: inline-block;
+    font-size: 18px;
+  }
+  .breadcrumbs a {
+
+  }
+  .breadcrumbs a:hover {
+    
   }
   .partilhanasredessociais {
     display: inline-block;
+    font-size: 18px;
+  }
+  .partilhanasredessociais a {
+    
+  }
+  .partilhanasredessociais a:hover {
+
+  }
+  .botaohomepagecomentarartigo {
+    display:inline-block;
+    font-size: 18px;
+  }
+  .botaohomepagecomentarartigo a {
+    text-decoration: none;
+  }
+  .botaohomepagecomentarartigo a:hover {
+    text-decoration: none;
+  }
+  .iconcomentario {
+    display: inline-block;
+    width: 30px;
+    height: auto;
+    color: #050300;
   }
   aside {
     display: block;
@@ -1640,9 +1812,39 @@ ul.socials a:hover {
   }
   .breadcrumbs {
     display: inline-block;
+    font-size: 18px;
+  }
+  .breadcrumbs a {
+
+  }
+  .breadcrumbs a:hover {
+    
   }
   .partilhanasredessociais {
     display: inline-block;
+    font-size: 18px;
+  }
+  .partilhanasredessociais a {
+    
+  }
+  .partilhanasredessociais a:hover {
+
+  }
+  .botaohomepagecomentarartigo {
+    display:inline-block;
+    font-size: 18px;
+  }
+  .botaohomepagecomentarartigo a {
+    text-decoration: none;
+  }
+  .botaohomepagecomentarartigo a:hover {
+    text-decoration: none;
+  }
+  .iconcomentario {
+    display: inline-block;
+    width: 30px;
+    height: auto;
+    color: #050300;
   }
   aside {
     display: block;
@@ -1799,9 +2001,39 @@ ul.socials a:hover {
   }
   .breadcrumbs {
     display: inline-block;
+    font-size: 18px;
+  }
+  .breadcrumbs a {
+
+  }
+  .breadcrumbs a:hover {
+    
   }
   .partilhanasredessociais {
     display: inline-block;
+    font-size: 18px;
+  }
+  .partilhanasredessociais a {
+    
+  }
+  .partilhanasredessociais a:hover {
+
+  }
+  .botaohomepagecomentarartigo {
+    display:inline-block;
+    font-size: 18px;
+  }
+  .botaohomepagecomentarartigo a {
+    text-decoration: none;
+  }
+  .botaohomepagecomentarartigo a:hover {
+    text-decoration: none;
+  }
+  .iconcomentario {
+    display: inline-block;
+    width: 30px;
+    height: auto;
+    color: #050300;
   }
   aside {
     display: block;
@@ -1958,9 +2190,39 @@ ul.socials a:hover {
   }
   .breadcrumbs {
     display: inline-block;
+    font-size: 18px;
+  }
+  .breadcrumbs a {
+
+  }
+  .breadcrumbs a:hover {
+    
   }
   .partilhanasredessociais {
     display: inline-block;
+    font-size: 18px;
+  }
+  .partilhanasredessociais a {
+    
+  }
+  .partilhanasredessociais a:hover {
+
+  }
+  .botaohomepagecomentarartigo {
+    display:inline-block;
+    font-size: 18px;
+  }
+  .botaohomepagecomentarartigo a {
+    text-decoration: none;
+  }
+  .botaohomepagecomentarartigo a:hover {
+    text-decoration: none;
+  }
+  .iconcomentario {
+    display: inline-block;
+    width: 30px;
+    height: auto;
+    color: #050300;
   }
   aside {
     display: block;
@@ -2117,9 +2379,39 @@ ul.socials a:hover {
   }
   .breadcrumbs {
     display: inline-block;
+    font-size: 18px;
+  }
+  .breadcrumbs a {
+
+  }
+  .breadcrumbs a:hover {
+    
   }
   .partilhanasredessociais {
     display: inline-block;
+    font-size: 18px;
+  }
+  .partilhanasredessociais a {
+    
+  }
+  .partilhanasredessociais a:hover {
+
+  }
+  .botaohomepagecomentarartigo {
+    display:inline-block;
+    font-size: 18px;
+  }
+  .botaohomepagecomentarartigo a {
+    text-decoration: none;
+  }
+  .botaohomepagecomentarartigo a:hover {
+    text-decoration: none;
+  }
+  .iconcomentario {
+    display: inline-block;
+    width: 30px;
+    height: auto;
+    color: #050300;
   }
   aside {
     display: block;
