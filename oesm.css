@@ -8,9 +8,20 @@ html {
 body {
   background-color: #fcedd4;
 }
-/* Cor de fundo da seleção de texto */
+/* Cor de fundo da seleção de texto aplicável a todo o tema */
 ::selection {
   background: #FAAB78;
+}
+::-moz-selection {
+  background: #FAAB78;
+}
+footer ::selection {
+  color: #050300;
+  background: #fffdfa;
+}
+footer ::-moz-selection {
+  color: #050300;
+  background: #fffdfa;
 }
 /* Estilo da função Mostrar mais e Mostrar menos */
 #mais {
@@ -139,17 +150,17 @@ input.caixa-de-pesquisa {
   position: static;
   min-width: 92%;
   margin: 20px 0px 20px 0px;
-  padding: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 14px;
   border: none;
   border-radius: 6px;
   background-color: #ffffff;
   outline: 1px solid rgba(250, 171, 120, .4);
   font-family: "Bricolage Grotesque", Verdana, sans-serif;
-  font-size: 16px;
 }
 input.caixa-de-pesquisa:focus {
   outline: 2px solid #FAAB78;
   background-color: #ffffff;
+  color: #050300;
 }
 /* Estilos da cor dos links e links já visitados dentro do footer aplicável a todo o tema */
 footer {
@@ -326,14 +337,14 @@ footer a:hover {
   .breadcrumbs a:active {
 
   }
-  .partilhanasredessociais {
+  .partilha-nas-redes-sociais {
     display: inline-block;
     font-size: 18px;
   }
-  .partilhanasredessociais a {
+  .partilha-nas-redes-sociais a {
 
   }
-  .partilhanasredessociais a:hover {
+  .partilha-nas-redes-sociais a:hover {
 
   }
   .botaohomepagecomentarartigo {
@@ -366,6 +377,9 @@ footer a:hover {
     font-size: 16px;
     font-weight: normal;
     color: #050300;
+  }
+  input.caixa-de-pesquisa {
+    font-size: 18px;
   }
   .redes-sociais-e-contacto-lateral-icon {
     display: inline-block;
@@ -404,7 +418,7 @@ footer a:hover {
     font-size: 16px;
   }
   .conteudo-blog-rodape:hover {
-
+    color: ;
   }
   .conteudo-blog-rodape:visited {
     color: #050300;
@@ -517,14 +531,14 @@ footer a:hover {
   .breadcrumbs a:active {
     
   }
-  .partilhanasredessociais {
+  .partilha-nas-redes-sociais {
     display: inline-block;
     font-size: 18px;
   }
-  .partilhanasredessociais a {
+  .partilha-nas-redes-sociais a {
     
   }
-  .partilhanasredessociais a:hover {
+  .partilha-nas-redes-sociais a:hover {
 
   }
   .botaohomepagecomentarartigo {
@@ -557,6 +571,9 @@ footer a:hover {
     font-size: 16px;
     font-weight: normal;
     color: #050300;
+  }
+  input.caixa-de-pesquisa {
+    font-size: 18px;
   }
   .redes-sociais-e-contacto-lateral-icon {
     display: inline-block;
@@ -595,7 +612,7 @@ footer a:hover {
     font-size: 16px;
   }
   .conteudo-blog-rodape:hover {
-
+    color: ;
   }
   .conteudo-blog-rodape:visited {
     color: #050300;
@@ -708,14 +725,14 @@ footer a:hover {
   .breadcrumbs a:active {
     
   }
-  .partilhanasredessociais {
+  .partilha-nas-redes-sociais {
     display: inline-block;
     font-size: 18px;
   }
-  .partilhanasredessociais a {
+  .partilha-nas-redes-sociais a {
     
   }
-  .partilhanasredessociais a:hover {
+  .partilha-nas-redes-sociais a:hover {
 
   }
   .botaohomepagecomentarartigo {
@@ -748,6 +765,9 @@ footer a:hover {
     font-size: 16px;
     font-weight: normal;
     color: #050300;
+  }
+  input.caixa-de-pesquisa {
+    font-size: 18px;
   }
   .redes-sociais-e-contacto-lateral-icon {
     display: inline-block;
@@ -786,7 +806,7 @@ footer a:hover {
     font-size: 16px;
   }
   .conteudo-blog-rodape:hover {
-
+    color: ;
   }
   .conteudo-blog-rodape:visited {
     color: #050300;
@@ -899,14 +919,14 @@ footer a:hover {
   .breadcrumbs a:active {
     
   }
-  .partilhanasredessociais {
+  .partilha-nas-redes-sociais {
     display: inline-block;
     font-size: 18px;
   }
-  .partilhanasredessociais a {
+  .partilha-nas-redes-sociais a {
     
   }
-  .partilhanasredessociais a:hover {
+  .partilha-nas-redes-sociais a:hover {
 
   }
   .botaohomepagecomentarartigo {
@@ -939,6 +959,9 @@ footer a:hover {
     font-size: 16px;
     font-weight: normal;
     color: #050300;
+  }
+  input.caixa-de-pesquisa {
+    font-size: 18px;
   }
   .redes-sociais-e-contacto-lateral-icon {
     display: inline-block;
@@ -977,7 +1000,7 @@ footer a:hover {
     font-size: 16px;
   }
   .conteudo-blog-rodape:hover {
-
+    color: ;
   }
   .conteudo-blog-rodape:visited {
     color: #050300;
@@ -1089,14 +1112,14 @@ footer a:hover {
   .breadcrumbs a:active {
     
   }
-  .partilhanasredessociais {
+  .partilha-nas-redes-sociais {
     display: inline-block;
     font-size: 18px;
   }
-  .partilhanasredessociais a {
+  .partilha-nas-redes-sociais a {
     
   }
-  .partilhanasredessociais a:hover {
+  .partilha-nas-redes-sociais a:hover {
 
   }
   .botaohomepagecomentarartigo {
@@ -1128,6 +1151,9 @@ footer a:hover {
     font-size: 16px;
     font-weight: normal;
     color: #050300;
+  }
+  input.caixa-de-pesquisa {
+    font-size: 18px;
   }
   .redes-sociais-e-contacto-lateral-icon {
     display: inline-block;
@@ -1166,7 +1192,7 @@ footer a:hover {
     font-size: 16px;
   }
   .conteudo-blog-rodape:hover {
-
+    color: ;
   }
   .conteudo-blog-rodape:visited {
     color: #050300;
@@ -1282,14 +1308,14 @@ footer a:hover {
   .breadcrumbs a:active {
     
   }
-  .partilhanasredessociais {
+  .partilha-nas-redes-sociais {
     display: inline-block;
     font-size: 18px;
   }
-  .partilhanasredessociais a {
+  .partilha-nas-redes-sociais a {
     
   }
-  .partilhanasredessociais a:hover {
+  .partilha-nas-redes-sociais a:hover {
 
   }
   .botaohomepagecomentarartigo {
@@ -1323,6 +1349,9 @@ footer a:hover {
     font-size: 16px;
     font-weight: normal;
     color: #050300;
+  }
+  input.caixa-de-pesquisa {
+    font-size: 18px;
   }
   .redes-sociais-e-contacto-lateral-icon {
     display: inline-block;
@@ -1361,7 +1390,7 @@ footer a:hover {
     font-size: 16px;
   }
   .conteudo-blog-rodape:hover {
-
+    color: ;
   }
   .conteudo-blog-rodape:visited {
     color: #050300;
@@ -1477,14 +1506,14 @@ footer a:hover {
   .breadcrumbs a:active {
     
   }
-  .partilhanasredessociais {
+  .partilha-nas-redes-sociais {
     display: inline-block;
     font-size: 18px;
   }
-  .partilhanasredessociais a {
+  .partilha-nas-redes-sociais a {
     
   }
-  .partilhanasredessociais a:hover {
+  .partilha-nas-redes-sociais a:hover {
 
   }
   .botaohomepagecomentarartigo {
@@ -1518,6 +1547,9 @@ footer a:hover {
     font-size: 18px;
     font-weight: normal;
     color: #050300;
+  }
+  input.caixa-de-pesquisa {
+    font-size: 18px;
   }
   .redes-sociais-e-contacto-lateral-icon {
     display: inline-block;
@@ -1556,7 +1588,7 @@ footer a:hover {
     font-size: 18px;
   }
   .conteudo-blog-rodape:hover {
-
+    color: ;
   }
   .conteudo-blog-rodape:visited {
     color: #050300;
@@ -1672,14 +1704,14 @@ footer a:hover {
   .breadcrumbs a:active {
     
   }
-  .partilhanasredessociais {
+  .partilha-nas-redes-sociais {
     display: inline-block;
     font-size: 18px;
   }
-  .partilhanasredessociais a {
+  .partilha-nas-redes-sociais a {
     
   }
-  .partilhanasredessociais a:hover {
+  .partilha-nas-redes-sociais a:hover {
 
   }
   .botaohomepagecomentarartigo {
@@ -1713,6 +1745,9 @@ footer a:hover {
     font-size: 18px;
     font-weight: normal;
     color: #050300;
+  }
+  input.caixa-de-pesquisa {
+    font-size: 18px;
   }
   .redes-sociais-e-contacto-lateral-icon {
     display: inline-block;
@@ -1751,7 +1786,7 @@ footer a:hover {
     font-size: 18px;
   }
   .conteudo-blog-rodape:hover {
-
+    color: ;
   }
   .conteudo-blog-rodape:visited {
     color: #050300;
@@ -1867,14 +1902,14 @@ footer a:hover {
   .breadcrumbs a:active {
     
   }
-  .partilhanasredessociais {
+  .partilha-nas-redes-sociais {
     display: inline-block;
     font-size: 18px;
   }
-  .partilhanasredessociais a {
+  .partilha-nas-redes-sociais a {
     
   }
-  .partilhanasredessociais a:hover {
+  .partilha-nas-redes-sociais a:hover {
 
   }
   .botaohomepagecomentarartigo {
@@ -1908,6 +1943,9 @@ footer a:hover {
     font-size: 18px;
     font-weight: normal;
     color: #050300;
+  }
+  input.caixa-de-pesquisa {
+    font-size: 18px;
   }
   .redes-sociais-e-contacto-lateral-icon {
     display: inline-block;
@@ -1946,7 +1984,7 @@ footer a:hover {
     font-size: 18px;
   }
   .conteudo-blog-rodape:hover {
-
+    color: ;
   }
   .conteudo-blog-rodape:visited {
     color: #050300;
@@ -2062,14 +2100,14 @@ footer a:hover {
   .breadcrumbs a:active {
     
   }
-  .partilhanasredessociais {
+  .partilha-nas-redes-sociais {
     display: inline-block;
     font-size: 18px;
   }
-  .partilhanasredessociais a {
+  .partilha-nas-redes-sociais a {
     
   }
-  .partilhanasredessociais a:hover {
+  .partilha-nas-redes-sociais a:hover {
 
   }
   .botaohomepagecomentarartigo {
@@ -2103,6 +2141,9 @@ footer a:hover {
     font-size: 18px;
     font-weight: normal;
     color: #050300;
+  }
+  input.caixa-de-pesquisa {
+    font-size: 18px;
   }
   .redes-sociais-e-contacto-lateral-icon {
     display: inline-block;
@@ -2141,7 +2182,7 @@ footer a:hover {
     font-size: 18px;
   }
   .conteudo-blog-rodape:hover {
-
+    color: ;
   }
   .conteudo-blog-rodape:visited {
     color: #050300;
@@ -2257,14 +2298,14 @@ footer a:hover {
   .breadcrumbs a:active {
     
   }
-  .partilhanasredessociais {
+  .partilha-nas-redes-sociais {
     display: inline-block;
     font-size: 18px;
   }
-  .partilhanasredessociais a {
+  .partilha-nas-redes-sociais a {
     
   }
-  .partilhanasredessociais a:hover {
+  .partilha-nas-redes-sociais a:hover {
 
   }
   .botaohomepagecomentarartigo {
@@ -2298,6 +2339,9 @@ footer a:hover {
     font-size: 18px;
     font-weight: normal;
     color: #050300;
+  }
+  input.caixa-de-pesquisa {
+    font-size: 18px;
   }
   .redes-sociais-e-contacto-lateral-icon {
     display: inline-block;
@@ -2336,7 +2380,7 @@ footer a:hover {
     font-size: 18px;
   }
   .conteudo-blog-rodape:hover {
-
+    color: ;
   }
   .conteudo-blog-rodape:visited {
     color: #050300;
@@ -2452,14 +2496,14 @@ footer a:hover {
   .breadcrumbs a:active {
     
   }
-  .partilhanasredessociais {
+  .partilha-nas-redes-sociais {
     display: inline-block;
     font-size: 18px;
   }
-  .partilhanasredessociais a {
+  .partilha-nas-redes-sociais a {
     
   }
-  .partilhanasredessociais a:hover {
+  .partilha-nas-redes-sociais a:hover {
 
   }
   .botaohomepagecomentarartigo {
@@ -2493,6 +2537,9 @@ footer a:hover {
     font-size: 18px;
     font-weight: normal;
     color: #050300;
+  }
+  input.caixa-de-pesquisa {
+    font-size: 18px;
   }
   .redes-sociais-e-contacto-lateral-icon {
     display: inline-block;
@@ -2531,7 +2578,7 @@ footer a:hover {
     font-size: 18px;
   }
   .conteudo-blog-rodape:hover {
-
+    color: ;
   }
   .conteudo-blog-rodape:visited {
     color: #050300;
