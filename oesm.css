@@ -1,12 +1,21 @@
 /* Estilos base gerais para todos os breakpoints do blog ontem é só memória */
 @import url("https://fonts.googleapis.com/css?family=Bricolage+Grotesque");
-/* Deslocação suave e barra de deslocação */
+/* Deslocação suave */
 html {
   scroll-behavior: smooth;
   }
 /* Cor de fundo do tema */
 body {
   background-color: #fcedd4;
+}
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #fffdfa9a
+}
+::-webkit-scrollbar-thumb {
+  background-color: #FAAB78;
+  border-radius: 14px;
 }
 /* Cor de fundo da seleção de texto aplicável a todo o tema */
 ::selection {
@@ -26,15 +35,6 @@ footer ::-moz-selection {
 /* Estilo da função Mostrar mais e Mostrar menos */
 #mais {
   display: none;
-}
-/* Scrollbar personalizada */
-::-webkit-scrollbar {
-  width: 12px;
-  background-color: #fffdfa9a
-}
-::-webkit-scrollbar-thumb {
-  background-color: #FAAB78;
-  border-radius: 14px;
 }
 /* Logotipo Responsivo no cabeçalho aplicável a todo o tema */
 .responsivetoplogo {
@@ -117,6 +117,7 @@ main a:visited {
 }
 /* Estilos das imagens no artigo aplicável a todo o tema */
 article img {
+  min-width: 80%;
   max-width: 80%;
   height: auto;
   border-radius: 6px;
@@ -140,6 +141,7 @@ aside a:visited {
 }
 /* Estilos das imagens na barra lateral aplicável a todos o tema */
 aside img {
+  min-width: 80%;
   max-width: 80%;
   height: auto;
   border-radius: 6px;
@@ -148,7 +150,8 @@ aside img {
 input.caixa-de-pesquisa {
   display: block;
   position: static;
-  min-width: 92%;
+  min-width: 100%;
+  max-width: 100%;
   margin: 20px 0px 20px 0px;
   padding: 10px 10px 10px 14px;
   border: none;
@@ -175,15 +178,19 @@ footer {
   font-weight: normal;
   text-align: center;
   color: #050300;
-  line-height: 1.7em;
+  line-height: 1.2em;
 }
 footer a {
-  color: #050300;
   text-decoration: none;
 }
 footer a:hover {
+  text-decoration: none;
+  font-weight: bold;
   color: #fffdfa;
-  text-decoration: underline;
+}
+footer a:visited {
+  color: #050300;
+  text-decoration: none;
 }
 /* Dropdown Button */
 .dropbtn {
@@ -236,7 +243,7 @@ footer a:hover {
   width: 60%;
   margin-top: 24px;
   margin-bottom: 24px;
-  background-color: #05030050;
+  background-color: #FAAB78;
   border: none;
   height: 1px;
 }
@@ -245,16 +252,17 @@ footer a:hover {
   width: 100%;
   margin-top: 30px;
   margin-bottom: 30px;
-  background-color: #05030096;
+  background-color: #FAAB78;
   border: none;
   height: 2px;
 }
-/* Estilo do separador entre post do blog */
-.separadoresbarralateral {
-  width: 96%;
-  margin-top: 28px;
-  margin-bottom: 28px;
-  background-color: #05030050;
+/* Estilo do separador entre elementos na Barra Lateral aplicável a todos os breakpoints */
+.separador-barra-lateral {
+  min-width: 96%;
+  max-width: 96%;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  background-color: #FAAB78;
   border: none;
   height: 1px;
 }
@@ -339,7 +347,7 @@ footer a:hover {
   }
   .partilha-nas-redes-sociais {
     display: inline-block;
-    font-size: 18px;
+    font-size: 16px;
   }
   .partilha-nas-redes-sociais a {
 
@@ -357,7 +365,7 @@ footer a:hover {
   .botaohomepagecomentarartigo a:hover {
     text-decoration: none;
   }
-  .iconcomentario {
+  .icon-comentario {
     display: inline-block;
     width: 30px;
     height: auto;
@@ -379,7 +387,7 @@ footer a:hover {
     color: #050300;
   }
   input.caixa-de-pesquisa {
-    font-size: 18px;
+    font-size: 16px;
   }
   .redes-sociais-e-contacto-lateral-icon {
     display: inline-block;
@@ -447,7 +455,7 @@ footer a:hover {
     border: none;
     right: 4%;
     bottom: 4%;
-    color: #050300c7;
+    color: #050300;
     z-index: 1000;
     width: 32px;
   }
@@ -551,7 +559,7 @@ footer a:hover {
   .botaohomepagecomentarartigo a:hover {
     text-decoration: none;
   }
-  .iconcomentario {
+  .icon-comentario {
     display: inline-block;
     width: 30px;
     height: auto;
@@ -573,7 +581,7 @@ footer a:hover {
     color: #050300;
   }
   input.caixa-de-pesquisa {
-    font-size: 18px;
+    font-size: 16px;
   }
   .redes-sociais-e-contacto-lateral-icon {
     display: inline-block;
@@ -641,7 +649,7 @@ footer a:hover {
     border: none;
     right: 4%;
     bottom: 4%;
-    color: #050300c7;
+    color: #050300;
     z-index: 1000;
     width: 34px;
   }
@@ -745,7 +753,7 @@ footer a:hover {
   .botaohomepagecomentarartigo a:hover {
     text-decoration: none;
   }
-  .iconcomentario {
+  .icon-comentario {
     display: inline-block;
     width: 30px;
     height: auto;
@@ -767,7 +775,7 @@ footer a:hover {
     color: #050300;
   }
   input.caixa-de-pesquisa {
-    font-size: 18px;
+    font-size: 16px;
   }
   .redes-sociais-e-contacto-lateral-icon {
     display: inline-block;
@@ -835,7 +843,7 @@ footer a:hover {
     border: none;
     right: 4%;
     bottom: 4%;
-    color: #050300c7;
+    color: #050300;
     z-index: 1000;
     width: 36px;
   }
@@ -939,7 +947,7 @@ footer a:hover {
   .botaohomepagecomentarartigo a:hover {
     text-decoration: none;
   }
-  .iconcomentario {
+  .icon-comentario {
     display: inline-block;
     width: 30px;
     height: auto;
@@ -961,7 +969,7 @@ footer a:hover {
     color: #050300;
   }
   input.caixa-de-pesquisa {
-    font-size: 18px;
+    font-size: 16px;
   }
   .redes-sociais-e-contacto-lateral-icon {
     display: inline-block;
@@ -1029,7 +1037,7 @@ footer a:hover {
     border: none;
     right: 4%;
     bottom: 4%;
-    color: #050300c7;
+    color: #050300;
     z-index: 1000;
     width: 38px;
   }
@@ -1132,7 +1140,7 @@ footer a:hover {
   .botaohomepagecomentarartigo a:hover {
     text-decoration: none;
   }
-  .iconcomentario {
+  .icon-comentario {
     display: inline-block;
     width: 30px;
     height: auto;
@@ -1153,7 +1161,7 @@ footer a:hover {
     color: #050300;
   }
   input.caixa-de-pesquisa {
-    font-size: 18px;
+    font-size: 16px;
   }
   .redes-sociais-e-contacto-lateral-icon {
     display: inline-block;
@@ -1221,7 +1229,7 @@ footer a:hover {
     border: none;
     right: 4%;
     bottom: 4%;
-    color: #050300c7;
+    color: #050300;
     z-index: 1000;
     width: 38px;
   }
@@ -1328,7 +1336,7 @@ footer a:hover {
   .botaohomepagecomentarartigo a:hover {
     text-decoration: none;
   }
-  .iconcomentario {
+  .icon-comentario {
     display: inline-block;
     width: 30px;
     height: auto;
@@ -1351,7 +1359,7 @@ footer a:hover {
     color: #050300;
   }
   input.caixa-de-pesquisa {
-    font-size: 18px;
+    font-size: 16px;
   }
   .redes-sociais-e-contacto-lateral-icon {
     display: inline-block;
@@ -1419,7 +1427,7 @@ footer a:hover {
     border: none;
     right: 4%;
     bottom: 4%;
-    color: #050300c7;
+    color: #050300;
     z-index: 1000;
     width: 38px;
   }
@@ -1526,7 +1534,7 @@ footer a:hover {
   .botaohomepagecomentarartigo a:hover {
     text-decoration: none;
   }
-  .iconcomentario {
+  .icon-comentario {
     display: inline-block;
     width: 30px;
     height: auto;
@@ -1549,7 +1557,7 @@ footer a:hover {
     color: #050300;
   }
   input.caixa-de-pesquisa {
-    font-size: 18px;
+    font-size: 16px;
   }
   .redes-sociais-e-contacto-lateral-icon {
     display: inline-block;
@@ -1609,7 +1617,7 @@ footer a:hover {
     font-size: 18px;
   }
   .programador {
-    font-size: 17px;
+    font-size: 16px;
   }
   .regresso-ao-topo {
     position: fixed;
@@ -1617,7 +1625,7 @@ footer a:hover {
     border: none;
     right: 4%;
     bottom: 4%;
-    color: #050300c7;
+    color: #050300;
     z-index: 1000;
     width: 40px;
   }
@@ -1724,7 +1732,7 @@ footer a:hover {
   .botaohomepagecomentarartigo a:hover {
     text-decoration: none;
   }
-  .iconcomentario {
+  .icon-comentario {
     display: inline-block;
     width: 30px;
     height: auto;
@@ -1747,7 +1755,7 @@ footer a:hover {
     color: #050300;
   }
   input.caixa-de-pesquisa {
-    font-size: 18px;
+    font-size: 16px;
   }
   .redes-sociais-e-contacto-lateral-icon {
     display: inline-block;
@@ -1807,7 +1815,7 @@ footer a:hover {
     font-size: 18px;
   }
   .programador {
-    font-size: 17px;
+    font-size: 16px;
   }
   .regresso-ao-topo {
     position: fixed;
@@ -1815,7 +1823,7 @@ footer a:hover {
     border: none;
     right: 4%;
     bottom: 4%;
-    color: #050300c7;
+    color: #050300;
     z-index: 1000;
     width: 40px;
   }
@@ -1922,7 +1930,7 @@ footer a:hover {
   .botaohomepagecomentarartigo a:hover {
     text-decoration: none;
   }
-  .iconcomentario {
+  .icon-comentario {
     display: inline-block;
     width: 30px;
     height: auto;
@@ -1945,7 +1953,7 @@ footer a:hover {
     color: #050300;
   }
   input.caixa-de-pesquisa {
-    font-size: 18px;
+    font-size: 16px;
   }
   .redes-sociais-e-contacto-lateral-icon {
     display: inline-block;
@@ -2005,7 +2013,7 @@ footer a:hover {
     font-size: 18px;
   }
   .programador {
-    font-size: 17px;
+    font-size: 16px;
   }
   .regresso-ao-topo {
     position: fixed;
@@ -2013,7 +2021,7 @@ footer a:hover {
     border: none;
     right: 4%;
     bottom: 4%;
-    color: #050300c7;
+    color: #050300;
     z-index: 1000;
     width: 40px;
   }
@@ -2120,7 +2128,7 @@ footer a:hover {
   .botaohomepagecomentarartigo a:hover {
     text-decoration: none;
   }
-  .iconcomentario {
+  .icon-comentario {
     display: inline-block;
     width: 30px;
     height: auto;
@@ -2203,7 +2211,7 @@ footer a:hover {
     font-size: 18px;
   }
   .programador {
-    font-size: 17px;
+    font-size: 16px;
   }
   .regresso-ao-topo {
     position: fixed;
@@ -2211,7 +2219,7 @@ footer a:hover {
     border: none;
     right: 4%;
     bottom: 4%;
-    color: #050300c7;
+    color: #050300;
     z-index: 1000;
     width: 42px;
   }
@@ -2318,7 +2326,7 @@ footer a:hover {
   .botaohomepagecomentarartigo a:hover {
     text-decoration: none;
   }
-  .iconcomentario {
+  .icon-comentario {
     display: inline-block;
     width: 30px;
     height: auto;
@@ -2401,7 +2409,7 @@ footer a:hover {
     font-size: 18px;
   }
   .programador {
-    font-size: 18px;
+    font-size: 17px;
   }
   .regresso-ao-topo {
     position: fixed;
@@ -2409,7 +2417,7 @@ footer a:hover {
     border: none;
     right: 4%;
     bottom: 4%;
-    color: #050300c7;
+    color: #050300;
     z-index: 1000;
     width: 44px;
   }
@@ -2516,7 +2524,7 @@ footer a:hover {
   .botaohomepagecomentarartigo a:hover {
     text-decoration: none;
   }
-  .iconcomentario {
+  .icon-comentario {
     display: inline-block;
     width: 30px;
     height: auto;
@@ -2599,7 +2607,7 @@ footer a:hover {
     font-size: 18px;
   }
   .programador {
-    font-size: 18px;
+    font-size: 17px;
   }
   .regresso-ao-topo {
     position: fixed;
@@ -2607,7 +2615,7 @@ footer a:hover {
     border: none;
     right: 4%;
     bottom: 4%;
-    color: #050300c7;
+    color: #050300;
     z-index: 1000;
     width: 48px;
   }
