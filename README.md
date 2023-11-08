@@ -1,16 +1,22 @@
 # Tema OESM
 
-Template HTML5 semântico para aplicação como tema de primeira geração na plataforma Blogger.
+Tema desenvolvido para utilização e 100% de compatibilidade com a plataforma Blogger (Primeira Geração).
+
+## HTML5
+
+Uso de HTML5 semântico
 
 
-## HTML5 Semântico
+## CSS3
+
+Uso de CSS3 externo
 
 
-## CSS 3
+## JAVASCRIPT
+
+Uso de JavaScript externo
 
 
-## JavaScript
+## UTILIZAÇÃO
 
-
-## Utilização
-
+Tema desenvolvido para uso no blog Ontem é só Memória de Teresa Isabel Silva.
