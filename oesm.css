@@ -111,8 +111,8 @@ main a:visited {
   font-family: "Bricolage Grotesque", Verdana, sans-serif;
   text-align: center;
   font-style: italic;
-  font-size: 18px;
-  text-decoration: underline;
+  font-size: 16px;
+  text-decoration: none;
   color: #050300;
 }
 /* Estilos das imagens no artigo aplicável a todo o tema */
@@ -334,7 +334,7 @@ footer a:visited {
   }
   .breadcrumbs {
     display: inline-block;
-    font-size: 18px;
+    font-size: 16px;
   }
   .breadcrumbs a {
 
@@ -426,7 +426,7 @@ footer a:visited {
     font-size: 16px;
   }
   .conteudo-blog-rodape:hover {
-    color: ;
+    color: #ffffff;
   }
   .conteudo-blog-rodape:visited {
     color: #050300;
@@ -528,7 +528,7 @@ footer a:visited {
   }
   .breadcrumbs {
     display: inline-block;
-    font-size: 18px;
+    font-size: 16px;
   }
   .breadcrumbs a {
 
@@ -620,7 +620,7 @@ footer a:visited {
     font-size: 16px;
   }
   .conteudo-blog-rodape:hover {
-    color: ;
+    color: #ffffff;
   }
   .conteudo-blog-rodape:visited {
     color: #050300;
@@ -722,7 +722,7 @@ footer a:visited {
   }
   .breadcrumbs {
     display: inline-block;
-    font-size: 18px;
+    font-size: 16px;
   }
   .breadcrumbs a {
 
@@ -814,7 +814,7 @@ footer a:visited {
     font-size: 16px;
   }
   .conteudo-blog-rodape:hover {
-    color: ;
+    color: #ffffff;
   }
   .conteudo-blog-rodape:visited {
     color: #050300;
@@ -916,7 +916,7 @@ footer a:visited {
   }
   .breadcrumbs {
     display: inline-block;
-    font-size: 18px;
+    font-size: 16px;
   }
   .breadcrumbs a {
 
@@ -1008,7 +1008,7 @@ footer a:visited {
     font-size: 16px;
   }
   .conteudo-blog-rodape:hover {
-    color: ;
+    color: #ffffff;
   }
   .conteudo-blog-rodape:visited {
     color: #050300;
@@ -1109,7 +1109,7 @@ footer a:visited {
   }
   .breadcrumbs {
     display: inline-block;
-    font-size: 18px;
+    font-size: 16px;
   }
   .breadcrumbs a {
 
@@ -1200,7 +1200,7 @@ footer a:visited {
     font-size: 16px;
   }
   .conteudo-blog-rodape:hover {
-    color: ;
+    color: #ffffff;
   }
   .conteudo-blog-rodape:visited {
     color: #050300;
@@ -1305,7 +1305,7 @@ footer a:visited {
   }
   .breadcrumbs {
     display: inline-block;
-    font-size: 18px;
+    font-size: 16px;
   }
   .breadcrumbs a {
 
@@ -1398,7 +1398,7 @@ footer a:visited {
     font-size: 16px;
   }
   .conteudo-blog-rodape:hover {
-    color: ;
+    color: #ffffff;
   }
   .conteudo-blog-rodape:visited {
     color: #050300;
@@ -1596,7 +1596,7 @@ footer a:visited {
     font-size: 18px;
   }
   .conteudo-blog-rodape:hover {
-    color: ;
+    color: #ffffff;
   }
   .conteudo-blog-rodape:visited {
     color: #050300;
@@ -1794,7 +1794,7 @@ footer a:visited {
     font-size: 18px;
   }
   .conteudo-blog-rodape:hover {
-    color: ;
+    color: #ffffff;
   }
   .conteudo-blog-rodape:visited {
     color: #050300;
@@ -1992,7 +1992,7 @@ footer a:visited {
     font-size: 18px;
   }
   .conteudo-blog-rodape:hover {
-    color: ;
+    color: #ffffff;
   }
   .conteudo-blog-rodape:visited {
     color: #050300;
@@ -2190,7 +2190,7 @@ footer a:visited {
     font-size: 18px;
   }
   .conteudo-blog-rodape:hover {
-    color: ;
+    color: #ffffff;
   }
   .conteudo-blog-rodape:visited {
     color: #050300;
@@ -2388,7 +2388,7 @@ footer a:visited {
     font-size: 18px;
   }
   .conteudo-blog-rodape:hover {
-    color: ;
+    color: #ffffff;
   }
   .conteudo-blog-rodape:visited {
     color: #050300;
@@ -2452,7 +2452,7 @@ footer a:visited {
     position: static;
     min-width: 69%;
     max-width: 69%;
-    font-size: 18px;
+    font-size: 19px;
     font-weight: normal;
     color: #050300;
   }
@@ -2464,7 +2464,7 @@ footer a:visited {
     padding: 10px 20px 10px 20px;
     outline: 1px solid rgba(250, 171, 120, .4);
     font-family: "Bricolage Grotesque", Verdana, sans-serif;
-    font-size: 18px;
+    font-size: 19px;
     font-weight: normal;
     line-height: normal;
   }
@@ -2493,7 +2493,7 @@ footer a:visited {
   }
   .breadcrumbs {
     display: inline-block;
-    font-size: 18px;
+    font-size: 19px;
   }
   .breadcrumbs a {
 
@@ -2542,12 +2542,12 @@ footer a:visited {
     background-color: #fffdfa;
     border: none;
     outline: 1px solid rgba(250, 171, 120, .4);
-    font-size: 18px;
+    font-size: 19px;
     font-weight: normal;
     color: #050300;
   }
   input.caixa-de-pesquisa {
-    font-size: 18px;
+    font-size: 17px;
   }
   .redes-sociais-e-contacto-lateral-icon {
     display: inline-block;
@@ -2580,19 +2580,19 @@ footer a:visited {
     position: static;
     margin: 20px 0px 30px 0px;
     padding: 2px 0px 2px 0px;
-    font-size: 18px;
+    font-size: 19px;
   }
   .conteudo-blog-rodape {
-    font-size: 18px;
+    font-size: 19px;
   }
   .conteudo-blog-rodape:hover {
-    color: ;
+    color: #ffffff;
   }
   .conteudo-blog-rodape:visited {
     color: #050300;
   }
   .redes-sociais-e-contacto-rodape {
-    font-size: 18px;
+    font-size: 19px;
   }
   .redes-sociais-e-contacto-rodape-icon {
     display: inline-block;
@@ -2604,7 +2604,7 @@ footer a:visited {
     color: #ffffff;
   }
   .disclaimer-rodape {
-    font-size: 18px;
+    font-size: 19px;
   }
   .programador {
     font-size: 17px;
