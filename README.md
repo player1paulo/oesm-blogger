@@ -30,11 +30,15 @@ Temas de segunda geração recorrem a widgets JavaScript para funções dinâmic
 
 Temas de primeira geração não recorrem de forma exagerada a JavaScript. Até porque nativamente estão limitados. Qualquer código JavaScript para funcionalidades terá de ser externo. Sempre condicionado pelo que a plataforma permite fazer.
 
-Comentários nos artigos não são um fator de ranking positivo ou que deva ser dada prioridade. Dado que é spam que é usado nos mesmos, para criar backlinks de forma desconexa de lógica ou ligação ao tópico do artigo. O blog que tem comentários de curtas frases nos seus artigos é categorizado como spam. Sendo o impato negativo dessa rotulagem por parte dos motores de pesquisa ainda maior, se, às poucas linhas e frases de texto for colocado um link externo.
+Comentários nos artigos não são um fator de ranking positivo, ou que deva ser dada prioridade por parte dos crawlers dos motores de pesquisa. Dado que é uma forma de spam que é usado nos mesmos, para criar backlinks de forma desconexa de lógica ou ligação ao tópico do artigo. 
 
-A conversa e engajamento na web moderna acontece nas redes sociais, que por sua vez canalizam tráfego para o blog. 
+O blog que tem comentários de curtas frases nos seus artigos é categorizado como spam. Sendo o impato negativo dessa rotulagem por parte dos motores de pesquisa ainda maior, se, às poucas linhas e frases de texto for colocado um link externo.
 
-Bem como, os crawlers do Google / Bing (que servem Duck Duck Go, Yahoo e outros motores de pesquisa de menor expressão no mercado) não dão prioridade de indexação a páginas cujo conteúdo a aparecer aos visitantes dependa da interpretação de código JavaScript. A prioridade dos crawlers Google / Bing é a código estático, preferêncialmente com recurso a toda a sintax semância HTML5.2. 
+A conversa e engajamento na web moderna acontece nas redes sociais, que por sua vez canalizam tráfego para o blog. Dessa forma a web entity é tida em conta pelos crawlers e elevada no rank dos SERP's.
+
+Bem como, os crawlers do Google / Bing (que servem Duck Duck Go, Yahoo e outros motores de pesquisa de menor expressão no mercado) não dão prioridade de indexação a páginas cujo conteúdo a aparecer aos visitantes dependa da interpretação de código JavaScript. 
+
+A prioridade dos crawlers do Google / Bing é para código estático, preferêncialmente com recurso a toda a semântica HTML5.2. 
 
 
 ## HTML5
