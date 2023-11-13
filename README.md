@@ -26,13 +26,15 @@ Otimização da apresentação e disposição do conteúdo presente na barra lat
 
 ## Limitações da Plataforma Blogger / Blogspot
 
-Temas de segunda geração recorrem a widgets JavaScript para funções dinâmicas. Como é o caso de responder a comentários direta e individualmente. Mais JavaScript piora a performance da página, dadas as limitações de recursos que são dadas para a rendeziração desse tipo de código. 
+Temas de segunda geração recorrem a widgets JavaScript para funções dinâmicas. Como é o caso de responder a comentários direta e individualmente. E também a funcionalidade de poder ser obtido no nome e hiperligação do post anterior, e caso exista, o post seguinte. Mais JavaScript piora a performance da página. Dadas as limitações de recursos que são disponibilizadas para os utilizadores da plataforma Blogger / Blogspot para a rendeziração do código. 
 
-Temas de primeira geração não recorrem de forma exagerada a JavaScript. No entado tem as suas "desvantagens", como é o caso dos comentários não permitirem resposta direta.
+Temas de primeira geração não recorrem de forma exagerada a JavaScript. Até porque nativamente estão limitados. Qualquer código JavaScript para funcionalidades terá de ser externo. Sempre condicionado pelo que a plataforma permite fazer.
 
-Comentários não são um fator de ranking positivo, dado o spam que é usado nos mesmos para criar backlinks de forma desconexa de lógica. O blog que tem comentários de curtas frases nos seus artigos é categorizado como spam, sendo o impato negativo ainda maior se às poucas linhas e frases de texto for colocado um link externo.
+Comentários nos artigos não são um fator de ranking positivo ou que deva ser dada prioridade. Dado que é spam que é usado nos mesmos, para criar backlinks de forma desconexa de lógica ou ligação ao tópico do artigo. O blog que tem comentários de curtas frases nos seus artigos é categorizado como spam. Sendo o impato negativo dessa rotulagem por parte dos motores de pesquisa ainda maior, se, às poucas linhas e frases de texto for colocado um link externo.
 
-Bem como, os crawlers do Google / Bing (que servem Duck Duck Go, Yahoo e outros) não dão prioridade de indexação a páginas cujo conteúdo a aparecer aos visitantes dependa da interpretação de código JavaScript. A prioridade dos crawlers Google / Bing é a código estático, preferêncialmente com recurso a toda a sintax semância do padarão HTML5.2. 
+A conversa e engajamento na web moderna acontece nas redes sociais, que por sua vez canalizam tráfego para o blog. 
+
+Bem como, os crawlers do Google / Bing (que servem Duck Duck Go, Yahoo e outros motores de pesquisa de menor expressão no mercado) não dão prioridade de indexação a páginas cujo conteúdo a aparecer aos visitantes dependa da interpretação de código JavaScript. A prioridade dos crawlers Google / Bing é a código estático, preferêncialmente com recurso a toda a sintax semância HTML5.2. 
 
 
 ## HTML5
