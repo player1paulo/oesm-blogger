@@ -36,6 +36,8 @@ O blog que tem comentários de curtas frases nos seus artigos é categorizado co
 
 A conversa e engajamento na web moderna acontece nas redes sociais, que por sua vez canalizam tráfego para o blog. Dessa forma a web entity é tida em conta pelos crawlers e elevada no rank dos SERP's.
 
+As redes sociais Facebook e Instagram estão formatadas para que o conteúdo seja consumido internamente. Tudo o que é chamada para a ação externa a estas redes sociais é penalizado no seu alcance orgânico.
+
 Bem como, os crawlers do Google / Bing (que servem Duck Duck Go, Yahoo e outros motores de pesquisa de menor expressão no mercado) não dão prioridade de indexação a páginas cujo conteúdo a aparecer aos visitantes dependa da interpretação de código JavaScript. 
 
 A prioridade dos crawlers do Google / Bing é para código estático, preferêncialmente com recurso a toda a semântica HTML5.2. 
