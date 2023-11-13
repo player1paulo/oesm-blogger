@@ -4,17 +4,17 @@ Tema desenvolvido para utilização e 100% de compatibilidade com a plataforma B
 
 ## HTML5
 
-Uso de HTML5 semântico
+Uso de HTML5.2 semântico.
 
 
 ## CSS3
 
-Uso de CSS3 externo
+Uso de CSS3 externo para estilos e animações.
 
 
 ## JAVASCRIPT
 
-Uso de JavaScript externo
+Uso de JavaScript externo para funcionalidades interativas.
 
 
 ## UTILIZAÇÃO
