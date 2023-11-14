@@ -41,11 +41,11 @@ function myFunctionMostrarMais() {
   
 	if (dots.style.display === "none") {
 	  dots.style.display = "inline";
-	  btnText.innerHTML = "Mostrar mais";
+	  btnText.innerHTML = "mostrar";
 	  moreText.style.display = "none";
 	} else {
 	  dots.style.display = "none";
-	  btnText.innerHTML = "Mostrar menos";
+	  btnText.innerHTML = "esconder";
 	  moreText.style.display = "inline";
 	}
   }

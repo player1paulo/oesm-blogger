@@ -2575,23 +2575,33 @@ footer a:visited {
   }
   .botao-ler-artigo {
     display: inline-block;
+    margin-right: 5px;
     font-size: 18px;
   }
   .botao-ler-artigo a {
     text-decoration: none;
+    border: 1px solid #050300;
+    border-radius: 6px;
   }
   .botao-ler-artigo a:hover {
     text-decoration: none;
+    background-color: ;
+    color: ;
   }
   .botao-comentar-artigo {
     display: inline-block;
+    margin-left: 5px;
     font-size: 18px;
   }
   .botao-comentar-artigo a {
     text-decoration: none;
+    border: 1px solid #050300;
+    border-radius: 6px;
   }
   .botao-comentar-artigo a:hover {
     text-decoration: none;
+    background-color: ;
+    color: ;
   }
   .icon-comentario {
     display: inline-block;
