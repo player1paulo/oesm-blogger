@@ -23,6 +23,8 @@ Otimização da apresentação de disposição do conteúdo presente na zona de 
 
 Otimização da apresentação e disposição do conteúdo presente na barra lateral do blog.
 
+Otimização da apresentação da barra lateral nos breakpoint em que a mesma aparece do lado direito. Nesses brakpoints a barra lateral do lado direito tem a função de ficar "sticky" e não desaparecer da vista. Assim não ficam um espaço por ocupar do lado direito do Tema do blog.
+
 
 ## Limitações da Plataforma Blogger / Blogspot
 
