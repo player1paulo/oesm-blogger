@@ -68,6 +68,7 @@ nav a {
 nav a:hover {
   background-color: #fffdfa;
   border: none;
+  transition-duration: .4s;
 }
 /* Efeito do indicador da barra de scroll aplicável a todo o tema */
 nav progress {
@@ -82,7 +83,7 @@ nav .progress--bar {
 	height: 6px;
 	background-color: #fffdfa;
 	width: 0%;
-  transition: width 0.4s ease;
+  transition: .4s;
 }
 /* Estilo do HEADER 1 H1 aplicável a todo o tema */
 h1 {
@@ -1425,6 +1426,7 @@ footer a:visited {
     outline: 2px solid #FAAB78;
     color: #050300;
     text-decoration: none;
+    transition-duration: .5s;
   }
   .breadcrumbs {
     display: inline-block;
@@ -1472,6 +1474,7 @@ footer a:visited {
   }
   .botao-ler-artigo a:hover {
     text-decoration: none;
+    transition-duration: .5s;
   }
   .botao-comentar-artigo {
     display: inline-block;
@@ -1482,6 +1485,7 @@ footer a:visited {
   }
   .botao-comentar-artigo a:hover {
     text-decoration: none;
+    transition-duration: .5s;
   }
   .icon-comentario {
     display: inline-block;
@@ -1648,6 +1652,7 @@ footer a:visited {
     outline: 2px solid #FAAB78;
     color: #050300;
     text-decoration: none;
+    transition-duration: .5s;
   }
   .breadcrumbs {
     display: inline-block;
@@ -1695,6 +1700,7 @@ footer a:visited {
   }
   .botao-ler-artigo a:hover {
     text-decoration: none;
+    transition-duration: .5s;
   }
   .botao-comentar-artigo {
     display: inline-block;
@@ -1705,6 +1711,7 @@ footer a:visited {
   }
   .botao-comentar-artigo a:hover {
     text-decoration: none;
+    transition-duration: .5s;
   }
   .icon-comentario {
     display: inline-block;
@@ -1871,6 +1878,7 @@ footer a:visited {
     outline: 2px solid #FAAB78;
     color: #050300;
     text-decoration: none;
+    transition-duration: .5s;
   }
   .breadcrumbs {
     display: inline-block;
@@ -1918,6 +1926,7 @@ footer a:visited {
   }
   .botao-ler-artigo a:hover {
     text-decoration: none;
+    transition-duration: .5s;
   }
   .botao-comentar-artigo {
     display: inline-block;
@@ -1928,6 +1937,7 @@ footer a:visited {
   }
   .botao-comentar-artigo a:hover {
     text-decoration: none;
+    transition-duration: .5s;
   }
   .icon-comentario {
     display: inline-block;
@@ -2094,6 +2104,7 @@ footer a:visited {
     outline: 2px solid #FAAB78;
     color: #050300;
     text-decoration: none;
+    transition-duration: .5s;
   }
   .breadcrumbs {
     display: inline-block;
@@ -2141,6 +2152,7 @@ footer a:visited {
   }
   .botao-ler-artigo a:hover {
     text-decoration: none;
+    transition-duration: .5s;
   }
   .botao-comentar-artigo {
     display: inline-block;
@@ -2151,6 +2163,7 @@ footer a:visited {
   }
   .botao-comentar-artigo a:hover {
     text-decoration: none;
+    transition-duration: .5s;
   }
   .icon-comentario {
     display: inline-block;
@@ -2317,6 +2330,7 @@ footer a:visited {
     outline: 2px solid #FAAB78;
     color: #050300;
     text-decoration: none;
+    transition-duration: .5s;
   }
   .breadcrumbs {
     display: inline-block;
@@ -2364,6 +2378,7 @@ footer a:visited {
   }
   .botao-ler-artigo a:hover {
     text-decoration: none;
+    transition-duration: .5s;
   }
   .botao-comentar-artigo {
     display: inline-block;
@@ -2374,6 +2389,7 @@ footer a:visited {
   }
   .botao-comentar-artigo a:hover {
     text-decoration: none;
+    transition-duration: .5s;
   }
   .icon-comentario {
     display: inline-block;
@@ -2540,6 +2556,7 @@ footer a:visited {
     outline: 2px solid #FAAB78;
     color: #050300;
     text-decoration: none;
+    transition-duration: .5s;
   }
   .breadcrumbs {
     display: inline-block;
@@ -2592,6 +2609,7 @@ footer a:visited {
     text-decoration: none;
     background-color: ;
     color: ;
+    transition-duration: .5s;
   }
   .botao-comentar-artigo {
     display: inline-block;
@@ -2607,6 +2625,7 @@ footer a:visited {
     text-decoration: none;
     background-color: ;
     color: ;
+    transition-duration: .5s;
   }
   .icon-comentario {
     display: inline-block;
@@ -2773,6 +2792,7 @@ footer a:visited {
     outline: 2px solid #FAAB78;
     color: #050300;
     text-decoration: none;
+    transition-duration: .5s;
   }
   .breadcrumbs {
     display: inline-block;
@@ -2820,6 +2840,7 @@ footer a:visited {
   }
   .botao-ler-artigo a:hover {
     text-decoration: none;
+    transition-duration: .5s;
   }
   .botao-comentar-artigo {
     display: inline-block;
@@ -2830,6 +2851,7 @@ footer a:visited {
   }
   .botao-comentar-artigo a:hover {
     text-decoration: none;
+    transition-duration: .5s;
   }
   .icon-comentario {
     display: inline-block;
