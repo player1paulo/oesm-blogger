@@ -222,7 +222,6 @@ footer a:visited {
   border-radius: 6px;
   width: 100%;
   font-size: 16px;
-  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 /* Links inside the dropdown */
@@ -235,8 +234,9 @@ footer a:visited {
 }
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #fcedd4;
+  background-color: #fffdfa;
   border-radius: 6px;
+  outline: 1px solid #FAAB78;
 }
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
