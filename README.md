@@ -3,7 +3,7 @@
 Tema desenvolvido para utilização e 100% de compatibilidade com a plataforma Blogger (Primeira Geração).
 
 
-## Preview V1.3 - Changelog (ainda não está preparado nem pronto para produção)
+## Preview V1.3 - Changelog (ainda não está preparado, nem pronto, para ser aplicado em produção)
 
 Introdução de mais variáveis para breakpoints correspondentes com as medidas de largurta em pixel de maior número de dispositivos utilizados para navegação na internet.
 
@@ -24,6 +24,8 @@ Otimização da apresentação de disposição do conteúdo presente na zona de 
 Otimização da apresentação e disposição do conteúdo presente na barra lateral do blog.
 
 Otimização da apresentação da barra lateral nos breakpoint em que a mesma aparece do lado direito. Nesses brakpoints a barra lateral do lado direito tem a função de ficar "sticky" e não desaparecer da vista. Assim não ficam um espaço por ocupar do lado direito do Tema do blog.
+
+Adicionados Breakpoints para resoluções até 4K/UHD.
 
 
 ## Limitações da Plataforma Blogger / Blogspot
