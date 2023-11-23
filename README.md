@@ -27,6 +27,8 @@ Otimização da apresentação da barra lateral nos breakpoint em que a mesma ap
 
 Adicionados Breakpoints para resoluções até 4K/UHD.
 
+Breakpoints para mobile e tablet não mostram a barra de scroll para melhor aproveitamento do espaço disponível.
+
 
 ## Limitações da Plataforma Blogger / Blogspot
 

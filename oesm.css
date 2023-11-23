@@ -275,6 +275,9 @@ footer a:visited {
   body {
     margin: 0px 1.2% 0px 1.2%;
   }
+  body::-webkit-scrollbar {
+    display: none;
+  }
   header {
     display: block;
     float: none;
@@ -492,6 +495,9 @@ footer a:visited {
 @media (min-width:415px) and (max-width:480px) {
   body {
     margin: 0px 1.4% 0px 1.4%;
+  }
+  body::-webkit-scrollbar {
+    display: none;
   }
   header {
     display: block;
@@ -711,6 +717,9 @@ footer a:visited {
   body {
     margin: 0px 2% 0px 2%;
   }
+  body::-webkit-scrollbar {
+    display: none;
+  }
   header {
     display: block;
     float: none;
@@ -929,6 +938,9 @@ footer a:visited {
   body {
     margin: 0px 2% 0px 2%;
   }
+  body::-webkit-scrollbar {
+    display: none;
+  }
   header {
     display: block;
     float: none;
@@ -1146,6 +1158,9 @@ footer a:visited {
 @media (min-width:768px) and (max-width:960px) {
   body {
     margin: 0px 3% 0px 3%;
+  }
+  body::-webkit-scrollbar {
+    display: none;
   }
   header {
     display: block;
