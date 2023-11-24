@@ -27,7 +27,9 @@ Otimização da apresentação da barra lateral nos breakpoint em que a mesma ap
 
 Adicionados Breakpoints para resoluções até 4K/UHD.
 
-Breakpoints para mobile e tablet não mostram a barra de scroll para melhor aproveitamento do espaço disponível.
+Breakpoints para mobile e tablet não mostram a barra de scroll para aproveitamento da largura disponível.
+
+Botão Buy Me A Coffee.
 
 
 ## Limitações da Plataforma Blogger / Blogspot
@@ -47,23 +49,3 @@ As redes sociais Facebook e Instagram estão formatadas para que o conteúdo sej
 Bem como, os crawlers do Google / Bing (que servem Duck Duck Go, Yahoo e outros motores de pesquisa de menor expressão no mercado) não dão prioridade de indexação a páginas cujo conteúdo a aparecer aos visitantes dependa da interpretação de código JavaScript. 
 
 A prioridade dos crawlers do Google / Bing é para código estático, preferêncialmente com recurso a toda a semântica HTML5.2. 
-
-
-## HTML5
-
-Uso de HTML5.2 semântico.
-
-
-## CSS3
-
-Uso de CSS3 externo para estilos e animações.
-
-
-## JAVASCRIPT
-
-Uso de JavaScript externo para funcionalidades interativas.
-
-
-## UTILIZAÇÃO
-
-Tema desenvolvido para uso no blog Ontem é só Memória de Teresa Isabel Silva.
