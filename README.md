@@ -3,11 +3,18 @@
 Tema desenvolvido para utilização e 100% de compatibilidade com a plataforma Blogger (Tema de Primeira Geração).
 
 100% compatibilidade do código CSS com browser Google Chrome.
+
 100% compatibilidade do código CSS com browser Microsoft Edge.
+
 100% compatibilidade do código CSS com browser Firefox.
+
 100% compatibilidade do código CSS com browser Opera.
+
 100% compatibilidade do código CSS com browser Brave.
+
 100% compatibilidade do código CSS com browser Tor.
+
+Tema responsivo com foco na rapidez, navegabilidade e acessibilidade. 
 
 ## Preview da V1.4 - Changelog (ainda não está preparado - nem pronto - para ser aplicado em produção)
 
