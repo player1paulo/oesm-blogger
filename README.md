@@ -2,39 +2,18 @@
 
 Tema desenvolvido para utilização e 100% de compatibilidade com a plataforma Blogger (Tema de Primeira Geração).
 
-100% de compatibilidade com os browsers Chrome, Edge e outros que tenham por código fonte o Chromium.
+100% compatibilidade do código CSS com browser Google Chrome.
+100% compatibilidade do código CSS com browser Microsoft Edge.
+100% compatibilidade do código CSS com browser Firefox.
+100% compatibilidade do código CSS com browser Opera.
+100% compatibilidade do código CSS com browser Brave.
+100% compatibilidade do código CSS com browser Tor.
 
+## Preview da V1.4 - Changelog (ainda não está preparado - nem pronto - para ser aplicado em produção)
 
-## Preview V1.3 - Changelog (ainda não está preparado - nem pronto - para ser aplicado em produção)
+Utilização mínima de JavaScript para funcionalidades dinâmicas.
 
-Introdução de mais variáveis para breakpoints correspondentes com as medidas de largurta em pixel de maior número de dispositivos utilizados para navegação na internet.
-
-Introdução de código para não aparecer o aviso para a utilização de cookies. 
-
-Remoção do uso, e da ligação externa por via de JavaScript, da biblioteca Font Awesome.
-
-Utilização de ícones SVG de acesso livre para identificação de redes sociais e outros elementos visuais presentes no Tema.
-
-Otimização da apresentação e disposição do botão flutuante para regresso ao topo da página do blog.
-
-Correção de vários bugs com a aplicação de medidas de diferentes elementos da barra lateral consoante o breakpoint.
-
-Otimização de código CSS e HTML para melhorar a renderização do blog, quer em páginas de conteúdo quer a página principal.
-
-Otimização da apresentação de disposição do conteúdo presente na zona de rodapé do blog. 
-
-Otimização da apresentação e disposição do conteúdo presente na barra lateral do blog.
-
-Otimização da apresentação da barra lateral nos breakpoint em que a mesma aparece do lado direito. Nesses breakpoints, a barra lateral do lado direito tem a função de ficar "sticky" e não desaparecer da vista com o deslocamento. Assim não fica um espaço por ocupar do lado direito do Tema do blog durante a leitura do artigo e deslocamento.
-
-Adicionados Breakpoints para resoluções até 4K/UHD.
-
-Breakpoints para mobile e tablet não mostram a barra de scroll para aproveitamento da largura disponível.
-
-Otimização de código CSS
-
-Botão Buy Me A Coffee.
-
+Separação do CSS em duas folhas de estilos: Uma folha de estilo para screen, print e acessibilidade em landscape com resoluções até 4K UHD. Outra folha de estilo para screen, print e acessibilidade em portrait com resoluções até 4K UHD.
 
 ## Limitações da Plataforma Blogger / Blogspot
 

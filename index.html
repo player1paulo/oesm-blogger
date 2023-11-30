@@ -67,7 +67,7 @@
     </BlogDateHeader>
     <!-- Início do artigo -->
       <BlogItemTitle>
-        <h2 class="nome-do-artigo"><a href="<$BlogItemPermalinkUrl$>"><$BlogItemTitle$></a></h2>
+        <a href="<$BlogItemPermalinkUrl$>"><h2 class="nome-do-artigo"><$BlogItemTitle$></h2></a>
       </BlogItemTitle>
     <!-- Breadcrumbs de início no artigo -->
       <ItemPage>
@@ -75,7 +75,7 @@
             <a href="https://ontemesomemoria.pt">Início</a> &sdot; <a href="<$BlogItemPermalinkUrl$>"><$BlogItemTitle$></a>
           </p>
       </ItemPage>
-    <!-- Fim dos Breadcrumbs no cabeçalho do artigo -->
+    <!-- Fim dos Breadcrumbs de início no artigo -->
         <p>
           <$BlogItemBody$>
         </p>
@@ -148,38 +148,38 @@
           <path d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2ZM8 3.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
         </svg>
       <h4><$BlogItemCommentCount$> Comentário(s):</h4>
-      <dl id="comments-block">
-      <BlogItemComments>
-      <dt id="c<$BlogCommentNumber$>"><a name="c<$BlogCommentNumber$>"></a>
-      <a href="#c<$BlogCommentNumber$>" title="comment permalink"><$BlogCommentDateTime$></a>,
+        <dl id="comments-block">
+          <BlogItemComments>
+            <dt id="c<$BlogCommentNumber$>"><a name="c<$BlogCommentNumber$>"></a>
+              <a href="#c<$BlogCommentNumber$>" title="comment permalink"><$BlogCommentDateTime$></a>,
       <$BlogCommentAuthor$> disse...
-      </dt>
-      <dd>
-      <p><$BlogCommentBody$></p>
-      <$BlogCommentDeleteIcon$>
-      </dd>
-      </BlogItemComments>
-      </dl>
-      <p>
-      <$BlogItemCreate$>
-      </p>
+            </dt>
+        <dd>
+          <p><$BlogCommentBody$></p>
+            <$BlogCommentDeleteIcon$>
+        </dd>
+          </BlogItemComments>
+            </dl>
+        <p>
+          <$BlogItemCreate$>
+        </p>
       </BlogItemCommentsEnabled>
-      <BlogItemBacklinksEnabled>
-      <a name="links"></a><h4>Hiperligações para o artigo:</h4>
-      <dl id="comments-block">
-      <BlogItemBacklinks>
-      <dt>
-      <$BlogBacklinkControl$>
-      <a href="<$BlogBacklinkURL$>" rel="nofollow"><$BlogBacklinkTitle$></a> <$BlogBacklinkDeleteIcon$>
-      </dt>
-      <dd><$BlogBacklinkSnippet$>
-      <br>
-      <span>
-      <em>publicado por <$BlogBacklinkAuthor$> @ <$BlogBacklinkDateTime$></em>
-      </span>
-      </dd>
-      </BlogItemBacklinks>
-      </dl>
+        <BlogItemBacklinksEnabled>
+          <a name="links"></a><h4>Hiperligações para o artigo:</h4>
+        <dl id="comments-block">
+          <BlogItemBacklinks>
+        <dt>
+          <$BlogBacklinkControl$>
+            <a href="<$BlogBacklinkURL$>" rel="nofollow"><$BlogBacklinkTitle$></a> <$BlogBacklinkDeleteIcon$>
+        </dt>
+        <dd><$BlogBacklinkSnippet$>
+          <br>
+            <span>
+              <em>publicado por <$BlogBacklinkAuthor$> @ <$BlogBacklinkDateTime$></em>
+            </span>
+        </dd>
+          </BlogItemBacklinks>
+        </dl>
       <p>
         <$BlogItemBacklinkCreate$>
       </p>
@@ -199,7 +199,10 @@
 </main>
 <!-- Barra Lateral do Tema do blog -->
 <aside>
-  <!-- <input type="search" aria-label="Search" placeholder="O que procuras?" class="caixa-de-pesquisa"> -->
+  <div class="search">
+    <div class="gcse-search"></div>
+  </div>
+  <hr class="separador-barra-lateral">
   <p style="text-align: center">
     <a href="https://www.facebook.com/ontemesomemoria" target="_blank">
       <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="currentColor" class="redes-sociais-e-contacto-lateral-icon" viewBox="0 0 16 16">
@@ -223,12 +226,21 @@
     </a>
   </p>
   <hr class="separador-barra-lateral">
-  <h3 style="text-align: center">Sobre a autora do blog</h3>
+  <h3 style="text-align: center">Sobre o Ontem é só Memória</h3>
+    <p>
+      <strong translate="no" >Ontem é só Memória</strong>, blog da autoria da <em translate="no">Teresa Isabel Silva</em>.
+    </p>
+    <p>  
+      Encontra uma maneira de conseguires ter um estilo de vida mais organizado e equilibrado.
+    </p>
+    <p>
+      Aqui tens novos conteúdos regulares sobre <i>lifestyle</i>, organização pessoal, organização de casa e organização dia-a-dia.
+    </p>
     <p style="text-align: center;">
       <img src="https://i.postimg.cc/CMc8FVsc/ontem-e-so-memoria-autora.webp" loading="lazy" alt="Teresa Isabel Silva autora do blog Ontem é só Memória">
     </p>
-    <p>
-      <b><em translate="no">Teresa Isabel Silva</em></b>, autora do blog <b><em translate="no">Ontem é só Memória</em></b>.
+    <p style="text-align: center">
+      <strong  translate="no">Teresa Isabel Silva</strong>, autora do blog.
     </p>
     <p>
       O blog <strong translate="no">Ontem é só Memória</strong> começou a sob o nome <strong translate="no">Pequena Boneca de Trapos</strong>. São mais de dez anos a criar conteúdo original com novos artigos todas as semanas.
@@ -254,15 +266,15 @@
   </p>
   <hr class="separador-barra-lateral">
   <h4 style="text-align: center">Paga-me um café</h4>
-    <p>
+    <p style="text-align: center">
       Podes fazer um donativo / doação para ajudar o <strong translate="no">Ontem é só Memória</strong> a melhorar. 
-    </p>
-    <p>  
-      Os montantes recebidos são canalizados para a aquisição de novo equipamento para a criação de conteúdo no blog e no canal no Youtube.
     </p>
     <div class="buy-me-a-coffee">
       <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="ontemesomemoria" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
     </div>
+    <p style="text-align: center">  
+      Os montantes recebidos são canalizados para a aquisição de novo equipamento para a criação de conteúdo no blog e no canal no Youtube.
+    </p>
     <hr class="separador-barra-lateral">
     <!-- ontemesomemoria_sidebar_AdSense2_300x600_as -->
         <ins class="adsbygoogle" style="display:inline-block;width:300px;height:600px" data-ad-client="ca-pub-9271243691582466" data-ad-slot="2595715196"></ins>
@@ -356,7 +368,7 @@
     <a href="https://ontemesomemoria.pt"><strong translate="no">Ontem é só Memória</strong></a> é da autoria de <em>Teresa Isabel Silva</em>. &nbsp;|&nbsp; &copy; Todos os direitos reservados.
   </p>
   <p class="programador">
-    Tema OESM [v1.3] para a plataforma <em>Blogger</em> a cargo de <a href="https://player1paulo.com" target="_blank"><strong translate="no">player1paulo</strong></a>.
+    Tema OESM [v1.4] para a plataforma <em>Blogger</em> a cargo do <a href="https://player1paulo.com" target="_blank"><strong translate="no">player1paulo</strong></a>.
   </p>
 </footer>
 <!-- Botão Regresso Ao Topo -->
