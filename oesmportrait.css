@@ -1,0 +1,46 @@
+/* Estilos base gerais para todos os breakpoints do blog ontem é só memória */
+@import url("https://fonts.googleapis.com/css?family=Bricolage+Grotesque");
+@media all and (orientation:portrait) {
+    /* Styles for Portrait screen */
+    html {
+        scroll-behavior: smooth;
+        }
+    body::-webkit-scrollbar {
+            display: none;
+        }
+    body {
+
+    }
+    header {
+
+    }
+    nav {
+        
+    }
+    main {
+
+    }
+    section {
+
+    }
+    article {
+
+    }
+    article img {
+        
+    }
+    article iframe {
+        width: ;
+        height: auto;
+    }
+    aside {
+
+    }
+    aside iframe {
+        width: ;
+        height: auto;
+    }
+    footer {
+
+    }
+    }

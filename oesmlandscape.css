@@ -1,0 +1,74 @@
+/* Estilos base gerais para todos os breakpoints do blog ontem é só memória */
+@import url("https://fonts.googleapis.com/css?family=Bricolage+Grotesque");
+@media all and (orientation:landscape) {
+    /* Styles for Landscape screen */
+    html {
+        scroll-behavior: smooth;
+        }
+    body {
+        background-color: ;
+    }
+    header {
+        width: ;
+    }
+    header img {
+        height: auto;
+    }
+    nav {
+        width: ;
+    }
+    main {
+        width: ;
+    }
+    section {
+        width: ;
+    }
+    article {
+        width: ;
+    }
+    article img {
+        width: ;
+        height: auto;
+    }
+    article iframe {
+        width: ;
+        height: auto;
+    }
+    aside {
+        width: ;
+    }
+    aside img {
+        width: ;
+        height: auto;
+    }
+    aside iframe {
+
+    }
+    .search-landscape {
+        width: ;
+    }
+    footer {
+        width: ;
+    }
+    footer img {
+        height: auto;
+    }
+    footer p {
+
+    }
+    footer a {
+
+    }
+    footer h2 {
+
+    }
+    footer h3 {
+
+    }
+    .regresso-ao-topo-landscape {
+        height: auto;
+    }
+    .regresso-ao-topo-landscape:hover {
+        
+    }
+    }
